@@ -5,10 +5,24 @@
     <link>https://m46f.github.io/tags/</link>
     <description>Recent content in Tags on m46f</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en</language><atom:link href="https://m46f.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>product</title>
+      <link>https://m46f.github.io/tags/product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://m46f.github.io/tags/product/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://m46f.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>search</title>
+      <link>https://m46f.github.io/tags/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://m46f.github.io/tags/search/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

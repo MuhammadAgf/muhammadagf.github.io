@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>m46f</title>
-    <link>https://m46f.github.io/</link>
-    <description>Recent content on m46f</description>
+    <title>Posts on m46f</title>
+    <link>https://m46f.github.io/posts/</link>
+    <description>Recent content in Posts on m46f</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://m46f.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://m46f.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a Search Product</title>
       <link>https://m46f.github.io/posts/search-product/</link>
@@ -14,15 +14,6 @@
       <guid>https://m46f.github.io/posts/search-product/</guid>
       <description>So you want to add search engine to your app, before jumping to algorithm and the &amp;ldquo;how&amp;rdquo;, just like any product that you want to build, ask &amp;ldquo;what problem our user is facing?&amp;rdquo; and &amp;ldquo;why are our user face that problem?&amp;rdquo;
 Before we start I assume that you have done your homework and you discover that you need to create a search engine to solve your user problem, but you have many question</description>
-    </item>
-    
-    <item>
-      <title>Hi I&#39;m Muhammad</title>
-      <link>https://m46f.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://m46f.github.io/about/</guid>
-      <description></description>
     </item>
     
   </channel>
