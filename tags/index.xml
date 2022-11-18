@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on m46f</title>
-    <link>https://m46f.github.io/tags/</link>
+    <link>https://muhammadagf.github.io/tags/</link>
     <description>Recent content in Tags on m46f</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://m46f.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>product</title>
-      <link>https://m46f.github.io/tags/product/</link>
+      <link>https://muhammadagf.github.io/tags/product/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://m46f.github.io/tags/product/</guid>
+      <guid>https://muhammadagf.github.io/tags/product/</guid>
       <description></description>
     </item>
     
     <item>
       <title>search</title>
-      <link>https://m46f.github.io/tags/search/</link>
+      <link>https://muhammadagf.github.io/tags/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://m46f.github.io/tags/search/</guid>
+      <guid>https://muhammadagf.github.io/tags/search/</guid>
       <description></description>
     </item>
     
