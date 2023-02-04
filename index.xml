@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://muhammadagf.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hi I&#39;m Muhammad</title>
+      <link>https://muhammadagf.github.io/about/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/about/</guid>
+      <description>I have a solid track record in defining problem statements, defining metrics, and delivering solutions. In my current role as a Senior Data Scientist at Noice, I am responsible for structuring and creating a data platform project and implementing MLOps processes. I have also improved the click-through rate by designing and developing scoring algorithms for the search engine.
+Prior to this, I served as a Senior Data Scientist at Ruangguru, where I managed and co-developed machine learning deployment projects.</description>
+    </item>
+    
+    <item>
       <title>Building a Search Product</title>
       <link>https://muhammadagf.github.io/posts/search-product/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14,15 +24,6 @@
       <guid>https://muhammadagf.github.io/posts/search-product/</guid>
       <description>So you want to add search engine to your app, before jumping to algorithm and the &amp;ldquo;how&amp;rdquo;, just like any product that you want to build, ask &amp;ldquo;what problem our user is facing?&amp;rdquo; and &amp;ldquo;why are our user face that problem?&amp;rdquo;
 Before we start I assume that you have done your homework and you discover that you need to create a search engine to solve your user problem, but you have many question</description>
-    </item>
-    
-    <item>
-      <title>Hi I&#39;m Muhammad</title>
-      <link>https://muhammadagf.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://muhammadagf.github.io/about/</guid>
-      <description></description>
     </item>
     
   </channel>
