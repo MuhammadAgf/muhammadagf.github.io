@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>classification on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/classification/</link>
+    <description>Recent content in classification on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/classification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logistic Regression</title>
+      <link>https://muhammadagf.github.io/posts/notes/logistic-regression/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/logistic-regression/</guid>
+      <description>statistical model that models the probability of an event taking place by having the log-odds of an event be a linear combination of one or more independent variables. since logistic regression fit a model in the form $p(y|x)$ directly, it&amp;rsquo;s called discriminative approach.
+$$ p(y|x,w) = Ber(y|sigm(w^Tx))$$ where sigm is a sigmoid function: $$sigm(x) = \frac{1}{1 + e^{-x}}$$
+model fitting    MLE    the negative log-likelihood for logistic regression is given by $$NLL(w) = -\sum_{i=1}^N y_i log(\mu_i) + (1-y_i)log(1-\mu_i)$$ this is also called **cross entropy** error function.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Muhammad</title>
+    <link>https://muhammadagf.github.io/posts/notes/</link>
+    <description>Recent content on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Standard Error</title>
+      <link>https://muhammadagf.github.io/posts/notes/standard-error/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/standard-error/</guid>
+      <description>usually standard error is: standard deviations of the sampling mean
+in essence it gives us how much variations in our &amp;ldquo;means&amp;rdquo; if we took a bunch of independent measurement samples.
+formula: $$SE(\hat{x} ) = \frac{\sigma}{\sqrt{n}} $$ $\hat{x}$ is sample mean $\sigma$ is population std $n$ is number of sample
+derivation:    $$SE(\hat{x}) = Std(samplemean) = \sqrt{VAR[\hat{X}]}$$ $$\sqrt{VAR[\frac{T}{n}]} = \sqrt{\frac{1}{n^2}VAR[T]} = \sqrt{\frac{1}{n}\sigma^2} = \frac{\sigma}{\sqrt{n}}$$ $T$ is sum of the mean from random variable $\hat{X}$ notice that $T$ consist of sum of iid ( independent and identically distributed) RV because we get T by sampling from the same distribution over and over again (bootstraping).</description>
+    </item>
+    
+    <item>
+      <title>Binomial Variable</title>
+      <link>https://muhammadagf.github.io/posts/notes/binomial-variable/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/binomial-variable/</guid>
+      <description>special class of random variable
+X = number of success given N trial with p probability of each success on each trial where each trial are independent with each other.
+properties:     made of independent trials each trials can be classified as success or failure fixed # of trials probability of success on each trial is constant  Binomial distribution    special case of probability mass function from a binomial variable pmf if the probability of success is p, the probability of having exactly k success given n trial is given by:</description>
+    </item>
+    
+    <item>
+      <title>Permutations And Combinations</title>
+      <link>https://muhammadagf.github.io/posts/notes/permutations-and-combinations/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/permutations-and-combinations/</guid>
+      <description>permutation    how many way we can arange thing if we care about the order? $$_kP_n = \frac{n!}{(n-k)!}$$ example: how many way 5 person can be seated to seat numbered from 1-3 = $_3P_5$ answer = 5 way for the first seat, 4 way for the 2nd seat, 3 way for the 3rd seat $$\frac{5!}{(5-3)!} = \frac{5!}{2!} = 5 * 4 * 3 = 60$$
+combination    how many way we can get item thing if we care about the order?</description>
+    </item>
+    
+    <item>
+      <title>Probability Mass Function (Pmf)</title>
+      <link>https://muhammadagf.github.io/posts/notes/probability-mass-function/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/probability-mass-function/</guid>
+      <description>PMF for a disscrete random variable X: $p(X)$
+Mean (Expectation)    *the sum of the weighted possible values of X (sum of $p(X=x)x$ ) Tip  $$\mu = E[X] = \sum_{x} x p(X=x)$$  Variance    measure the spread of a PMF (Average Squared Distance from the mean) Tip  $$\sigma^2 = Var[X] = E[(X-\mu)^2] = E[(X-E[X])^2] = E[X^2] - (E[X])^2$$  calculation: using the expected value rules: $$Var[X] = E[(X-\mu)^2] = E[g(x)] = \sum_x g(x)p(X=x) = \sum_x (x-\mu)^2p(X=x) $$ Info  $$Var[X] = \sum_x (x-\mu)^2p(X=x) $$  $$Var[X] = E[(X-\mu)^2] = E[X^2 - 2X\mu + \mu^2] $$ $$Var[X] = E[(X-\mu)^2] = E[X^2] - 2\mu E[X] + \mu^2 $$ $$Var[X] = E[X^2] - 2 (E[X])^2 + E[X]^2 $$ Info  $$Var[X] = E[X^2] - (E[X])^2 $$   References    [1] https://socratic.</description>
+    </item>
+    
+    <item>
+      <title>Random Variable</title>
+      <link>https://muhammadagf.github.io/posts/notes/random-variable/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/random-variable/</guid>
+      <description>mapping outcomes -&amp;gt; numbers from a random process
+Discrete    Suppose X is a discrete event, we denote probability of $X=x$ by $p(X=x)$, or just $p(x)$ for short. Here $p(x)$ is called a probability mass function or pmf.
+Continuous    Suppose X is some uncertain continuous quantity. The probability that X lies in any interval $a \leq X \leq b$ can be computed as follows:</description>
+    </item>
+    
+    <item>
+      <title>Z-Score</title>
+      <link>https://muhammadagf.github.io/posts/notes/z-score/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/z-score/</guid>
+      <description>how many $\sigma$ (standard deviation) away from the mean from a normal distribution ? $$ z = \frac{x-\mu}{\sigma}$$
+usage    comparing 2 distribution for example Juwan took LSAT and MCAT with score: 172 on the LSAT and 37 on the MCAT. summary stats of LSAT and MCAT:
+   Exam mean $\mu$ std $\sigma$     LSAT 151 10   MCAT 25.1 6.4    which exam did he do relatively better on?</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression</title>
+      <link>https://muhammadagf.github.io/posts/notes/linear-regression/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/linear-regression/</guid>
+      <description>to answer:
+ Is there a relationship between feature advertising budget and sales? How strong is the relationship between advertising budget and sales? Which media are associated with sales? How large is the association between each medium and slaes? How accurately we can predict future sales? Is there synergy among the advertising media?  Single Linear Regression    $$ Y \approx \beta_0 + \beta_1 X$$
+RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} + \hat{\beta_1} x_i$ be the prediction of $y$ based on the $i$th value of $X$.</description>
+    </item>
+    
+    <item>
+      <title>Greedy Feature Selection</title>
+      <link>https://muhammadagf.github.io/posts/notes/greedy-feature-selection/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/greedy-feature-selection/</guid>
+      <description>Simple Filters    The most basic approach to feature selection is to screen the predictors to see if any have a relationship with the outcome prior to including them in a model.
+Some popular techniques:
+Categorical Feature     when the target is categorical the relationship between feature and outcome forms a contingency tables.  3 or more level for the feature: can use chi-squared test or exact methods 2 level for the feature: can use odds-ratio   when the target is numeric  2 level for the feature: basic t-test can be calculated 3 level for the feature: traditional ANOVA F-statistic can be calculated    Numeric Feature     when the target is categorical similar as when feature is categorical and the target is numeric (but the role is reversed) correlation-adjusted t-scores are a good alternative to simple ANOVA statistics.</description>
+    </item>
+    
+    <item>
+      <title>Entropy</title>
+      <link>https://muhammadagf.github.io/posts/notes/entropy/</link>
+      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/entropy/</guid>
+      <description>the entropy of a random variable $X$ with distribution $p$, denoted by $H(X)$ or sometimes $H(p)$, is a measure of it&amp;rsquo;s uncertainty. In particular, for a discrete variable with K states, it is defined by Tip  $$ H(X) \triangleq - \sum_{i=1}^K p(X=k) log(p(X=k)) $$  in essence entropy is calculating the expected surprise we get from a RV intuitively the value of a surprise is inverse probability of an event, or mathematicaly: $$ surprise(p(X=k)) = log(\frac{1}{p(X=k)})$$</description>
+    </item>
+    
+    <item>
+      <title>Feature Selection</title>
+      <link>https://muhammadagf.github.io/posts/notes/feature-selection/</link>
+      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/feature-selection/</guid>
+      <description>Goals     Some models (such as SVM and Neural Networks) are sensitive to irrelevant features/predictors. superfluous features can sink predictive performance in some situations. Some models (such as logistic regression) are vulnerable to correlated features. removing features can reduce cost and it make scientific sense to include the minimum possible set that provides acceptable results.  Classes of Feature Selection Method    in general feature selection method can be divided by 3</description>
+    </item>
+    
+    <item>
+      <title>Bias Variance Tradeoff</title>
+      <link>https://muhammadagf.github.io/posts/notes/bias-variance-tradeoff/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/bias-variance-tradeoff/</guid>
+      <description>Note  MSE = bias$^2$ + variance  image source: https://www.codingninjas.com/codestudio/library/bias-variance-tradeoff
+Bias (Underfitting)    $$Bias[Y_{pred}|Y_{true}] = E[Y_{pred}] - Y_{true}$$ the **bias** error is an error from incorrect assumption in the learning algorithm. high bias can cause an algorithm to miss the relevant relations between features and target output (**underfitting**) (systematic off-the mark)
+Variance (Overfitting)    $$ Var[Y_{pred}|Y_{true}] = E[(Y_{pred} - Y_{true})^2] - E[Y_{pred} - Y_{true}]^2$$</description>
+    </item>
+    
+    <item>
+      <title>K-Means Clustering</title>
+      <link>https://muhammadagf.github.io/posts/notes/k-means-clustering/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/k-means-clustering/</guid>
+      <description>How it works:
+ K centroid are created randomly (based predefined number of K) by selecting K random data as centroid K-means algorithm will allocate each data point in the data to the nearest centroid based on some distance metrics (usually euclidean distance) K-means take the mean of each data in each cluster and use that mean as the new centroid (not necessarily assigned to a single datapoint) K-means then repeat step 2 and 3 until stoping criterion is met (eg.</description>
+    </item>
+    
+    <item>
+      <title>Logistic Regression</title>
+      <link>https://muhammadagf.github.io/posts/notes/logistic-regression/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/logistic-regression/</guid>
+      <description>statistical model that models the probability of an event taking place by having the log-odds of an event be a linear combination of one or more independent variables. since logistic regression fit a model in the form $p(y|x)$ directly, it&amp;rsquo;s called discriminative approach.
+$$ p(y|x,w) = Ber(y|sigm(w^Tx))$$ where sigm is a sigmoid function: $$sigm(x) = \frac{1}{1 + e^{-x}}$$
+model fitting    MLE    the negative log-likelihood for logistic regression is given by $$NLL(w) = -\sum_{i=1}^N y_i log(\mu_i) + (1-y_i)log(1-\mu_i)$$ this is also called **cross entropy** error function.</description>
+    </item>
+    
+    <item>
+      <title>Regularization</title>
+      <link>https://muhammadagf.github.io/posts/notes/regularization/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/regularization/</guid>
+      <description>add penalty to the loss function and reduce the value of weight. (introduce bias) $$ Regularized loss = loss + penalty $$ example:
+L1 Regularization    or called Lasso add “absolute value of magnitude” coefficient as a penalty term to the loss function (minimize sum of of coefficients/weights)
+$$ penalty = \lambda ||w|| = \lambda \sum_{j=1}^M |w|$$
+pros:     robust to outliers works best when your model contains a lot of useless features (built-in feature selection) preferred when having a high number of features as it&amp;rsquo;s provide sparse solution  cons:     if there is a high group of higly correlated variables, L1 tend to select 1 variable from the group and ignore the others  L2 Regularization    or called Ridge add “squared magnitude” coefficient as a penalty term to the loss function (minimize sum of square of coefficients/weights)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>random variable on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/random-variable/</link>
+    <description>Recent content in random variable on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 28 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/random-variable/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binomial Variable</title>
+      <link>https://muhammadagf.github.io/posts/notes/binomial-variable/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/binomial-variable/</guid>
+      <description>special class of random variable
+X = number of success given N trial with p probability of each success on each trial where each trial are independent with each other.
+properties:     made of independent trials each trials can be classified as success or failure fixed # of trials probability of success on each trial is constant  Binomial distribution    special case of probability mass function from a binomial variable pmf if the probability of success is p, the probability of having exactly k success given n trial is given by:</description>
+    </item>
+    
+    <item>
+      <title>Probability Mass Function (Pmf)</title>
+      <link>https://muhammadagf.github.io/posts/notes/probability-mass-function/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/probability-mass-function/</guid>
+      <description>PMF for a disscrete random variable X: $p(X)$
+Mean (Expectation)    *the sum of the weighted possible values of X (sum of $p(X=x)x$ ) Tip  $$\mu = E[X] = \sum_{x} x p(X=x)$$  Variance    measure the spread of a PMF (Average Squared Distance from the mean) Tip  $$\sigma^2 = Var[X] = E[(X-\mu)^2] = E[(X-E[X])^2] = E[X^2] - (E[X])^2$$  calculation: using the expected value rules: $$Var[X] = E[(X-\mu)^2] = E[g(x)] = \sum_x g(x)p(X=x) = \sum_x (x-\mu)^2p(X=x) $$ Info  $$Var[X] = \sum_x (x-\mu)^2p(X=x) $$  $$Var[X] = E[(X-\mu)^2] = E[X^2 - 2X\mu + \mu^2] $$ $$Var[X] = E[(X-\mu)^2] = E[X^2] - 2\mu E[X] + \mu^2 $$ $$Var[X] = E[X^2] - 2 (E[X])^2 + E[X]^2 $$ Info  $$Var[X] = E[X^2] - (E[X])^2 $$   References    [1] https://socratic.</description>
+    </item>
+    
+  </channel>
+</rss>
