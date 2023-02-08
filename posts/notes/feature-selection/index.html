@@ -34,12 +34,12 @@
       <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/feature-selection/">
     
 
-    <link rel="preload" href="https://muhammadagf.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
     
       
       
-      <link rel="stylesheet" href="https://muhammadagf.github.io/css/coder.min.0e5ce5b959a68dfe0232c6ddcec1e8ef154517c968464707f3181c437fe611c0.css" integrity="sha256-DlzluVmmjf4CMsbdzsHo7xVFF8loRkcH8xgcQ3/mEcA=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="/css/coder.min.0e5ce5b959a68dfe0232c6ddcec1e8ef154517c968464707f3181c437fe611c0.css" integrity="sha256-DlzluVmmjf4CMsbdzsHo7xVFF8loRkcH8xgcQ3/mEcA=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -48,7 +48,7 @@
       
         
         
-        <link rel="stylesheet" href="https://muhammadagf.github.io/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -56,11 +56,11 @@
 
     
 
-    <link rel="icon" type="image/png" href="https://muhammadagf.github.io/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://muhammadagf.github.io/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
 
-    <link rel="apple-touch-icon" href="https://muhammadagf.github.io/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://muhammadagf.github.io/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
     <meta name="generator" content="Hugo 0.83.1" />
   </head>
@@ -81,7 +81,7 @@
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="https://muhammadagf.github.io/">
+    <a class="navigation-title" href="/">
       Muhammad
     </a>
     
@@ -93,11 +93,11 @@
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://muhammadagf.github.io/about/">About Me</a>
+              <a class="navigation-link" href="/about/">About Me</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://muhammadagf.github.io/posts/notes/">Personal notes</a>
+              <a class="navigation-link" href="/posts/notes/">Personal notes</a>
             </li>
           
         
@@ -138,11 +138,11 @@
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="https://muhammadagf.github.io/tags/machine-learning/">machine-learning</a>
+      <a href="/tags/machine-learning/">machine-learning</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="https://muhammadagf.github.io/tags/feature-engineering/">feature engineering</a>
+      <a href="/tags/feature-engineering/">feature engineering</a>
     </span></div>
 
         </div>
@@ -170,11 +170,9 @@ superfluous features can sink predictive performance in some situations.</li>
   </a>
 </h2>
 <p>in general feature selection method can be divided by 3</p>
-<div class="notice info">
-  <div class="notice-title">
-    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>Info
-  </div>
-  <div class="notice-content"><p>title: Intrinsic
+<style type="text/css">.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative}</style>
+<div><svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg></div><div class="notice info" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#info-notice"></use></svg></span>Info</p><p>title: Intrinsic
 feature selection naturally incorporated with the modeling process.</p>
 <p>Examples:</p>
 <ol>
@@ -185,13 +183,9 @@ search the best predictors and split point such that the outcomes are more homog
 penalizes or shrinks predictor coefficient used by the model (in some cases such as with L1 regularization to absolute zero)</li>
 </ol>
 <p>Cons: model dependent</p></div>
-</div>
 
-<div class="notice info">
-  <div class="notice-title">
-    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>Info
-  </div>
-  <div class="notice-content"><p>title: <strong>filter methods</strong>
+<div class="notice info" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#info-notice"></use></svg></span>Info</p><p>title: <strong>filter methods</strong>
 conduct an initial supervised analysis to the feature/predictors to determine which are important, and only provide these to the model.</p>
 <p>is a <strong><a href="https://muhammadagf.github.io/posts/notes/greedy-feature-selection/">greedy feature selection</a></strong> approach</p>
 <p>Pros: Simple and fast, effective at capturing the large trends (i.e., individual predictor-outcome relationship)</p>
@@ -200,20 +194,15 @@ conduct an initial supervised analysis to the feature/predictors to determine wh
 <li>prone to over-selecting predictor</li>
 <li>in many case some measure of statistical significance is used to judge &ldquo;importance&rdquo; and may be disconnected with the actual predictive performance</li>
 </ol></div>
-</div>
 
-<div class="notice info">
-  <div class="notice-title">
-    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>Info
-  </div>
-  <div class="notice-content"><p>title: <strong>wrapper methods</strong>
+<div class="notice info" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#info-notice"></use></svg></span>Info</p><p>title: <strong>wrapper methods</strong>
 iterative search procedure that repeatedly supply predictor subsets to the model, and use the model performance as the guide to select which subsets to supply and evaluate next.</p>
 <p>can be <strong>greedy or <strong>global feature selection</strong> approach</strong></p>
 <p>Pros:</p>
 <p>the one that have most potential to find the global optima of subset if they exist (especially non-greedy one)</p>
 <p><strong>Cons:</strong></p>
 <p>Computationally Costly</p></div>
-</div>
 
 <h3 id="recommended-approach">
   Recommended Approach
@@ -221,12 +210,8 @@ iterative search procedure that repeatedly supply predictor subsets to the model
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h3>
-<div class="notice tip">
-  <div class="notice-title">
-    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>Tip
-  </div>
-  <div class="notice-content">start with one or more intrinsic approach and see what they yield</div>
-</div>
+<div class="notice tip" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#tip-notice"></use></svg></span>Tip</p><p>start with one or more intrinsic approach and see what they yield</p></div>
 
 <p>If non-linear intrinsic method has a good performance: proceed with a wrapper method with a non-linear model
 similarry if linear intrinsic method has a good performance: proceed with a wrapper methode with a linear model</p>
@@ -238,7 +223,7 @@ similarry if linear intrinsic method has a good performance: proceed with a wrap
 </h2>
 <p>irrelevant features can have effect to a model depend on the type of the model itself</p>
 <p>below is example of aditional irrelevant/noise features vs RMSE (x axes is number of additional noise features)</p>
-<p><img src="https://muhammadagf.github.io/images/obsidian/Pasted%20image%2020221212094231.png" alt="img">
+<p><img src="/images/obsidian/Pasted%20image%2020221212094231.png" alt="img">
 image source: <a href="https://bookdown.org/max/FES/feature-selection-simulation.html">https://bookdown.org/max/FES/feature-selection-simulation.html</a>
 original y consist of nonlinear function from a 20 predictors
 $$y=x_1+sin(x_2)+log(|x_3|)+x_4^2+x_5x_6+I(x_7x_8x_9&lt;0)+I(x_{10}&gt;0)+x_{11}I(x_{11}&gt;0)+√(|x_{12}|)+cos(x_{13})+2x_{14}+|x_15|+I(x_{16}&lt;−1)+x_{17}I(x_{17}&lt;−1)−2x_{18}−x_{19}x_{20}+ϵ $$</p>
@@ -312,7 +297,7 @@ $$y=x_1+sin(x_2)+log(|x_3|)+x_4^2+x_5x_6+I(x_7x_8x_9&lt;0)+I(x_{10}&gt;0)+x_{11}
 
     
       
-      <script src="https://muhammadagf.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
     
 
     
