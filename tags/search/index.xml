@@ -1,20 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>search on Muhammad</title>
-    <link>https://muhammadagf.github.io/tags/search/</link>
-    <description>Recent content in search on Muhammad</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://muhammadagf.github.io/tags/search/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Building a Search Product</title>
-      <link>https://muhammadagf.github.io/posts/search-product/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://muhammadagf.github.io/posts/search-product/</guid>
-      <description>So you want to add search engine to your app, before jumping to algorithm and the &amp;ldquo;how&amp;rdquo;, just like any product that you want to build, ask &amp;ldquo;what problem our user is facing?&amp;rdquo; and &amp;ldquo;why are our user face that problem?&amp;rdquo;
-Before we start    I assume that you have done your homework and you discover that you need to create a search engine to solve your user problem, but you have many question</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>search on Muhammad</title><link>https://muhammadagf.github.io/tags/search/</link><description>Recent content in search on Muhammad</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://muhammadagf.github.io/tags/search/index.xml" rel="self" type="application/rss+xml"/><item><title>Building a Search Product</title><link>https://muhammadagf.github.io/posts/search-product/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://muhammadagf.github.io/posts/search-product/</guid><description>So you want to add search engine to your app, before jumping to algorithm and the &amp;ldquo;how&amp;rdquo;, just like any product that you want to build, ask &amp;ldquo;what problem our user is facing?&amp;rdquo; and &amp;ldquo;why are our user face that problem?&amp;rdquo;
+Before we start I assume that you have done your homework and you discover that you need to create a search engine to solve your user problem, but you have many question</description></item></channel></rss>
