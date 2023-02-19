@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>probability on Muhammad</title>
-    <link>/tags/probability/</link>
+    <link>https://muhammadagf.github.io/tags/probability/</link>
     <description>Recent content in probability on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/probability/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binomial Variable</title>
-      <link>/posts/notes/binomial-variable/</link>
+      <link>https://muhammadagf.github.io/posts/notes/binomial-variable/</link>
       <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/notes/binomial-variable/</guid>
+      <guid>https://muhammadagf.github.io/posts/notes/binomial-variable/</guid>
       <description>special class of random variable
 X = number of success given N trial with p probability of each success on each trial where each trial are independent with each other.
 properties:     made of independent trials each trials can be classified as success or failure fixed # of trials probability of success on each trial is constant  Binomial distribution    special case of probability mass function from a binomial variable pmf if the probability of success is p, the probability of having exactly k success given n trial is given by:</description>
@@ -20,10 +20,10 @@ properties:     made of independent trials each trials can be classified as succ
     
     <item>
       <title>Probability Mass Function (Pmf)</title>
-      <link>/posts/notes/probability-mass-function/</link>
+      <link>https://muhammadagf.github.io/posts/notes/probability-mass-function/</link>
       <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/notes/probability-mass-function/</guid>
+      <guid>https://muhammadagf.github.io/posts/notes/probability-mass-function/</guid>
       <description>PMF for a disscrete random variable X: $p(X)$
 Mean (Expectation)    *the sum of the weighted possible values of X (sum of $p(X=x)x$ ) .notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative} Tip
 $$\mu = E[X] = \sum_{x} x p(X=x)$$
@@ -32,10 +32,10 @@ $$\mu = E[X] = \sum_{x} x p(X=x)$$
     
     <item>
       <title>Random Variable</title>
-      <link>/posts/notes/random-variable/</link>
+      <link>https://muhammadagf.github.io/posts/notes/random-variable/</link>
       <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/notes/random-variable/</guid>
+      <guid>https://muhammadagf.github.io/posts/notes/random-variable/</guid>
       <description>mapping outcomes -&amp;gt; numbers from a random process
 Discrete    Suppose X is a discrete event, we denote probability of $X=x$ by $p(X=x)$, or just $p(x)$ for short. Here $p(x)$ is called a probability mass function or pmf.
 Continuous    Suppose X is some uncertain continuous quantity. The probability that X lies in any interval $a \leq X \leq b$ can be computed as follows:</description>

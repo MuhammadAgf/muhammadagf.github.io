@@ -2,134 +2,134 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Muhammad</title>
-    <link>/tags/</link>
+    <link>https://muhammadagf.github.io/tags/</link>
     <description>Recent content in Tags on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>statistics</title>
-      <link>/tags/statistics/</link>
+      <link>https://muhammadagf.github.io/tags/statistics/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/statistics/</guid>
+      <guid>https://muhammadagf.github.io/tags/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>combinatorics</title>
-      <link>/tags/combinatorics/</link>
+      <link>https://muhammadagf.github.io/tags/combinatorics/</link>
       <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/combinatorics/</guid>
+      <guid>https://muhammadagf.github.io/tags/combinatorics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>probability</title>
-      <link>/tags/probability/</link>
+      <link>https://muhammadagf.github.io/tags/probability/</link>
       <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/probability/</guid>
+      <guid>https://muhammadagf.github.io/tags/probability/</guid>
       <description></description>
     </item>
     
     <item>
       <title>random variable</title>
-      <link>/tags/random-variable/</link>
+      <link>https://muhammadagf.github.io/tags/random-variable/</link>
       <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/random-variable/</guid>
+      <guid>https://muhammadagf.github.io/tags/random-variable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine-learning</title>
-      <link>/tags/machine-learning/</link>
+      <link>https://muhammadagf.github.io/tags/machine-learning/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/machine-learning/</guid>
+      <guid>https://muhammadagf.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regression</title>
-      <link>/tags/regression/</link>
+      <link>https://muhammadagf.github.io/tags/regression/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/regression/</guid>
+      <guid>https://muhammadagf.github.io/tags/regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>statistical model</title>
-      <link>/tags/statistical-model/</link>
+      <link>https://muhammadagf.github.io/tags/statistical-model/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/statistical-model/</guid>
+      <guid>https://muhammadagf.github.io/tags/statistical-model/</guid>
       <description></description>
     </item>
     
     <item>
       <title>feature selection</title>
-      <link>/tags/feature-selection/</link>
+      <link>https://muhammadagf.github.io/tags/feature-selection/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/feature-selection/</guid>
+      <guid>https://muhammadagf.github.io/tags/feature-selection/</guid>
       <description></description>
     </item>
     
     <item>
       <title>feature engineering</title>
-      <link>/tags/feature-engineering/</link>
+      <link>https://muhammadagf.github.io/tags/feature-engineering/</link>
       <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/feature-engineering/</guid>
+      <guid>https://muhammadagf.github.io/tags/feature-engineering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>information theory</title>
-      <link>/tags/information-theory/</link>
+      <link>https://muhammadagf.github.io/tags/information-theory/</link>
       <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/information-theory/</guid>
+      <guid>https://muhammadagf.github.io/tags/information-theory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>classification</title>
-      <link>/tags/classification/</link>
+      <link>https://muhammadagf.github.io/tags/classification/</link>
       <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/classification/</guid>
+      <guid>https://muhammadagf.github.io/tags/classification/</guid>
       <description></description>
     </item>
     
     <item>
       <title>clustering</title>
-      <link>/tags/clustering/</link>
+      <link>https://muhammadagf.github.io/tags/clustering/</link>
       <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/clustering/</guid>
+      <guid>https://muhammadagf.github.io/tags/clustering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>product</title>
-      <link>/tags/product/</link>
+      <link>https://muhammadagf.github.io/tags/product/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/product/</guid>
+      <guid>https://muhammadagf.github.io/tags/product/</guid>
       <description></description>
     </item>
     
     <item>
       <title>search</title>
-      <link>/tags/search/</link>
+      <link>https://muhammadagf.github.io/tags/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/search/</guid>
+      <guid>https://muhammadagf.github.io/tags/search/</guid>
       <description></description>
     </item>
     
