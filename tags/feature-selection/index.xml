@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>feature selection on Muhammad</title>
-    <link>https://muhammadagf.github.io/tags/feature-selection/</link>
+    <link>/tags/feature-selection/</link>
     <description>Recent content in feature selection on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/feature-selection/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/feature-selection/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Greedy Feature Selection</title>
-      <link>https://muhammadagf.github.io/posts/notes/greedy-feature-selection/</link>
+      <link>/posts/notes/greedy-feature-selection/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://muhammadagf.github.io/posts/notes/greedy-feature-selection/</guid>
+      <guid>/posts/notes/greedy-feature-selection/</guid>
       <description>Simple Filters    The most basic approach to feature selection is to screen the predictors to see if any have a relationship with the outcome prior to including them in a model.
 Some popular techniques:
 Categorical Feature     when the target is categorical the relationship between feature and outcome forms a contingency tables.  3 or more level for the feature: can use chi-squared test or exact methods 2 level for the feature: can use odds-ratio   when the target is numeric  2 level for the feature: basic t-test can be calculated 3 level for the feature: traditional ANOVA F-statistic can be calculated    Numeric Feature     when the target is categorical similar as when feature is categorical and the target is numeric (but the role is reversed) correlation-adjusted t-scores are a good alternative to simple ANOVA statistics.</description>

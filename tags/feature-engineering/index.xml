@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>feature engineering on Muhammad</title>
-    <link>https://muhammadagf.github.io/tags/feature-engineering/</link>
+    <link>/tags/feature-engineering/</link>
     <description>Recent content in feature engineering on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/feature-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/feature-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feature Selection</title>
-      <link>https://muhammadagf.github.io/posts/notes/feature-selection/</link>
+      <link>/posts/notes/feature-selection/</link>
       <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://muhammadagf.github.io/posts/notes/feature-selection/</guid>
+      <guid>/posts/notes/feature-selection/</guid>
       <description>Goals     Some models (such as SVM and Neural Networks) are sensitive to irrelevant features/predictors. superfluous features can sink predictive performance in some situations. Some models (such as logistic regression) are vulnerable to correlated features. removing features can reduce cost and it make scientific sense to include the minimum possible set that provides acceptable results.  Classes of Feature Selection Method    in general feature selection method can be divided by 3</description>
     </item>
     

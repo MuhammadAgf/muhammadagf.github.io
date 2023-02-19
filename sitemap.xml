@@ -2,107 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://muhammadagf.github.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2023-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/</loc>
+    <loc>/posts/notes/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
-    <loc>https://muhammadagf.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/standard-error/</loc>
+    <loc>/posts/notes/standard-error/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/statistics/</loc>
+    <loc>/tags/statistics/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/binomial-variable/</loc>
+    <loc>/posts/notes/binomial-variable/</loc>
     <lastmod>2023-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/combinatorics/</loc>
+    <loc>/tags/combinatorics/</loc>
     <lastmod>2023-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/permutations-and-combinations/</loc>
+    <loc>/posts/notes/permutations-and-combinations/</loc>
     <lastmod>2023-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/probability/</loc>
+    <loc>/tags/probability/</loc>
     <lastmod>2023-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/probability-mass-function/</loc>
+    <loc>/posts/notes/probability-mass-function/</loc>
     <lastmod>2023-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/random-variable/</loc>
+    <loc>/posts/notes/random-variable/</loc>
     <lastmod>2023-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/random-variable/</loc>
+    <loc>/tags/random-variable/</loc>
     <lastmod>2023-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/z-score/</loc>
+    <loc>/posts/notes/z-score/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/linear-regression/</loc>
+    <loc>/posts/notes/linear-regression/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/machine-learning/</loc>
+    <loc>/tags/machine-learning/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/regression/</loc>
+    <loc>/tags/regression/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/statistical-model/</loc>
+    <loc>/tags/statistical-model/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/feature-selection/</loc>
+    <loc>/tags/feature-selection/</loc>
     <lastmod>2022-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/greedy-feature-selection/</loc>
+    <loc>/posts/notes/greedy-feature-selection/</loc>
     <lastmod>2022-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/entropy/</loc>
+    <loc>/posts/notes/entropy/</loc>
     <lastmod>2022-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/feature-engineering/</loc>
+    <loc>/tags/feature-engineering/</loc>
     <lastmod>2022-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/feature-selection/</loc>
+    <loc>/posts/notes/feature-selection/</loc>
     <lastmod>2022-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/information-theory/</loc>
+    <loc>/tags/information-theory/</loc>
     <lastmod>2022-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/bias-variance-tradeoff/</loc>
+    <loc>/posts/notes/bias-variance-tradeoff/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/classification/</loc>
+    <loc>/tags/classification/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/clustering/</loc>
+    <loc>/tags/clustering/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/k-means-clustering/</loc>
+    <loc>/posts/notes/k-means-clustering/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/logistic-regression/</loc>
+    <loc>/posts/notes/logistic-regression/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/notes/regularization/</loc>
+    <loc>/posts/notes/regularization/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/posts/search-product/</loc>
+    <loc>/posts/search-product/</loc>
   </url><url>
-    <loc>https://muhammadagf.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/product/</loc>
+    <loc>/tags/product/</loc>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/search/</loc>
+    <loc>/tags/search/</loc>
   </url>
 </urlset>

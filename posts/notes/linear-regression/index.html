@@ -26,7 +26,7 @@ RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} &#43; \hat{\beta_1}
  Is there a relationship between feature advertising budget and sales? How strong is the relationship between advertising budget and sales? Which media are associated with sales? How large is the association between each medium and slaes? How accurately we can predict future sales? Is there synergy among the advertising media?  Single Linear Regression    $$ Y \approx \beta_0 &#43; \beta_1 X$$
 RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} &#43; \hat{\beta_1} x_i$ be the prediction of $y$ based on the $i$th value of $X$." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/linear-regression/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="/posts/notes/linear-regression/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-01-01T00:00:00&#43;00:00" />
 <meta property="article:modified_time" content="2023-01-01T00:00:00&#43;00:00" />
 
@@ -37,15 +37,15 @@ RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} &#43; \hat{\beta_1}
 </title>
 
     
-      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/linear-regression/">
+      <link rel="canonical" href="../../../posts/notes/linear-regression/">
     
 
-    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
     
       
       
-      <link rel="stylesheet" href="/css/coder.min.0e5ce5b959a68dfe0232c6ddcec1e8ef154517c968464707f3181c437fe611c0.css" integrity="sha256-DlzluVmmjf4CMsbdzsHo7xVFF8loRkcH8xgcQ3/mEcA=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="../../../css/coder.min.0e5ce5b959a68dfe0232c6ddcec1e8ef154517c968464707f3181c437fe611c0.css" integrity="sha256-DlzluVmmjf4CMsbdzsHo7xVFF8loRkcH8xgcQ3/mEcA=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -54,7 +54,7 @@ RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} &#43; \hat{\beta_1}
       
         
         
-        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="../../../css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -62,11 +62,11 @@ RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} &#43; \hat{\beta_1}
 
     
 
-    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../../img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../../img/favicon-16x16.png" sizes="16x16">
 
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="../../../images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/apple-touch-icon.png">
 
     <meta name="generator" content="Hugo 0.83.1" />
   </head>
@@ -87,7 +87,7 @@ RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} &#43; \hat{\beta_1}
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="/">
+    <a class="navigation-title" href="../../../">
       Muhammad
     </a>
     
@@ -99,11 +99,11 @@ RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} &#43; \hat{\beta_1}
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About Me</a>
+              <a class="navigation-link" href="../../../about/">About Me</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/posts/notes/">Personal notes</a>
+              <a class="navigation-link" href="../../../posts/notes/">Personal notes</a>
             </li>
           
         
@@ -121,7 +121,7 @@ RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} &#43; \hat{\beta_1}
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/linear-regression/">
+            <a class="title-link" href="../../../posts/notes/linear-regression/">
               Linear Regression
             </a>
           </h1>
@@ -144,15 +144,15 @@ RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} &#43; \hat{\beta_1}
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="/tags/regression/">regression</a>
+      <a href="../../../tags/regression/">regression</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/statistical-model/">statistical model</a>
+      <a href="../../../tags/statistical-model/">statistical model</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/machine-learning/">machine-learning</a>
+      <a href="../../../tags/machine-learning/">machine-learning</a>
     </span></div>
 
         </div>
@@ -194,7 +194,7 @@ then $e_i$ represent the $i$th residual (difference between true y and predicted
 </h3>
 <p>$$Var(\hat{\mu}) = SE(\hat{\mu})^2 = (\frac{\sigma}{\sqrt{n}})^2$$
 we can also compute the standard Error for $\beta$
-<img src="/images/obsidian/Pasted%20image%2020230101185252.png" alt="img">
+<img src="../../../images/obsidian/Pasted%20image%2020230101185252.png" alt="img">
 image source: screenshot from <a href="https://hastie.su.domains/ISLR2/ISLRv2_website.pdf">https://hastie.su.domains/ISLR2/ISLRv2_website.pdf</a> chapter 3</p>
 <p>proof: <a href="https://www.youtube.com/watch?v=rODUBTRUV0U&amp;t=317s">https://www.youtube.com/watch?v=rODUBTRUV0U&amp;t=317s</a></p>
 <p>notice that $SE(\hat{\beta_1})$ is smaller when the $x_i$ are more spread out; intuitively we have more leverage to estimate slope when this is the case.</p>
@@ -297,7 +297,7 @@ TSS can be thought as amount of variability inherent in the response before regr
 
     
       
-      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+      <script src="../../../js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
     
 
     

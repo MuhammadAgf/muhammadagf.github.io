@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>clustering on Muhammad</title>
-    <link>https://muhammadagf.github.io/tags/clustering/</link>
+    <link>/tags/clustering/</link>
     <description>Recent content in clustering on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>K-Means Clustering</title>
-      <link>https://muhammadagf.github.io/posts/notes/k-means-clustering/</link>
+      <link>/posts/notes/k-means-clustering/</link>
       <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://muhammadagf.github.io/posts/notes/k-means-clustering/</guid>
+      <guid>/posts/notes/k-means-clustering/</guid>
       <description>How it works:
  K centroid are created randomly (based predefined number of K) by selecting K random data as centroid K-means algorithm will allocate each data point in the data to the nearest centroid based on some distance metrics (usually euclidean distance) K-means take the mean of each data in each cluster and use that mean as the new centroid (not necessarily assigned to a single datapoint) K-means then repeat step 2 and 3 until stoping criterion is met (eg.</description>
     </item>

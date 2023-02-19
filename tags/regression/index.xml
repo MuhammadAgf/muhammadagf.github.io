@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>regression on Muhammad</title>
-    <link>https://muhammadagf.github.io/tags/regression/</link>
+    <link>/tags/regression/</link>
     <description>Recent content in regression on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Regression</title>
-      <link>https://muhammadagf.github.io/posts/notes/linear-regression/</link>
+      <link>/posts/notes/linear-regression/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://muhammadagf.github.io/posts/notes/linear-regression/</guid>
+      <guid>/posts/notes/linear-regression/</guid>
       <description>to answer:
  Is there a relationship between feature advertising budget and sales? How strong is the relationship between advertising budget and sales? Which media are associated with sales? How large is the association between each medium and slaes? How accurately we can predict future sales? Is there synergy among the advertising media?  Single Linear Regression    $$ Y \approx \beta_0 + \beta_1 X$$
 RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} + \hat{\beta_1} x_i$ be the prediction of $y$ based on the $i$th value of $X$.</description>

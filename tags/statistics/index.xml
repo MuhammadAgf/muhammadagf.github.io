@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>statistics on Muhammad</title>
-    <link>https://muhammadagf.github.io/tags/statistics/</link>
+    <link>/tags/statistics/</link>
     <description>Recent content in statistics on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Standard Error</title>
-      <link>https://muhammadagf.github.io/posts/notes/standard-error/</link>
+      <link>/posts/notes/standard-error/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://muhammadagf.github.io/posts/notes/standard-error/</guid>
+      <guid>/posts/notes/standard-error/</guid>
       <description>usually standard error is: standard deviations of the sampling mean
 in essence it gives us how much variations in our &amp;ldquo;means&amp;rdquo; if we took a bunch of independent measurement samples.
 formula: $$SE(\hat{x} ) = \frac{\sigma}{\sqrt{n}} $$ $\hat{x}$ is sample mean $\sigma$ is population std $n$ is number of sample
@@ -21,10 +21,10 @@ derivation:    $$SE(\hat{x}) = Std(samplemean) = \sqrt{VAR[\hat{X}]}$$ $$\sqrt{V
     
     <item>
       <title>Z-Score</title>
-      <link>https://muhammadagf.github.io/posts/notes/z-score/</link>
+      <link>/posts/notes/z-score/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://muhammadagf.github.io/posts/notes/z-score/</guid>
+      <guid>/posts/notes/z-score/</guid>
       <description>how many $\sigma$ (standard deviation) away from the mean from a normal distribution ? $$ z = \frac{x-\mu}{\sigma}$$
 usage    comparing 2 distribution for example Juwan took LSAT and MCAT with score: 172 on the LSAT and 37 on the MCAT. summary stats of LSAT and MCAT:
    Exam mean $\mu$ std $\sigma$     LSAT 151 10   MCAT 25.1 6.4    which exam did he do relatively better on?</description>
