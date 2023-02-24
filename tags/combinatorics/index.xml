@@ -1,2 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>combinatorics on Muhammad</title><link>https://muhammadagf.github.io/tags/combinatorics/</link><description>Recent content in combinatorics on Muhammad</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 28 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/combinatorics/index.xml" rel="self" type="application/rss+xml"/><item><title>Permutations And Combinations</title><link>https://muhammadagf.github.io/posts/notes/permutations-and-combinations/</link><pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate><guid>https://muhammadagf.github.io/posts/notes/permutations-and-combinations/</guid><description>permutation how many way we can arange thing if we care about the order? $$_kP_n = \frac{n!}{(n-k)!}$$ example: how many way 5 person can be seated to seat numbered from 1-3 = $_3P_5$ answer = 5 way for the first seat, 4 way for the 2nd seat, 3 way for the 3rd seat $$\frac{5!}{(5-3)!} = \frac{5!}{2!} = 5 * 4 * 3 = 60$$
-combination how many way we can get item thing if we care about the order?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>combinatorics on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/combinatorics/</link>
+    <description>Recent content in combinatorics on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 28 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/combinatorics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Permutations And Combinations</title>
+      <link>https://muhammadagf.github.io/posts/notes/permutations-and-combinations/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/permutations-and-combinations/</guid>
+      <description>permutation    how many way we can arange thing if we care about the order? $$_kP_n = \frac{n!}{(n-k)!}$$ example: how many way 5 person can be seated to seat numbered from 1-3 = $_3P_5$ answer = 5 way for the first seat, 4 way for the 2nd seat, 3 way for the 3rd seat $$\frac{5!}{(5-3)!} = \frac{5!}{2!} = 5 * 4 * 3 = 60$$
+combination    how many way we can get item thing if we care about the order?</description>
+    </item>
+    
+  </channel>
+</rss>
