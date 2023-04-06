@@ -6,7 +6,18 @@
     <description>Recent content in regression on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decision Tree</title>
+      <link>https://muhammadagf.github.io/posts/notes/decision-tree/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/decision-tree/</guid>
+      <description>Greedy, Top Down, Recursive Partitioning
+CART Algorithm    CART constructs binary trees using the feature and threshold that yield the largest information gain at each node.
+ get list of split candidates for each split candidates, calculate the purity of the split select the best split, and check if stopping criterion is met repeat step 1  Classification    if a target is a classification with k number of classes, for node m, let prediction: $$p_{mk} = \frac{1}{n_m} \sum_{y\in Node_m} I(y=k)$$ usually, we use Gini Impurity to meassure the purity of each node or split candidates: $$IG(Node) = 1-\sum_{i=0}^k p(i)^2$$ or for binary classification = (1 - probability of yes squared + probability of no squared)</description>
+    </item>
+    
     <item>
       <title>Linear Regression</title>
       <link>https://muhammadagf.github.io/posts/notes/linear-regression/</link>

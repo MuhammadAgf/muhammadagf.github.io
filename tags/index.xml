@@ -6,13 +6,49 @@
     <description>Recent content in Tags on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sampling distribution</title>
+      <link>https://muhammadagf.github.io/tags/sampling-distribution/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/sampling-distribution/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>statistics</title>
       <link>https://muhammadagf.github.io/tags/statistics/</link>
-      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine-learning</title>
+      <link>https://muhammadagf.github.io/tags/machine-learning/</link>
+      <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>classification</title>
+      <link>https://muhammadagf.github.io/tags/classification/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>regression</title>
+      <link>https://muhammadagf.github.io/tags/regression/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/regression/</guid>
       <description></description>
     </item>
     
@@ -40,24 +76,6 @@
       <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/random-variable/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine-learning</title>
-      <link>https://muhammadagf.github.io/tags/machine-learning/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://muhammadagf.github.io/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regression</title>
-      <link>https://muhammadagf.github.io/tags/regression/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://muhammadagf.github.io/tags/regression/</guid>
       <description></description>
     </item>
     
@@ -94,15 +112,6 @@
       <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/information-theory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>classification</title>
-      <link>https://muhammadagf.github.io/tags/classification/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://muhammadagf.github.io/tags/classification/</guid>
       <description></description>
     </item>
     

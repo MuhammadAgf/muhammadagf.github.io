@@ -6,7 +6,27 @@
     <description>Recent content in machine-learning on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gradient Boosting</title>
+      <link>https://muhammadagf.github.io/posts/notes/gradient-boosting/</link>
+      <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/gradient-boosting/</guid>
+      <description>Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]_{F(x) = F_{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.</description>
+    </item>
+    
+    <item>
+      <title>Decision Tree</title>
+      <link>https://muhammadagf.github.io/posts/notes/decision-tree/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/decision-tree/</guid>
+      <description>Greedy, Top Down, Recursive Partitioning
+CART Algorithm    CART constructs binary trees using the feature and threshold that yield the largest information gain at each node.
+ get list of split candidates for each split candidates, calculate the purity of the split select the best split, and check if stopping criterion is met repeat step 1  Classification    if a target is a classification with k number of classes, for node m, let prediction: $$p_{mk} = \frac{1}{n_m} \sum_{y\in Node_m} I(y=k)$$ usually, we use Gini Impurity to meassure the purity of each node or split candidates: $$IG(Node) = 1-\sum_{i=0}^k p(i)^2$$ or for binary classification = (1 - probability of yes squared + probability of no squared)</description>
+    </item>
+    
     <item>
       <title>Linear Regression</title>
       <link>https://muhammadagf.github.io/posts/notes/linear-regression/</link>
