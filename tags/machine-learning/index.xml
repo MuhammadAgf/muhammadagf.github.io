@@ -23,7 +23,7 @@
       
       <guid>https://muhammadagf.github.io/posts/notes/decision-tree/</guid>
       <description>Greedy, Top Down, Recursive Partitioning
-CART Algorithm    CART constructs binary trees using the feature and threshold that yield the largest information gain at each node.
+CART Algorithm    CART constructs binary trees using the feature and threshold that yield the largest information gain (usually it based on entropy) at each node.
  get list of split candidates for each split candidates, calculate the purity of the split select the best split, and check if stopping criterion is met repeat step 1  Classification    if a target is a classification with k number of classes, for node m, let prediction: $$p_{mk} = \frac{1}{n_m} \sum_{y\in Node_m} I(y=k)$$ usually, we use Gini Impurity to meassure the purity of each node or split candidates: $$IG(Node) = 1-\sum_{i=0}^k p(i)^2$$ or for binary classification = (1 - probability of yes squared + probability of no squared)</description>
     </item>
     
@@ -36,6 +36,17 @@ CART Algorithm    CART constructs binary trees using the feature and threshold t
       <description>to answer:
  Is there a relationship between feature advertising budget and sales? How strong is the relationship between advertising budget and sales? Which media are associated with sales? How large is the association between each medium and slaes? How accurately we can predict future sales? Is there synergy among the advertising media?  Single Linear Regression    $$ Y \approx \beta_0 + \beta_1 X$$
 RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} + \hat{\beta_1} x_i$ be the prediction of $y$ based on the $i$th value of $X$.</description>
+    </item>
+    
+    <item>
+      <title>Greedy Feature Selection</title>
+      <link>https://muhammadagf.github.io/posts/notes/greedy-feature-selection/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/greedy-feature-selection/</guid>
+      <description>Simple Filters    The most basic approach to feature selection is to screen the predictors to see if any have a relationship with the outcome prior to including them in a model.
+Some popular techniques:
+Categorical Feature     when the target is categorical the relationship between feature and outcome forms a contingency tables.  3 or more level for the feature: can use chi-squared test or exact methods 2 level for the feature: can use odds-ratio   when the target is numeric  2 level for the feature: basic t-test can be calculated 3 level for the feature: traditional ANOVA F-statistic can be calculated    Numeric Feature     when the target is categorical similar as when feature is categorical and the target is numeric (but the role is reversed) correlation-adjusted t-scores are a good alternative to simple ANOVA statistics.</description>
     </item>
     
     <item>

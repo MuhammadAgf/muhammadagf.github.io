@@ -11,19 +11,19 @@
 
     <meta name="author" content="Muhammad Assagaf">
     <meta name="description" content="Greedy, Top Down, Recursive Partitioning
-CART Algorithm    CART constructs binary trees using the feature and threshold that yield the largest information gain at each node.
+CART Algorithm    CART constructs binary trees using the feature and threshold that yield the largest information gain (usually it based on entropy) at each node.
  get list of split candidates for each split candidates, calculate the purity of the split select the best split, and check if stopping criterion is met repeat step 1  Classification    if a target is a classification with k number of classes, for node m, let prediction: $$p_{mk} = \frac{1}{n_m} \sum_{y\in Node_m} I(y=k)$$ usually, we use Gini Impurity to meassure the purity of each node or split candidates: $$IG(Node) = 1-\sum_{i=0}^k p(i)^2$$ or for binary classification = (1 - probability of yes squared &#43; probability of no squared)">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Decision Tree"/>
 <meta name="twitter:description" content="Greedy, Top Down, Recursive Partitioning
-CART Algorithm    CART constructs binary trees using the feature and threshold that yield the largest information gain at each node.
+CART Algorithm    CART constructs binary trees using the feature and threshold that yield the largest information gain (usually it based on entropy) at each node.
  get list of split candidates for each split candidates, calculate the purity of the split select the best split, and check if stopping criterion is met repeat step 1  Classification    if a target is a classification with k number of classes, for node m, let prediction: $$p_{mk} = \frac{1}{n_m} \sum_{y\in Node_m} I(y=k)$$ usually, we use Gini Impurity to meassure the purity of each node or split candidates: $$IG(Node) = 1-\sum_{i=0}^k p(i)^2$$ or for binary classification = (1 - probability of yes squared &#43; probability of no squared)"/>
 
     <meta property="og:title" content="Decision Tree" />
 <meta property="og:description" content="Greedy, Top Down, Recursive Partitioning
-CART Algorithm    CART constructs binary trees using the feature and threshold that yield the largest information gain at each node.
+CART Algorithm    CART constructs binary trees using the feature and threshold that yield the largest information gain (usually it based on entropy) at each node.
  get list of split candidates for each split candidates, calculate the purity of the split select the best split, and check if stopping criterion is met repeat step 1  Classification    if a target is a classification with k number of classes, for node m, let prediction: $$p_{mk} = \frac{1}{n_m} \sum_{y\in Node_m} I(y=k)$$ usually, we use Gini Impurity to meassure the purity of each node or split candidates: $$IG(Node) = 1-\sum_{i=0}^k p(i)^2$$ or for binary classification = (1 - probability of yes squared &#43; probability of no squared)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://muhammadagf.github.io/posts/notes/decision-tree/" /><meta property="article:section" content="posts" />
@@ -172,7 +172,7 @@ CART Algorithm    CART constructs binary trees using the feature and threshold t
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h3>
-<p>CART constructs binary trees using the feature and threshold that yield the largest information gain at each node.</p>
+<p>CART constructs binary trees using the feature and threshold that yield the largest information gain (usually it based on <a href="https://muhammadagf.github.io/posts/notes/entropy/">entropy</a>) at each node.</p>
 <ol>
 <li>get list of split candidates</li>
 <li>for each split candidates, calculate the purity of the split</li>
