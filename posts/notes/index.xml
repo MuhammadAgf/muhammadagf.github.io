@@ -6,7 +6,31 @@
     <description>Recent content on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 31 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Missing Value</title>
+      <link>https://muhammadagf.github.io/posts/notes/missing-value/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/missing-value/</guid>
+      <description>Type of Missing Data      Structural deficiencies in the data For example: when null means &amp;ldquo;no&amp;rdquo; or 0.
+  Random occurrences
+  Missing Completely at Random (MCAR) The likelihood of a missing results is equal for all data points. the missing value are independent of the data.
+  Missing at Random (MAR) The likelihood of a missing results is not equal for all data points.</description>
+    </item>
+    
+    <item>
+      <title>Tree-Based Imputation</title>
+      <link>https://muhammadagf.github.io/posts/notes/tree-based-imputation/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/tree-based-imputation/</guid>
+      <description>It involves building a decision tree model using the non-missing data and then using the tree model to predict the missing values. Here are some pros and cons of tree-based imputation:
+Pros:
+ It can handle non-linear relationships between the variables and non-monotonic missing data patterns. It can impute both continuous and categorical variables. It can be less prone to bias compared to other imputation methods.  Cons:
+ It can be computationally intensive, especially when dealing with large datasets.</description>
+    </item>
+    
     <item>
       <title>Central Limit Theorem</title>
       <link>https://muhammadagf.github.io/posts/notes/central-limit-theorem/</link>
