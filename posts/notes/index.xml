@@ -6,7 +6,40 @@
     <description>Recent content on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adam (Adaptive Moment Estimation)</title>
+      <link>https://muhammadagf.github.io/posts/notes/adam/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/adam/</guid>
+      <description>$$w_t = w_{t-1} - \eta \ \dfrac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$$ **with:** $$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$ this is for bias correction for the fact that first and second moment estimates start at zero.
+given: $$m_t = \beta_1m_{t-1} + (1 - \beta_1)\ g_t$$ $$v_t = \beta_2v_{t-1} + (1 - \beta_2)\ g_t^2$$
+ *$m_t$ is momentum. $v_t$ takes the idea from AdaGrad / RMSProp  parameter:
+ $\eta$ is the learning rate $\beta_1$ is forgeting param (typically 0.</description>
+    </item>
+    
+    <item>
+      <title>Recurrent Neural Net</title>
+      <link>https://muhammadagf.github.io/posts/notes/recurrent-neural-net/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/recurrent-neural-net/</guid>
+      <description>Vanilla RNN:    $$h_t = F(h_{t-1}, x_t)$$ $$h_t = activation(W_h\ h_{t-1} + W_x\ x_t)$$ $$y_t = W_y \ h_t$$
+image source: https://youtu.be/6niqTuYFZLQ
+Problem:     hard to remember long sentences Vanishing and Exploding Gradient problem  LSTM:    image from https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+Forget gate:    since i&amp;rsquo;s using sigmoid function the output would be 0-1 (decide how much we should forget the long term memory, if 0 forget)</description>
+    </item>
+    
+    <item>
+      <title>Convolutional Neural Net</title>
+      <link>https://muhammadagf.github.io/posts/notes/convolutional-neural-net/</link>
+      <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/convolutional-neural-net/</guid>
+      <description>CNNs use a mathematical operation called convolution in place of general matrix multiplication in at least one of their layers. Why CNN?     curse of dimensionality  for a single 32x32 pixel image, it will have 3 channel of 1024 pixels. Fully Connected Neural Networks (FCNNs) treat every pixel as an independent input and do not consider the spatial relationship between them. FCNNs require a large number of parameters, making them computationally expensive and prone to overfitting.</description>
+    </item>
+    
     <item>
       <title>Missing Values</title>
       <link>https://muhammadagf.github.io/posts/notes/missing-values/</link>

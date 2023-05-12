@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sequence-model on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/sequence-model/</link>
+    <description>Recent content in sequence-model on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/sequence-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recurrent Neural Net</title>
+      <link>https://muhammadagf.github.io/posts/notes/recurrent-neural-net/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/recurrent-neural-net/</guid>
+      <description>Vanilla RNN:    $$h_t = F(h_{t-1}, x_t)$$ $$h_t = activation(W_h\ h_{t-1} + W_x\ x_t)$$ $$y_t = W_y \ h_t$$
+image source: https://youtu.be/6niqTuYFZLQ
+Problem:     hard to remember long sentences Vanishing and Exploding Gradient problem  LSTM:    image from https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+Forget gate:    since i&amp;rsquo;s using sigmoid function the output would be 0-1 (decide how much we should forget the long term memory, if 0 forget)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>neural-net</title>
+      <link>https://muhammadagf.github.io/tags/neural-net/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/neural-net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>optimizer</title>
+      <link>https://muhammadagf.github.io/tags/optimizer/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/optimizer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine-learning</title>
+      <link>https://muhammadagf.github.io/tags/machine-learning/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sequence-model</title>
+      <link>https://muhammadagf.github.io/tags/sequence-model/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/sequence-model/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>data-imputation</title>
       <link>https://muhammadagf.github.io/tags/data-imputation/</link>
@@ -22,15 +58,6 @@
       <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/feature-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine-learning</title>
-      <link>https://muhammadagf.github.io/tags/machine-learning/</link>
-      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://muhammadagf.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     

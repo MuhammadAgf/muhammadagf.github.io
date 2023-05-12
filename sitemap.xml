@@ -3,12 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://muhammadagf.github.io/posts/</loc>
-    <lastmod>2023-04-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://muhammadagf.github.io/posts/notes/</loc>
-    <lastmod>2023-04-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>https://muhammadagf.github.io/posts/notes/adam/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/tags/neural-net/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/tags/optimizer/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/tags/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/tags/machine-learning/</loc>
+    <lastmod>2023-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/posts/notes/recurrent-neural-net/</loc>
+    <lastmod>2023-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/tags/sequence-model/</loc>
+    <lastmod>2023-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/posts/notes/convolutional-neural-net/</loc>
+    <lastmod>2023-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://muhammadagf.github.io/tags/data-imputation/</loc>
     <lastmod>2023-04-09T00:00:00+00:00</lastmod>
@@ -16,16 +43,7 @@
     <loc>https://muhammadagf.github.io/tags/feature-engineering/</loc>
     <lastmod>2023-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/tags/machine-learning/</loc>
-    <lastmod>2023-04-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://muhammadagf.github.io/posts/notes/missing-values/</loc>
-    <lastmod>2023-04-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://muhammadagf.github.io/</loc>
-    <lastmod>2023-04-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://muhammadagf.github.io/tags/</loc>
     <lastmod>2023-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://muhammadagf.github.io/posts/notes/tree-based-imputation/</loc>

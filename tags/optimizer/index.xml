@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>optimizer on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/optimizer/</link>
+    <description>Recent content in optimizer on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/optimizer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adam (Adaptive Moment Estimation)</title>
+      <link>https://muhammadagf.github.io/posts/notes/adam/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/adam/</guid>
+      <description>$$w_t = w_{t-1} - \eta \ \dfrac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$$ **with:** $$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$ this is for bias correction for the fact that first and second moment estimates start at zero.
+given: $$m_t = \beta_1m_{t-1} + (1 - \beta_1)\ g_t$$ $$v_t = \beta_2v_{t-1} + (1 - \beta_2)\ g_t^2$$
+ *$m_t$ is momentum. $v_t$ takes the idea from AdaGrad / RMSProp  parameter:
+ $\eta$ is the learning rate $\beta_1$ is forgeting param (typically 0.</description>
+    </item>
+    
+  </channel>
+</rss>

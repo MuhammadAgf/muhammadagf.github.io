@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Muhammad Assagaf">
+    <meta name="description" content="CNNs use a mathematical operation called convolution in place of general matrix multiplication in at least one of their layers. Why CNN?     curse of dimensionality  for a single 32x32 pixel image, it will have 3 channel of 1024 pixels. Fully Connected Neural Networks (FCNNs) treat every pixel as an independent input and do not consider the spatial relationship between them. FCNNs require a large number of parameters, making them computationally expensive and prone to overfitting.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Convolutional Neural Net"/>
+<meta name="twitter:description" content="CNNs use a mathematical operation called convolution in place of general matrix multiplication in at least one of their layers. Why CNN?     curse of dimensionality  for a single 32x32 pixel image, it will have 3 channel of 1024 pixels. Fully Connected Neural Networks (FCNNs) treat every pixel as an independent input and do not consider the spatial relationship between them. FCNNs require a large number of parameters, making them computationally expensive and prone to overfitting."/>
+
+    <meta property="og:title" content="Convolutional Neural Net" />
+<meta property="og:description" content="CNNs use a mathematical operation called convolution in place of general matrix multiplication in at least one of their layers. Why CNN?     curse of dimensionality  for a single 32x32 pixel image, it will have 3 channel of 1024 pixels. Fully Connected Neural Networks (FCNNs) treat every pixel as an independent input and do not consider the spatial relationship between them. FCNNs require a large number of parameters, making them computationally expensive and prone to overfitting." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/convolutional-neural-net/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-06T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2023-05-06T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  Convolutional Neural Net · Muhammad
+</title>
+
+    
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/convolutional-neural-net/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Muhammad
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About Me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/portofolio/">Portofolio</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/notes/">Personal notes</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/convolutional-neural-net/">
+              Convolutional Neural Net
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2023-05-06T00:00:00Z'>
+                May 6, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              One-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/machine-learning/">machine-learning</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/neural-net/">neural-net</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <hr>
+<p>CNNs use a mathematical operation called <a href="https://en.wikipedia.org/wiki/Convolution" title="Convolution">convolution</a> in place of general matrix multiplication in at least one of their layers.
+ </p>
+<h2 id="why-cnn">
+  Why CNN?
+  <a class="heading-link" href="#why-cnn">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ol>
+<li>curse of dimensionality
+<ul>
+<li>for a single 32x32 pixel image, it will have 3 channel of 1024 pixels.
+Fully Connected Neural Networks (FCNNs) treat every pixel as an independent input and do not consider the spatial relationship between them. FCNNs require a large number of parameters, making them computationally expensive and prone to overfitting.</li>
+</ul>
+</li>
+<li>spatial relationship
+<ul>
+<li>CNN can exploit the spatial correlation between pixels in an image. By using convolutional filters, the network can learn to detect patterns regardless of their location within the image.</li>
+</ul>
+</li>
+</ol>
+<h2 id="convolution-layer">
+  Convolution Layer
+  <a class="heading-link" href="#convolution-layer">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><img src="/images/obsidian/Pasted%20image%2020230506192402.png" alt="img">
+Image is SS from: <a href="https://youtu.be/bNb2fEVKeEo">https://youtu.be/bNb2fEVKeEo</a></p>
+<p>Notice that the number of parameter will always fixed to the size of the filter no matter the input size</p>
+<h3 id="parameter">
+  Parameter
+  <a class="heading-link" href="#parameter">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Accept a volume size of $W_1 \times H_1 \times D_1$
+Requires four hyperparameters:</p>
+<ol>
+<li>Number of filters $K$</li>
+<li>size of the filter $F$</li>
+<li>stride $S$</li>
+<li>amount of zero padding $P$</li>
+</ol>
+<p>Output:
+volume size: $W_2 \times H_2 \times D_2$
+with:</p>
+<ol>
+<li>$W_2 = (W_1 - F + 2P)/S + 1$</li>
+<li>$H_2 = (H_1 - F + 2P)/S + 1$</li>
+<li>$D_2 = K$</li>
+</ol>
+<hr>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<ol>
+<li><a href="https://youtu.be/bNb2fEVKeEo">https://youtu.be/bNb2fEVKeEo</a></li>
+</ol>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>More to Come</p>
+      
+      
+        ©
+        
+        2023
+         Muhammad Assagaf 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5E9PZY0GT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K5E9PZY0GT');
+</script>
+
+  </body>
+
+</html>
