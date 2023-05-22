@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Muhammad Assagaf">
+    <meta name="description" content="Use Cases:    Offering a new product or capability:    When introducing a new service like speech recognition, a common design pattern is to start with a small amount of traffic and gradually increase it.
+Automating or assisting existing tasks:    If a task previously performed by humans, like inspecting smartphones for defects, can be automated or assisted by a learning algorithm, a shadow mode deployment can be used.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ml Deployment Patterns And Degrees Of Automation"/>
+<meta name="twitter:description" content="Use Cases:    Offering a new product or capability:    When introducing a new service like speech recognition, a common design pattern is to start with a small amount of traffic and gradually increase it.
+Automating or assisting existing tasks:    If a task previously performed by humans, like inspecting smartphones for defects, can be automated or assisted by a learning algorithm, a shadow mode deployment can be used."/>
+
+    <meta property="og:title" content="Ml Deployment Patterns And Degrees Of Automation" />
+<meta property="og:description" content="Use Cases:    Offering a new product or capability:    When introducing a new service like speech recognition, a common design pattern is to start with a small amount of traffic and gradually increase it.
+Automating or assisting existing tasks:    If a task previously performed by humans, like inspecting smartphones for defects, can be automated or assisted by a learning algorithm, a shadow mode deployment can be used." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/ml-deployment-patterns-and-degrees-of-automation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-21T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2023-05-21T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  Ml Deployment Patterns And Degrees Of Automation · Muhammad
+</title>
+
+    
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/ml-deployment-patterns-and-degrees-of-automation/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Muhammad
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About Me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/portofolio/">Portofolio</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/notes/">Personal notes</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/ml-deployment-patterns-and-degrees-of-automation/">
+              Ml Deployment Patterns And Degrees Of Automation
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2023-05-21T00:00:00Z'>
+                May 21, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/mlops/">mlops</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/machine-learning-lifecycle/">machine learning lifecycle</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <hr>
+<h2 id="use-cases">
+  Use Cases:
+  <a class="heading-link" href="#use-cases">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="offering-a-new-product-or-capability">
+  Offering a new product or capability:
+  <a class="heading-link" href="#offering-a-new-product-or-capability">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>When introducing a new service like speech recognition, a common design pattern is to start with a small amount of traffic and gradually increase it.</p>
+<h3 id="automating-or-assisting-existing-tasks">
+  Automating or assisting existing tasks:
+  <a class="heading-link" href="#automating-or-assisting-existing-tasks">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>If a task previously performed by humans, like inspecting smartphones for defects, can be automated or assisted by a learning algorithm, a shadow mode deployment can be used. This involves running the algorithm parallel to human inspectors without using its output for decision-making initially.</p>
+<h3 id="replacing-an-existing-system">
+  Replacing an existing system:
+  <a class="heading-link" href="#replacing-an-existing-system">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>When replacing a previous implementation of a machine learning system with a better one, a gradual ramp-up with monitoring and the option for rollback are essential.</p>
+<h2 id="deployment-patterns">
+  Deployment Patterns
+  <a class="heading-link" href="#deployment-patterns">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="shadow-mode-deployment">
+  Shadow Mode Deployment:
+  <a class="heading-link" href="#shadow-mode-deployment">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>In shadow mode deployment, a learning algorithm shadows human inspectors without making actual decisions.
+-   This allows for data collection and comparison between the algorithm&rsquo;s performance and human judgment.
+-   Shadow mode deployment helps verify the algorithm&rsquo;s accuracy before allowing it to make real decisions.</p>
+<h3 id="canary-deployment">
+  Canary Deployment:
+  <a class="heading-link" href="#canary-deployment">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Canary deployment involves gradually introducing a learning algorithm to make real decisions.
+-   Initially, a small fraction (e.g., 5%) of traffic is routed to the algorithm to monitor its performance.
+-   By starting with a small percentage of traffic, potential mistakes by the algorithm can be limited and closely monitored.
+This deployment pattern helps detect and address issues before they cause significant consequences.</p>
+<h3 id="blue-green-deployment">
+  Blue Green Deployment:
+  <a class="heading-link" href="#blue-green-deployment">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Blue green deployment is used when transitioning from an old version of software to a new one.
+-   The old version (blue) and the new version with a learning algorithm (green) coexist.
+-   Traffic is initially sent to the blue version, and then, when ready, it is switched to the green version.
+-   This pattern allows for easy rollback to the previous version if needed.</p>
+<h2 id="degrees-of-automation">
+  Degrees of Automation:
+  <a class="heading-link" href="#degrees-of-automation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Automation can range from no automation (human-only) to full automation (algorithm makes all decisions).
+Different degrees of automation include:</p>
+<ol>
+<li>No Automation</li>
+<li>Shadow mode</li>
+<li>AI assistance</li>
+<li>Partial automation
+involves the algorithm making decisions confidently and deferring to humans for uncertain cases.</li>
+<li>Full automation.</li>
+</ol>
+<p>Human-in-the-loop deployments, such as AI assistance and partial automation, are often suitable for applications where the algorithm&rsquo;s performance is not sufficient for full automation.</p>
+<hr>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<ol>
+<li><a href="https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/1">https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/1</a></li>
+<li><a href="https://community.deeplearning.ai/t/mlep-course-1-lecture-notes/54446">https://community.deeplearning.ai/t/mlep-course-1-lecture-notes/54446</a> (need login)</li>
+</ol>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>More to Come</p>
+      
+      
+        ©
+        
+        2023
+         Muhammad Assagaf 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5E9PZY0GT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K5E9PZY0GT');
+</script>
+
+  </body>
+
+</html>

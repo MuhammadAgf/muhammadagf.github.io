@@ -14,9 +14,8 @@
       
       <guid>https://muhammadagf.github.io/posts/notes/adam/</guid>
       <description>$$w_t = w_{t-1} - \eta \ \dfrac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$$ **with:** $$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$ this is for bias correction for the fact that first and second moment estimates start at zero.
-given: $$m_t = \beta_1m_{t-1} + (1 - \beta_1)\ g_t$$ $$v_t = \beta_2v_{t-1} + (1 - \beta_2)\ g_t^2$$
- *$m_t$ is momentum. $v_t$ takes the idea from AdaGrad / RMSProp  parameter:
- $\eta$ is the learning rate $\beta_1$ is forgeting param (typically 0.</description>
+given: $$m_t = \beta_1m_{t-1} + (1 - \beta_1)\ \delta w_t$$ $$v_t = \beta_2v_{t-1} + (1 - \beta_2)\ \delta w_t^2$$
+ $m_t$ is momentum. $v_t$ takes the idea from AdaGrad / RMSProp  parameter:</description>
     </item>
     
     <item>

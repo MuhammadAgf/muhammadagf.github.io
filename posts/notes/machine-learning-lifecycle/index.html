@@ -10,34 +10,37 @@
     
 
     <meta name="author" content="Muhammad Assagaf">
-    <meta name="description" content="$$w_t = w_{t-1} - \eta \ \dfrac{\hat{m}_t}{\sqrt{\hat{v}_t} &#43; \epsilon}$$ **with:** $$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$ this is for bias correction for the fact that first and second moment estimates start at zero.
-given: $$m_t = \beta_1m_{t-1} &#43; (1 - \beta_1)\ \delta w_t$$ $$v_t = \beta_2v_{t-1} &#43; (1 - \beta_2)\ \delta w_t^2$$
- $m_t$ is momentum. $v_t$ takes the idea from AdaGrad / RMSProp  parameter:">
+    <meta name="description" content="Scoping:
+ Define the project. Decide on key metrics. Estimate resources, and timeline.    Data:
+ Define data.  establish a baselines, and address data labeling inconsistencies.   Standardize data labeling conventions.    Modeling: 3 key input: Code (algorithm/model), Hyperparameter, Data.
+ Select and train the model while optimizing data and hyperparameters. Perform error analysis in machine learning to identify areas for improvement.">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Adam (Adaptive Moment Estimation)"/>
-<meta name="twitter:description" content="$$w_t = w_{t-1} - \eta \ \dfrac{\hat{m}_t}{\sqrt{\hat{v}_t} &#43; \epsilon}$$ **with:** $$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$ this is for bias correction for the fact that first and second moment estimates start at zero.
-given: $$m_t = \beta_1m_{t-1} &#43; (1 - \beta_1)\ \delta w_t$$ $$v_t = \beta_2v_{t-1} &#43; (1 - \beta_2)\ \delta w_t^2$$
- $m_t$ is momentum. $v_t$ takes the idea from AdaGrad / RMSProp  parameter:"/>
+<meta name="twitter:title" content="Machine Learning Lifecycle"/>
+<meta name="twitter:description" content="Scoping:
+ Define the project. Decide on key metrics. Estimate resources, and timeline.    Data:
+ Define data.  establish a baselines, and address data labeling inconsistencies.   Standardize data labeling conventions.    Modeling: 3 key input: Code (algorithm/model), Hyperparameter, Data.
+ Select and train the model while optimizing data and hyperparameters. Perform error analysis in machine learning to identify areas for improvement."/>
 
-    <meta property="og:title" content="Adam (Adaptive Moment Estimation)" />
-<meta property="og:description" content="$$w_t = w_{t-1} - \eta \ \dfrac{\hat{m}_t}{\sqrt{\hat{v}_t} &#43; \epsilon}$$ **with:** $$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$ this is for bias correction for the fact that first and second moment estimates start at zero.
-given: $$m_t = \beta_1m_{t-1} &#43; (1 - \beta_1)\ \delta w_t$$ $$v_t = \beta_2v_{t-1} &#43; (1 - \beta_2)\ \delta w_t^2$$
- $m_t$ is momentum. $v_t$ takes the idea from AdaGrad / RMSProp  parameter:" />
+    <meta property="og:title" content="Machine Learning Lifecycle" />
+<meta property="og:description" content="Scoping:
+ Define the project. Decide on key metrics. Estimate resources, and timeline.    Data:
+ Define data.  establish a baselines, and address data labeling inconsistencies.   Standardize data labeling conventions.    Modeling: 3 key input: Code (algorithm/model), Hyperparameter, Data.
+ Select and train the model while optimizing data and hyperparameters. Perform error analysis in machine learning to identify areas for improvement." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/adam/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-05-10T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2023-05-10T00:00:00&#43;00:00" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/machine-learning-lifecycle/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-20T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2023-05-20T00:00:00&#43;00:00" />
 
 
 
     <title>
-  Adam (Adaptive Moment Estimation) · Muhammad
+  Machine Learning Lifecycle · Muhammad
 </title>
 
     
-      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/adam/">
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/machine-learning-lifecycle/">
     
 
     <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -125,8 +128,8 @@ given: $$m_t = \beta_1m_{t-1} &#43; (1 - \beta_1)\ \delta w_t$$ $$v_t = \beta_2v
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/adam/">
-              Adam (Adaptive Moment Estimation)
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/machine-learning-lifecycle/">
+              Machine Learning Lifecycle
             </a>
           </h1>
         </div>
@@ -134,8 +137,8 @@ given: $$m_t = \beta_1m_{t-1} &#43; (1 - \beta_1)\ \delta w_t$$ $$v_t = \beta_2v
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2023-05-10T00:00:00Z'>
-                May 10, 2023
+              <time datetime='2023-05-20T00:00:00Z'>
+                May 20, 2023
               </time>
             </span>
             <span class="reading-time">
@@ -148,7 +151,11 @@ given: $$m_t = \beta_1m_{t-1} &#43; (1 - \beta_1)\ \delta w_t$$ $$v_t = \beta_2v
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="/tags/neural-net/">neural-net</a>
+      <a href="/tags/mlops/">mlops</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/machine-learning-lifecycle/">machine learning lifecycle</a>
     </span></div>
 
         </div>
@@ -157,23 +164,47 @@ given: $$m_t = \beta_1m_{t-1} &#43; (1 - \beta_1)\ \delta w_t$$ $$v_t = \beta_2v
       <div>
         
         <hr>
-<p>$$w_t = w_{t-1} - \eta \ \dfrac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$$
-**with:**
-$$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$
-$$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
-this is for bias correction for the fact that first and second moment estimates start at zero.</p>
-<p><strong>given:</strong>
-$$m_t = \beta_1m_{t-1} + (1 - \beta_1)\ \delta w_t$$
-$$v_t = \beta_2v_{t-1} + (1 - \beta_2)\ \delta w_t^2$$</p>
 <ul>
-<li>$m_t$ is momentum.</li>
-<li>$v_t$ takes the idea from AdaGrad / RMSProp</li>
+<li>
+<p><strong>Scoping:</strong></p>
+<ul>
+<li>Define the project.</li>
+<li>Decide on key metrics.</li>
+<li>Estimate resources, and timeline.</li>
 </ul>
-<p><strong>parameter:</strong></p>
+</li>
+<li>
+<p><strong>Data:</strong></p>
 <ul>
-<li>$\eta$ is the learning rate</li>
-<li>$\beta_1$ is forgeting param (typically 0.9)</li>
-<li>$\beta_2$ is forgeting param (typically 0.99)</li>
+<li>Define data.
+<ul>
+<li><a href="https://muhammadagf.github.io/posts/notes/establish-a-baselines/">establish a baselines</a>, and address data labeling inconsistencies.</li>
+</ul>
+</li>
+<li>Standardize data labeling conventions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Modeling:</strong>
+3 key input: Code (algorithm/model), Hyperparameter, Data.</p>
+<ul>
+<li>Select and train the model while optimizing data and hyperparameters.</li>
+<li>Perform <a href="https://muhammadagf.github.io/posts/notes/error-analysis-in-machine-learning/">error analysis in machine learning</a> to identify areas for improvement.
+in general: Optimizing data and hyperparameters can be more effective for production systems. (the code (algorithm/model) is fixed.
+to <a href="https://muhammadagf.github.io/posts/notes/get-started-in-modelling/">get started in modelling</a></li>
+</ul>
+</li>
+<li>
+<p><strong><strong>ML Model Deployment</strong>:</strong></p>
+<ul>
+<li>Deploy the system</li>
+<li>Monitor, and maintain it in production.
+<ul>
+<li>data distribution changes.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <hr>
 <h1 id="references">
@@ -183,8 +214,8 @@ $$v_t = \beta_2v_{t-1} + (1 - \beta_2)\ \delta w_t^2$$</p>
   </a>
 </h1>
 <ol>
-<li><a href="https://youtu.be/_JB0AO7QxSA">https://youtu.be/_JB0AO7QxSA</a></li>
-<li><a href="https://paperswithcode.com/method/adam">https://paperswithcode.com/method/adam</a></li>
+<li><a href="https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/1">https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/1</a></li>
+<li><a href="https://community.deeplearning.ai/t/mlep-course-1-lecture-notes/54446">https://community.deeplearning.ai/t/mlep-course-1-lecture-notes/54446</a> (need login)</li>
 </ol>
 
       </div>

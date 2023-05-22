@@ -6,7 +6,81 @@
     <description>Recent content on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Error Analysis In Machine Learning</title>
+      <link>https://muhammadagf.github.io/posts/notes/error-analysis-in-machine-learning/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/error-analysis-in-machine-learning/</guid>
+      <description>When training a learning algorithm for the first time, it is expected that it won&amp;rsquo;t work perfectly right away. The key to improving its performance lies in error analysis. By analyzing the errors made by the algorithm, we can determine the most efficient use of our time in improving its performance.
+Example: Speech Recognition Error Analysis    To illustrate the error analysis process, let&amp;rsquo;s consider an example of speech recognition.</description>
+    </item>
+    
+    <item>
+      <title>Establish A Baselines</title>
+      <link>https://muhammadagf.github.io/posts/notes/establish-a-baselines/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/establish-a-baselines/</guid>
+      <description>When starting a machine learning project, it is essential to establish a baseline level of performance before making improvements. This baseline serves as a point of comparison and helps determine where to focus efforts.
+Establishing a Baseline     Determine major categories in your data. for speech recognition: (e.g., clear speech, speech with car noise, speech with people noise, low bandwidth audio). Measure accuracy for each category (e.</description>
+    </item>
+    
+    <item>
+      <title>Get Started In Modelling</title>
+      <link>https://muhammadagf.github.io/posts/notes/get-started-in-modelling/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/get-started-in-modelling/</guid>
+      <description>Tips for Getting Started    When starting a machine learning project, there are several tips to consider for efficient progress.
+Getting Started on Modeling     Conduct a literature search to understand existing approaches and possibilities. Focus on practical implementations instead of the latest algorithms. Open source implementations can provide a baseline and facilitate quick start. A reasonable algorithm with good data often outperforms a cutting-edge algorithm with poor data.</description>
+    </item>
+    
+    <item>
+      <title>Ml Deployment Patterns And Degrees Of Automation</title>
+      <link>https://muhammadagf.github.io/posts/notes/ml-deployment-patterns-and-degrees-of-automation/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/ml-deployment-patterns-and-degrees-of-automation/</guid>
+      <description>Use Cases:    Offering a new product or capability:    When introducing a new service like speech recognition, a common design pattern is to start with a small amount of traffic and gradually increase it.
+Automating or assisting existing tasks:    If a task previously performed by humans, like inspecting smartphones for defects, can be automated or assisted by a learning algorithm, a shadow mode deployment can be used.</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Lifecycle</title>
+      <link>https://muhammadagf.github.io/posts/notes/machine-learning-lifecycle/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/machine-learning-lifecycle/</guid>
+      <description>Scoping:
+ Define the project. Decide on key metrics. Estimate resources, and timeline.    Data:
+ Define data.  establish a baselines, and address data labeling inconsistencies.   Standardize data labeling conventions.    Modeling: 3 key input: Code (algorithm/model), Hyperparameter, Data.
+ Select and train the model while optimizing data and hyperparameters. Perform error analysis in machine learning to identify areas for improvement.</description>
+    </item>
+    
+    <item>
+      <title>Ml Model Deployment</title>
+      <link>https://muhammadagf.github.io/posts/notes/ml-model-deployment/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/ml-model-deployment/</guid>
+      <description>ML/Statistical Issue:    Given a data X, model F and output y, we have Issue called: Concept drift and Data drift.
+Concept Drift    refer to when desired mapping from X to y changes. for example due to inflation, same size of the house can be priced higher.
+Data Drift    refer to when the input distribution (X) changes. for example when most people suddenly build a smaller house.</description>
+    </item>
+    
+    <item>
+      <title>Measuring Success In A Product</title>
+      <link>https://muhammadagf.github.io/posts/notes/measuring-success-in-a-product/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/measuring-success-in-a-product/</guid>
+      <description>GAME Framework    1. Understand the Goal (Goals).    Start by making sure you understand the product properly and agree with your stakeholder on specific user and business objectives.
+A. User Goal
+ How will our users benefit from the product? What problems do our users want the product to solve for them? How will our users interact with the product? How will our users feel when they use the product?</description>
+    </item>
+    
     <item>
       <title>Adam (Adaptive Moment Estimation)</title>
       <link>https://muhammadagf.github.io/posts/notes/adam/</link>
@@ -14,9 +88,8 @@
       
       <guid>https://muhammadagf.github.io/posts/notes/adam/</guid>
       <description>$$w_t = w_{t-1} - \eta \ \dfrac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$$ **with:** $$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$ this is for bias correction for the fact that first and second moment estimates start at zero.
-given: $$m_t = \beta_1m_{t-1} + (1 - \beta_1)\ g_t$$ $$v_t = \beta_2v_{t-1} + (1 - \beta_2)\ g_t^2$$
- *$m_t$ is momentum. $v_t$ takes the idea from AdaGrad / RMSProp  parameter:
- $\eta$ is the learning rate $\beta_1$ is forgeting param (typically 0.</description>
+given: $$m_t = \beta_1m_{t-1} + (1 - \beta_1)\ \delta w_t$$ $$v_t = \beta_2v_{t-1} + (1 - \beta_2)\ \delta w_t^2$$
+ $m_t$ is momentum. $v_t$ takes the idea from AdaGrad / RMSProp  parameter:</description>
     </item>
     
     <item>

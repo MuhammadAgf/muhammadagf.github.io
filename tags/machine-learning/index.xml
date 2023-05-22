@@ -6,7 +6,17 @@
     <description>Recent content in machine-learning on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Error Analysis In Machine Learning</title>
+      <link>https://muhammadagf.github.io/posts/notes/error-analysis-in-machine-learning/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/error-analysis-in-machine-learning/</guid>
+      <description>When training a learning algorithm for the first time, it is expected that it won&amp;rsquo;t work perfectly right away. The key to improving its performance lies in error analysis. By analyzing the errors made by the algorithm, we can determine the most efficient use of our time in improving its performance.
+Example: Speech Recognition Error Analysis    To illustrate the error analysis process, let&amp;rsquo;s consider an example of speech recognition.</description>
+    </item>
+    
     <item>
       <title>Recurrent Neural Net</title>
       <link>https://muhammadagf.github.io/posts/notes/recurrent-neural-net/</link>

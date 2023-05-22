@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>product-management on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/product-management/</link>
+    <description>Recent content in product-management on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/product-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Measuring Success In A Product</title>
+      <link>https://muhammadagf.github.io/posts/notes/measuring-success-in-a-product/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/measuring-success-in-a-product/</guid>
+      <description>GAME Framework    1. Understand the Goal (Goals).    Start by making sure you understand the product properly and agree with your stakeholder on specific user and business objectives.
+A. User Goal
+ How will our users benefit from the product? What problems do our users want the product to solve for them? How will our users interact with the product? How will our users feel when they use the product?</description>
+    </item>
+    
+  </channel>
+</rss>

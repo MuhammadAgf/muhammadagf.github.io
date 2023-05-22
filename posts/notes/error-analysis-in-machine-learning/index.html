@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Muhammad Assagaf">
+    <meta name="description" content="When training a learning algorithm for the first time, it is expected that it won&rsquo;t work perfectly right away. The key to improving its performance lies in error analysis. By analyzing the errors made by the algorithm, we can determine the most efficient use of our time in improving its performance.
+Example: Speech Recognition Error Analysis    To illustrate the error analysis process, let&rsquo;s consider an example of speech recognition.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Error Analysis In Machine Learning"/>
+<meta name="twitter:description" content="When training a learning algorithm for the first time, it is expected that it won&rsquo;t work perfectly right away. The key to improving its performance lies in error analysis. By analyzing the errors made by the algorithm, we can determine the most efficient use of our time in improving its performance.
+Example: Speech Recognition Error Analysis    To illustrate the error analysis process, let&rsquo;s consider an example of speech recognition."/>
+
+    <meta property="og:title" content="Error Analysis In Machine Learning" />
+<meta property="og:description" content="When training a learning algorithm for the first time, it is expected that it won&rsquo;t work perfectly right away. The key to improving its performance lies in error analysis. By analyzing the errors made by the algorithm, we can determine the most efficient use of our time in improving its performance.
+Example: Speech Recognition Error Analysis    To illustrate the error analysis process, let&rsquo;s consider an example of speech recognition." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/error-analysis-in-machine-learning/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-21T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2023-05-21T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  Error Analysis In Machine Learning · Muhammad
+</title>
+
+    
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/error-analysis-in-machine-learning/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Muhammad
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About Me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/portofolio/">Portofolio</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/notes/">Personal notes</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/error-analysis-in-machine-learning/">
+              Error Analysis In Machine Learning
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2023-05-21T00:00:00Z'>
+                May 21, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/machine-learning/">machine-learning</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <hr>
+<p>When training a learning algorithm for the first time, it is expected that it won&rsquo;t work perfectly right away. The key to improving its performance lies in error analysis. By analyzing the errors made by the algorithm, we can determine the most efficient use of our time in improving its performance.</p>
+<h3 id="example-speech-recognition-error-analysis">
+  Example: Speech Recognition Error Analysis
+  <a class="heading-link" href="#example-speech-recognition-error-analysis">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>To illustrate the error analysis process, let&rsquo;s consider an example of speech recognition. Here are the steps involved:</p>
+<ol>
+<li>
+<p><strong>Listen to mislabeled examples</strong>:
+Start by listening to a subset of mislabeled examples from the development set. For each example, compare the ground truth label with the algorithm&rsquo;s prediction.</p>
+</li>
+<li>
+<p><strong>Identify major data types</strong>:
+Determine the major types of data in the dataset. For speech recognition, this could be categories like car noise and people noise.</p>
+</li>
+<li>
+<p><strong>Create a spreadsheet</strong>:
+Use a spreadsheet program like Google Sheets or Excel to build a spreadsheet with columns for different types of data. Mark each example in the spreadsheet based on its characteristics, such as the presence of car noise or people noise.</p>
+</li>
+<li>
+<p><strong>Iterate and add new tags</strong>:
+As you listen to more examples, you may come up with new tags to describe additional characteristics. Update the spreadsheet accordingly.</p>
+</li>
+<li>
+<p><strong>Analyze error patterns</strong>:
+Look for patterns and analyze the distribution of errors across different tags. This analysis helps identify the categories that contribute to the most errors and require further attention.</p>
+</li>
+</ol>
+<p><img src="/images/obsidian/Pasted%20image%2020230521203803.png" alt="img">
+source: <a href="https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/2">https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/2</a></p>
+<h2 id="manual-vs-mlops-tools">
+  Manual vs. MLOps Tools
+  <a class="heading-link" href="#manual-vs-mlops-tools">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Traditionally, error analysis has been done manually using spreadsheets or notebooks. However, emerging MLOps tools like LandingLens provide more efficient ways to perform error analysis, especially for computer vision applications.</p>
+<h2 id="prioritizing-improvement-areas">
+  Prioritizing Improvement Areas
+  <a class="heading-link" href="#prioritizing-improvement-areas">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Once error analysis is done, it&rsquo;s important to prioritize areas for improvement. Consider the following factors:</p>
+<ol>
+<li>
+<p><strong>Room for improvement</strong>:
+Evaluate the gap between the algorithm&rsquo;s performance and human-level performance. Focus on categories with significant room for improvement.</p>
+</li>
+<li>
+<p><strong>Data frequency in that category</strong>:
+Determine the frequency of each category in the dataset. Categories that appear more frequently may be more important to address.</p>
+</li>
+<li>
+<p><strong>Ease of improvement in that category</strong>:
+Assess the feasibility of improving accuracy in each category. Some categories may have clear strategies for improvement, while others may be more challenging.</p>
+</li>
+<li>
+<p><strong>Importance of improvement in that category</strong>:
+Consider the impact of improving performance in each category. Some categories may be more crucial for the overall system&rsquo;s effectiveness.</p>
+</li>
+</ol>
+<p>for the example above:
+<img src="/images/obsidian/Pasted%20image%2020230521204412.png" alt="img">
+source: <a href="https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/2">https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/2</a></p>
+<h2 id="skewed-datasets-and-handling-techniques">
+  Skewed Datasets and Handling Techniques
+  <a class="heading-link" href="#skewed-datasets-and-handling-techniques">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Skewed datasets, where the ratio of positive to negative examples is imbalanced, require special handling techniques. Consider the following:</p>
+<ol>
+<li>
+<p><strong>Confusion matrix:</strong>
+Instead of relying solely on accuracy, construct a confusion matrix to evaluate the performance. The matrix compares actual labels with predictions, allowing a more comprehensive analysis.</p>
+</li>
+<li>
+<p><strong>True positives, true negatives, false positives, false negatives</strong>:
+Fill in the confusion matrix with the counts of examples falling into these four categories to assess the algorithm&rsquo;s performance.</p>
+</li>
+<li>
+<p><strong>Precision</strong>:
+Precision is the proportion of true positive predictions out of all positive predictions. It helps evaluate the algorithm&rsquo;s accuracy when it predicts positive instances.</p>
+</li>
+<li>
+<p><strong>Prioritizing improvement</strong>:
+Consider the distribution of examples in the confusion matrix and prioritize improving areas with a significant number of false negatives or false positives.</p>
+</li>
+</ol>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Error analysis is a crucial step in improving the performance of machine learning algorithms. By carefully analyzing errors, identifying patterns, and prioritizing improvement areas, we can make targeted efforts to enhance the algorithm&rsquo;s accuracy and overall effectiveness.</p>
+<hr>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<ol>
+<li><a href="https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/2">https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/2</a></li>
+<li><a href="https://community.deeplearning.ai/t/mlep-course-1-lecture-notes/54446">https://community.deeplearning.ai/t/mlep-course-1-lecture-notes/54446</a> (need login)</li>
+</ol>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>More to Come</p>
+      
+      
+        ©
+        
+        2023
+         Muhammad Assagaf 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5E9PZY0GT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K5E9PZY0GT');
+</script>
+
+  </body>
+
+</html>
