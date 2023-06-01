@@ -6,15 +6,16 @@
     <description>Recent content in machine-learning on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Error Analysis In Machine Learning</title>
-      <link>https://muhammadagf.github.io/posts/notes/error-analysis-in-machine-learning/</link>
-      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      <title>Feature Engineering</title>
+      <link>https://muhammadagf.github.io/posts/notes/feature-engineering/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://muhammadagf.github.io/posts/notes/error-analysis-in-machine-learning/</guid>
-      <description>When training a learning algorithm for the first time, it is expected that it won&amp;rsquo;t work perfectly right away. The key to improving its performance lies in error analysis. By analyzing the errors made by the algorithm, we can determine the most efficient use of our time in improving its performance.
-Example: Speech Recognition Error Analysis    To illustrate the error analysis process, let&amp;rsquo;s consider an example of speech recognition.</description>
+      <guid>https://muhammadagf.github.io/posts/notes/feature-engineering/</guid>
+      <description>Preprocessing      Data Cleansing: To eliminate or correct erroneous data by identifying and handling inconsistencies or outliers.
+  Scaling and Normalizing: Numerical features often need to be scaled or normalized to ensure the models can learn effectively. Scaling adjusts the range of features, while normalization brings them within a specific range, such as between 0 and 1.
+  Dimensionality Reduction: Involves reducing the number of features by creating a lower-dimensional representation of the data.</description>
     </item>
     
     <item>

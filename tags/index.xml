@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>machine learning lifecycle</title>
       <link>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</link>
-      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</guid>
       <description></description>
@@ -19,9 +19,18 @@
     <item>
       <title>machine-learning</title>
       <link>https://muhammadagf.github.io/tags/machine-learning/</link>
-      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data labeling</title>
+      <link>https://muhammadagf.github.io/tags/data-labeling/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/data-labeling/</guid>
       <description></description>
     </item>
     

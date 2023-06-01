@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data labeling on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/data-labeling/</link>
+    <description>Recent content in data labeling on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/data-labeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Labeling Conventions</title>
+      <link>https://muhammadagf.github.io/posts/notes/data-labeling-conventions/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/data-labeling-conventions/</guid>
+      <description>Improving Label Consistency    To enhance the consistency of labels in a project, follow these steps:
+  Multiple Labelers: If label consistency is a concern, select a few examples and have multiple labelers assign labels to them. This approach helps identify inconsistencies among labelers.
+  Relabeling: Allow the same labeler to relabel an example after a break or time gap, encouraging consistency even within individual labelers.</description>
+    </item>
+    
+  </channel>
+</rss>
