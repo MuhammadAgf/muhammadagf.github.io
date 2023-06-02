@@ -10,34 +10,31 @@
     
 
     <meta name="author" content="Muhammad Assagaf">
-    <meta name="description" content="ML/Statistical Issue:    Given a data X, model F and output y, we have a data distribution changes Issue called: Concept drift and Data drift.
-Concept Drift    refer to when desired mapping from X to y changes. for example due to inflation, same size of the house can be priced higher.
-Data Drift    refer to when the input distribution (X) changes. for example when most people suddenly build a smaller house.">
+    <meta name="description" content="Active learning is a method of intelligently sampling data to select the most informative unlabeled points for labeling. It helps in scenarios with limited data budget, imbalanced datasets, and when standard sampling techniques do not improve accuracy.
+Active learning involves iteratively selecting the most uncertain data points for labeling to improve the model&rsquo;s performance. Intelligent sampling techniques in active learning:     Margin sampling: Labels the most uncertain points based on their distance from the decision boundary.">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Ml Model Deployment"/>
-<meta name="twitter:description" content="ML/Statistical Issue:    Given a data X, model F and output y, we have a data distribution changes Issue called: Concept drift and Data drift.
-Concept Drift    refer to when desired mapping from X to y changes. for example due to inflation, same size of the house can be priced higher.
-Data Drift    refer to when the input distribution (X) changes. for example when most people suddenly build a smaller house."/>
+<meta name="twitter:title" content="Active Learning"/>
+<meta name="twitter:description" content="Active learning is a method of intelligently sampling data to select the most informative unlabeled points for labeling. It helps in scenarios with limited data budget, imbalanced datasets, and when standard sampling techniques do not improve accuracy.
+Active learning involves iteratively selecting the most uncertain data points for labeling to improve the model&rsquo;s performance. Intelligent sampling techniques in active learning:     Margin sampling: Labels the most uncertain points based on their distance from the decision boundary."/>
 
-    <meta property="og:title" content="Ml Model Deployment" />
-<meta property="og:description" content="ML/Statistical Issue:    Given a data X, model F and output y, we have a data distribution changes Issue called: Concept drift and Data drift.
-Concept Drift    refer to when desired mapping from X to y changes. for example due to inflation, same size of the house can be priced higher.
-Data Drift    refer to when the input distribution (X) changes. for example when most people suddenly build a smaller house." />
+    <meta property="og:title" content="Active Learning" />
+<meta property="og:description" content="Active learning is a method of intelligently sampling data to select the most informative unlabeled points for labeling. It helps in scenarios with limited data budget, imbalanced datasets, and when standard sampling techniques do not improve accuracy.
+Active learning involves iteratively selecting the most uncertain data points for labeling to improve the model&rsquo;s performance. Intelligent sampling techniques in active learning:     Margin sampling: Labels the most uncertain points based on their distance from the decision boundary." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/ml-model-deployment/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-05-20T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2023-05-20T00:00:00&#43;00:00" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/active-learning/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-02T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2023-06-02T00:00:00&#43;00:00" />
 
 
 
     <title>
-  Ml Model Deployment · Muhammad
+  Active Learning · Muhammad
 </title>
 
     
-      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/ml-model-deployment/">
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/active-learning/">
     
 
     <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -125,8 +122,8 @@ Data Drift    refer to when the input distribution (X) changes. for example when
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/ml-model-deployment/">
-              Ml Model Deployment
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/active-learning/">
+              Active Learning
             </a>
           </h1>
         </div>
@@ -134,13 +131,13 @@ Data Drift    refer to when the input distribution (X) changes. for example when
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2023-05-20T00:00:00Z'>
-                May 20, 2023
+              <time datetime='2023-06-02T00:00:00Z'>
+                June 2, 2023
               </time>
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              2-minute read
+              One-minute read
             </span>
           </div>
           
@@ -148,11 +145,11 @@ Data Drift    refer to when the input distribution (X) changes. for example when
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="/tags/machine-learning-lifecycle/">machine learning lifecycle</a>
+      <a href="/tags/machine-learning/">machine-learning</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/mlops/">mlops</a>
+      <a href="/tags/machine-learning-labeling/">machine learning labeling</a>
     </span></div>
 
         </div>
@@ -161,71 +158,22 @@ Data Drift    refer to when the input distribution (X) changes. for example when
       <div>
         
         <hr>
-<h3 id="mlstatistical-issue">
-  ML/Statistical Issue:
-  <a class="heading-link" href="#mlstatistical-issue">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h3>
-<p>Given a data X, model F and output y, we have a <a href="https://muhammadagf.github.io/posts/notes/data-distribution-changes/">data distribution changes</a> Issue called: Concept drift and Data drift.</p>
-<h6 id="concept-drift">
-  <strong>Concept Drift</strong>
-  <a class="heading-link" href="#concept-drift">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h6>
-<p>refer to <strong>when desired mapping from X to y changes.</strong>
-for example due to inflation, same size of the house can be priced higher.</p>
-<h6 id="data-drift">
-  <strong>Data Drift</strong>
-  <a class="heading-link" href="#data-drift">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h6>
-<p>refer to <strong>when the input distribution (X) changes.</strong>
-for example when most people suddenly build a smaller house.</p>
-<p>make sure you can detect and manage both of concept drift as well as data drift even when the mapping between x -&gt; y didn&rsquo;t changes.</p>
-<h4 id="how-has-the-data-changed">
-  How has the data changed?
-  <a class="heading-link" href="#how-has-the-data-changed">
+<p>Active learning is a method of <strong>intelligently sampling data to select the most informative unlabeled points for labeling</strong>. It helps in scenarios with limited data budget, imbalanced datasets, and when standard sampling techniques do not improve accuracy.</p>
+<p>Active learning involves iteratively selecting the most uncertain data points for labeling to improve the model&rsquo;s performance.
+<img src="/images/obsidian/Pasted%20image%2020230602102715.png" alt="img"></p>
+<h4 id="intelligent-sampling-techniques-in-active-learning">
+  Intelligent sampling techniques in active learning:
+  <a class="heading-link" href="#intelligent-sampling-techniques-in-active-learning">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h4>
-<h5 id="a-gradually">
-  A. Gradually
-  <a class="heading-link" href="#a-gradually">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h5>
-<p>when the data or the behaviour gradually changes, for example: English language has evolved, some trend within teenagers, some people starting to use new brand of Iphone, etc.</p>
-<h5 id="b-suddenly">
-  B. Suddenly
-  <a class="heading-link" href="#b-suddenly">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h5>
-<p>sudden shock in the system, for example: covid, people purchase pattern changes suddenly.</p>
-<h3 id="software-issue">
-  Software Issue:
-  <a class="heading-link" href="#software-issue">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h3>
-<p>Checklist of questions:</p>
 <ol>
-<li>Realtime or Batch Prediction?</li>
-<li>Does it run in the Cloud or Edge/Browser?
-<ol>
-<li>Do we need to perform <a href="https://muhammadagf.github.io/posts/notes/model-resource-optimization/">model resource optimization</a>  (especially if it&rsquo;s on Edge)?</li>
+<li><strong>Margin sampling</strong>:  Labels the most uncertain points based on their distance from the decision boundary.</li>
+<li><strong>Cluster-based sampling</strong>: Selects diverse points using clustering methods over the feature space.</li>
+<li><strong>Query-by-committee</strong>: Trains multiple models and selects points with the highest disagreement among them.</li>
+<li><strong>Region-based sampling</strong>: Divides the input space into regions and runs active learning algorithms in each region.</li>
+<li>etc.</li>
 </ol>
-</li>
-<li>Compute resources (CPU/GPU/memory)</li>
-<li>Latency, throughput (QPS (query per second given your compute resources))</li>
-<li>Logging</li>
-<li>Security and Privacy</li>
-</ol>
-<p>if we know how much CPU/GPU resources for your prediction service, it could help you writing the software and/or choosing the proper ML model.</p>
-<p>monitor and continue maintain it, especially in the face of concept drift and/or data drift.</p>
 <hr>
 <h1 id="references">
   References
@@ -234,8 +182,8 @@ for example when most people suddenly build a smaller house.</p>
   </a>
 </h1>
 <ol>
-<li><a href="https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/1">https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/1</a></li>
-<li><a href="https://community.deeplearning.ai/t/mlep-course-1-lecture-notes/54446">https://community.deeplearning.ai/t/mlep-course-1-lecture-notes/54446</a> (need login)</li>
+<li><a href="https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production/home/week/4">https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production/home/week/4</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Active_learning_(machine_learning)">https://en.wikipedia.org/wiki/Active_learning_(machine_learning)</a></li>
 </ol>
 
       </div>

@@ -6,7 +6,50 @@
     <description>Recent content on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Active Learning</title>
+      <link>https://muhammadagf.github.io/posts/notes/active-learning/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/active-learning/</guid>
+      <description>Active learning is a method of intelligently sampling data to select the most informative unlabeled points for labeling. It helps in scenarios with limited data budget, imbalanced datasets, and when standard sampling techniques do not improve accuracy.
+Active learning involves iteratively selecting the most uncertain data points for labeling to improve the model&amp;rsquo;s performance. Intelligent sampling techniques in active learning:     Margin sampling: Labels the most uncertain points based on their distance from the decision boundary.</description>
+    </item>
+    
+    <item>
+      <title>Dimensionality Reduction</title>
+      <link>https://muhammadagf.github.io/posts/notes/dimensionality-reduction/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/dimensionality-reduction/</guid>
+      <description>Not to be confused with feature selection. .notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative} Tip
+Feature selection is simply selecting and excluding given features without changing them. Dimensionality reduction transforms features into a lower dimension space
+ Why is it a problem?     More dimensions → more features  Redundant / irrelevant features More noise added than signal Hard to interpret and visualize Hard to store and process data   Risk of overfitting our models Distances grow more and more alike No clear distinction between clustered objects Concentration phenomenon for Euclidean distance  Using the same number of data, there will be a point where increasing features will reduces model performances (irrelevant features can have effect to a model depend on the type of the model itself, see: feature selection) Source: https://community.</description>
+    </item>
+    
+    <item>
+      <title>Model Resource Optimization</title>
+      <link>https://muhammadagf.github.io/posts/notes/model-resource-optimization/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/model-resource-optimization/</guid>
+      <description>Background    Machine learning is increasingly integrated into mobile, IoT, and embedded applications, with billions of devices already in use.
+Reasons for Deploying Models on Device
+ Advances in Machine Learning Research: Research enables running inference locally on low-power devices, making it feasible to incorporate machine learning as part of a device&amp;rsquo;s core functionality. Decreasing Hardware Costs: Lower hardware costs allow for affordable devices and higher volume production, making on-device machine learning more accessible.</description>
+    </item>
+    
+    <item>
+      <title>Semi-Supervised Learning</title>
+      <link>https://muhammadagf.github.io/posts/notes/semi-supervised-learning/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/semi-supervised-learning/</guid>
+      <description>Semi-supervised learning is a technique that combines a small labeled dataset with a large unlabeled dataset to improve model performance. The process involves inferring labels for the unlabeled data based on how labeled classes are structured within the feature space.
+Semi-supervised learning assumes that different label classes exhibit clustering or recognizable structure. source: https://www.altexsoft.com/blog/semi-supervised-learning/
+Key Principle    Instead of adding tags to the entire dataset, you go through and hand-label just a small part of the data and use it to train a model, which then is applied to the ocean of unlabeled data.</description>
+    </item>
+    
     <item>
       <title>Data Distribution Changes</title>
       <link>https://muhammadagf.github.io/posts/notes/data-distribution-changes/</link>
@@ -24,7 +67,7 @@
       <guid>https://muhammadagf.github.io/posts/notes/feature-engineering/</guid>
       <description>Preprocessing      Data Cleansing: To eliminate or correct erroneous data by identifying and handling inconsistencies or outliers.
   Scaling and Normalizing: Numerical features often need to be scaled or normalized to ensure the models can learn effectively. Scaling adjusts the range of features, while normalization brings them within a specific range, such as between 0 and 1.
-  Dimensionality Reduction: Involves reducing the number of features by creating a lower-dimensional representation of the data.</description>
+  Dimensionality Reduction: Reducing the number of features by creating a lower-dimensional representation of the data.</description>
     </item>
     
     <item>

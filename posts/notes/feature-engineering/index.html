@@ -12,19 +12,19 @@
     <meta name="author" content="Muhammad Assagaf">
     <meta name="description" content="Preprocessing      Data Cleansing: To eliminate or correct erroneous data by identifying and handling inconsistencies or outliers.
   Scaling and Normalizing: Numerical features often need to be scaled or normalized to ensure the models can learn effectively. Scaling adjusts the range of features, while normalization brings them within a specific range, such as between 0 and 1.
-  Dimensionality Reduction: Involves reducing the number of features by creating a lower-dimensional representation of the data.">
+  Dimensionality Reduction: Reducing the number of features by creating a lower-dimensional representation of the data.">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Feature Engineering"/>
 <meta name="twitter:description" content="Preprocessing      Data Cleansing: To eliminate or correct erroneous data by identifying and handling inconsistencies or outliers.
   Scaling and Normalizing: Numerical features often need to be scaled or normalized to ensure the models can learn effectively. Scaling adjusts the range of features, while normalization brings them within a specific range, such as between 0 and 1.
-  Dimensionality Reduction: Involves reducing the number of features by creating a lower-dimensional representation of the data."/>
+  Dimensionality Reduction: Reducing the number of features by creating a lower-dimensional representation of the data."/>
 
     <meta property="og:title" content="Feature Engineering" />
 <meta property="og:description" content="Preprocessing      Data Cleansing: To eliminate or correct erroneous data by identifying and handling inconsistencies or outliers.
   Scaling and Normalizing: Numerical features often need to be scaled or normalized to ensure the models can learn effectively. Scaling adjusts the range of features, while normalization brings them within a specific range, such as between 0 and 1.
-  Dimensionality Reduction: Involves reducing the number of features by creating a lower-dimensional representation of the data." />
+  Dimensionality Reduction: Reducing the number of features by creating a lower-dimensional representation of the data." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://muhammadagf.github.io/posts/notes/feature-engineering/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-06-01T00:00:00&#43;00:00" />
@@ -172,44 +172,39 @@
 <p><strong>Data Cleansing</strong>: To eliminate or correct erroneous data by identifying and handling inconsistencies or outliers.</p>
 </li>
 <li>
-<p><strong>Scaling and Normalizing</strong>: Numerical features often need to be scaled or normalized to ensure the models can learn effectively. Scaling adjusts the range of features, while normalization brings them within a specific range, such as between 0 and 1.</p>
+<p><strong>Scaling and Normalizing</strong>: Numerical features often need to be scaled or normalized to ensure the models can learn effectively. <strong>Scaling adjusts the range of features, while normalization brings them within a specific range, such as between 0 and 1</strong>.</p>
 </li>
 <li>
-<p><strong>Dimensionality Reduction</strong>: Involves reducing the number of features by creating a lower-dimensional representation of the data. It helps to remove noise, improve model performance, and interpretability.</p>
+<p><strong><strong>Dimensionality Reduction</strong></strong>: Reducing the number of features by creating a lower-dimensional representation of the data. It helps to remove noise, improve model performance, and interpretability.</p>
 </li>
 <li>
-<p><strong>Feature Construction</strong>: Feature construction involves creating new features from existing ones using various techniques. For example, categorical features can be transformed into one-hot vectors, and numerical features can be mapped to floats. This process helps extract more meaningful information from the data.</p>
+<p><strong>Feature Construction</strong>: Feature construction involves creating new features from existing ones using various techniques.</p>
 </li>
 </ol>
-<p>Different types of data require specific preprocessing techniques.</p>
-<p>For text data, techniques like stemming, lemmatization, TF-IDF, n-grams, and embeddings can be used to enhance predictive quality.
-Similarly, image data can benefit from operations such as resizing, cropping, filtering, and applying photometric distortions.</p>
-<p>Preprocessing plays a crucial role in building accurate predictive models by transforming raw data into informative features.</p>
 <h2 id="feature-engineering-techniques">
   Feature Engineering Techniques
   <a class="heading-link" href="#feature-engineering-techniques">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h2>
-<p>Feature engineering involves transforming raw input data into a feature vector using various techniques. Here are some commonly used techniques:</p>
+<p>Some commonly used techniques:</p>
 <ol>
 <li>
-<p><strong>Feature Scaling</strong>: Scaling numerical features ensures they are within a similar range, making it easier for models to learn from them. Techniques like normalization and standardization are used to scale features effectively.</p>
+<p><strong>Feature Scaling</strong>: Scaling numerical features ensures they are within a similar range, making it easier for models to learn from them.</p>
 </li>
 <li>
 <p><strong>Bucketizing/Binning</strong>: Grouping numerical data into buckets or bins can convert continuous values into discrete categories. This technique is useful when encoding numerical data as categories, enabling models to learn patterns based on these groups.</p>
 </li>
 <li>
-<p><strong>Dimensionality Reduction</strong>: Techniques like Principal Component Analysis (PCA), t-SNE, and UMAP help reduce the number of features while preserving important information. Dimensionality reduction can enhance model performance and simplify data representation.</p>
+<p><strong><strong>Dimensionality Reduction</strong></strong>: Techniques like Principal Component Analysis (PCA), t-SNE, and UMAP help reduce the number of features while preserving important information.</p>
 </li>
 <li>
-<p><strong>Feature Crosses</strong>: Feature crosses involve combining multiple features to create new features. This technique allows for the encoding of non-linear relationships or the expression of the same information in fewer features. Feature crosses can be formed by multiplying numerical features or combining categorical and numerical features.</p>
+<p><strong>Feature Crosses</strong>:  Combining multiple features to create new features. This technique allows for the encoding of non-linear relationships or the expression of the same information in fewer features. Feature.</p>
 </li>
 <li>
 <p><strong>Encoding Features</strong>: Encoding features involves transforming categorical variables into numerical representations. Techniques like one-hot encoding and categorical embeddings are used to convert categorical data into a format suitable for models.</p>
 </li>
 </ol>
-<p>By applying these feature engineering techniques, raw data can be transformed into more meaningful features, improving model performance and enhancing the understanding of the underlying data patterns.</p>
 <h2 id="feature-crosses">
   Feature Crosses
   <a class="heading-link" href="#feature-crosses">
@@ -243,7 +238,6 @@ The three-way interaction term is greyed out due to the effect sparsity principl
 <li>Feature crosses can also <strong>reduce the number of features by encoding the same information in a single feature</strong>.</li>
 <li>They can be powerful in capturing interactions and improving the predictive capabilities of models.</li>
 </ul>
-<p>In addition to feature crosses, encoding features is another important aspect of feature engineering. It involves transforming categorical variables</p>
 <p>Example:</p>
 <ol>
 <li>Area = Width x Height</li>

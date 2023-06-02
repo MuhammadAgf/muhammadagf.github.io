@@ -6,22 +6,40 @@
     <description>Recent content in Tags on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>machine learning lifecycle</title>
-      <link>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <title>machine learning labeling</title>
+      <link>https://muhammadagf.github.io/tags/machine-learning-labeling/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</guid>
+      <guid>https://muhammadagf.github.io/tags/machine-learning-labeling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine-learning</title>
       <link>https://muhammadagf.github.io/tags/machine-learning/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neural-net</title>
+      <link>https://muhammadagf.github.io/tags/neural-net/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/neural-net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning lifecycle</title>
+      <link>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</guid>
       <description></description>
     </item>
     
@@ -49,15 +67,6 @@
       <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/product-management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>neural-net</title>
-      <link>https://muhammadagf.github.io/tags/neural-net/</link>
-      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://muhammadagf.github.io/tags/neural-net/</guid>
       <description></description>
     </item>
     
@@ -148,6 +157,15 @@
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/statistical-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dimensionality Reduction</title>
+      <link>https://muhammadagf.github.io/tags/dimensionality-reduction/</link>
+      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/dimensionality-reduction/</guid>
       <description></description>
     </item>
     

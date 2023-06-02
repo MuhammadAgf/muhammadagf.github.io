@@ -10,28 +10,34 @@
     
 
     <meta name="author" content="Muhammad Assagaf">
-    <meta name="description" content="Goals     Some models (such as SVM and Neural Networks) are sensitive to irrelevant features/predictors. superfluous features can sink predictive performance in some situations. Some models (such as logistic regression) are vulnerable to correlated features. removing features can reduce cost and it make scientific sense to include the minimum possible set that provides acceptable results.  Classes of Feature Selection Method    in general feature selection method can be divided by 3">
+    <meta name="description" content="Background    Machine learning is increasingly integrated into mobile, IoT, and embedded applications, with billions of devices already in use.
+Reasons for Deploying Models on Device
+ Advances in Machine Learning Research: Research enables running inference locally on low-power devices, making it feasible to incorporate machine learning as part of a device&rsquo;s core functionality. Decreasing Hardware Costs: Lower hardware costs allow for affordable devices and higher volume production, making on-device machine learning more accessible.">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Feature Selection"/>
-<meta name="twitter:description" content="Goals     Some models (such as SVM and Neural Networks) are sensitive to irrelevant features/predictors. superfluous features can sink predictive performance in some situations. Some models (such as logistic regression) are vulnerable to correlated features. removing features can reduce cost and it make scientific sense to include the minimum possible set that provides acceptable results.  Classes of Feature Selection Method    in general feature selection method can be divided by 3"/>
+<meta name="twitter:title" content="Model Resource Optimization"/>
+<meta name="twitter:description" content="Background    Machine learning is increasingly integrated into mobile, IoT, and embedded applications, with billions of devices already in use.
+Reasons for Deploying Models on Device
+ Advances in Machine Learning Research: Research enables running inference locally on low-power devices, making it feasible to incorporate machine learning as part of a device&rsquo;s core functionality. Decreasing Hardware Costs: Lower hardware costs allow for affordable devices and higher volume production, making on-device machine learning more accessible."/>
 
-    <meta property="og:title" content="Feature Selection" />
-<meta property="og:description" content="Goals     Some models (such as SVM and Neural Networks) are sensitive to irrelevant features/predictors. superfluous features can sink predictive performance in some situations. Some models (such as logistic regression) are vulnerable to correlated features. removing features can reduce cost and it make scientific sense to include the minimum possible set that provides acceptable results.  Classes of Feature Selection Method    in general feature selection method can be divided by 3" />
+    <meta property="og:title" content="Model Resource Optimization" />
+<meta property="og:description" content="Background    Machine learning is increasingly integrated into mobile, IoT, and embedded applications, with billions of devices already in use.
+Reasons for Deploying Models on Device
+ Advances in Machine Learning Research: Research enables running inference locally on low-power devices, making it feasible to incorporate machine learning as part of a device&rsquo;s core functionality. Decreasing Hardware Costs: Lower hardware costs allow for affordable devices and higher volume production, making on-device machine learning more accessible." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/feature-selection/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-12-11T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2022-12-11T00:00:00&#43;00:00" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/model-resource-optimization/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-02T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2023-06-02T00:00:00&#43;00:00" />
 
 
 
     <title>
-  Feature Selection · Muhammad
+  Model Resource Optimization · Muhammad
 </title>
 
     
-      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/feature-selection/">
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/model-resource-optimization/">
     
 
     <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -119,8 +125,8 @@
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/feature-selection/">
-              Feature Selection
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/model-resource-optimization/">
+              Model Resource Optimization
             </a>
           </h1>
         </div>
@@ -128,8 +134,8 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2022-12-11T00:00:00Z'>
-                December 11, 2022
+              <time datetime='2023-06-02T00:00:00Z'>
+                June 2, 2023
               </time>
             </span>
             <span class="reading-time">
@@ -142,15 +148,11 @@
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
+      <a href="/tags/neural-net/">neural-net</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
       <a href="/tags/machine-learning/">machine-learning</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="/tags/feature-engineering/">feature engineering</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="/tags/dimensionality-reduction/">Dimensionality Reduction</a>
     </span></div>
 
         </div>
@@ -159,84 +161,111 @@
       <div>
         
         <hr>
-<h2 id="goals">
-  Goals
-  <a class="heading-link" href="#goals">
+<h2 id="background">
+  Background
+  <a class="heading-link" href="#background">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h2>
+<p>Machine learning is increasingly integrated into mobile, IoT, and embedded applications, with billions of devices already in use.</p>
+<p>Reasons for Deploying Models on Device</p>
 <ol>
-<li>Some models (such as SVM and Neural Networks) are <strong>sensitive to irrelevant features/predictors</strong>.
-superfluous features can sink predictive performance in some situations.</li>
-<li>Some models (such as logistic regression) are <strong>vulnerable to correlated features</strong>.</li>
-<li>removing features can reduce cost and it make scientific sense to include the minimum possible set that provides acceptable results.</li>
+<li><strong>Advances in Machine Learning Research</strong>: Research enables running inference locally on low-power devices, making it feasible to incorporate machine learning as part of a device&rsquo;s core functionality.</li>
+<li><strong>Decreasing Hardware Costs</strong>: Lower hardware costs allow for affordable devices and higher volume production, making on-device machine learning more accessible.</li>
+<li><strong>Privacy Compliance</strong>: On-device machine learning ensures compliance with privacy regulations by keeping user data on the device.</li>
 </ol>
-<h2 id="classes-of-feature-selection-method">
-  Classes of Feature Selection Method
-  <a class="heading-link" href="#classes-of-feature-selection-method">
+<h2 id="techniques">
+  Techniques:
+  <a class="heading-link" href="#techniques">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h2>
-<p>in general feature selection method can be divided by 3</p>
-<style type="text/css">.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative}</style>
-<div><svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg></div><div class="notice info" >
-<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#info-notice"></use></svg></span>Info</p><p>title: Intrinsic
-feature selection naturally incorporated with the modeling process.</p>
-<p>Examples:</p>
-<ol>
-<li>Tree and rule-based models.
-search the best predictors and split point such that the outcomes are more homogeneous within each new partition.</li>
-<li>Multivariate adaptive regression spline (MARS)</li>
-<li><a href="https://muhammadagf.github.io/posts/notes/regularization/">Regularization</a> models.
-penalizes or shrinks predictor coefficient used by the model (in some cases such as with L1 regularization to absolute zero)</li>
-</ol>
-<p>Cons: model dependent</p></div>
-
-<div class="notice info" >
-<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#info-notice"></use></svg></span>Info</p><p>title: <strong>filter methods</strong>
-conduct an initial supervised analysis to the feature/predictors to determine which are important, and only provide these to the model.</p>
-<p>is a <strong><a href="https://muhammadagf.github.io/posts/notes/greedy-feature-selection/">greedy feature selection</a></strong> approach</p>
-<p>Pros: Simple and fast, effective at capturing the large trends (i.e., individual predictor-outcome relationship)</p>
-<p>Cons:</p>
-<ol>
-<li>prone to over-selecting predictor</li>
-<li>in many case some measure of statistical significance is used to judge &ldquo;importance&rdquo; and may be disconnected with the actual predictive performance</li>
-</ol></div>
-
-<div class="notice info" >
-<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#info-notice"></use></svg></span>Info</p><p>title: <strong>wrapper methods</strong>
-iterative search procedure that repeatedly supply predictor subsets to the model, and use the model performance as the guide to select which subsets to supply and evaluate next.</p>
-<p>can be <strong>greedy or <strong>global feature selection</strong> approach</strong></p>
-<p>Pros:</p>
-<p>the one that have most potential to find the global optima of subset if they exist (especially non-greedy one)</p>
-<p><strong>Cons:</strong></p>
-<p>Computationally Costly</p></div>
-
-<h3 id="recommended-approach">
-  Recommended Approach
-  <a class="heading-link" href="#recommended-approach">
+<h3 id="quantization">
+  Quantization
+  <a class="heading-link" href="#quantization">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h3>
-<div class="notice tip" >
-<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#tip-notice"></use></svg></span>Tip</p><p>start with one or more intrinsic approach and see what they yield</p></div>
+<p><img src="/images/obsidian/Pasted%20image%2020230602201617.png" alt="img">
+source: <a href="https://blog.tensorflow.org/2020/04/quantization-aware-training-with-tensorflow-model-optimization-toolkit.html">https://blog.tensorflow.org/2020/04/quantization-aware-training-with-tensorflow-model-optimization-toolkit.html</a></p>
+<style type="text/css">.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative}</style>
+<div><svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg></div><div class="notice info" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#info-notice"></use></svg></span>Info</p><ul>
+<li>It involves transforming the model into a lower precision representation, such as 8-bit integers.</li>
+<li>Quantized models are smaller in size, faster in computations, and consume less power.</li>
+</ul></div>
 
-<ul>
-<li>If non-linear intrinsic method has a good performance: proceed with a wrapper method with a non-linear model</li>
-<li>similarry if linear intrinsic method has a good performance: proceed with a wrapper methode with a linear model</li>
-</ul>
-<h2 id="effect-of-irrelevant-features">
-  Effect of Irrelevant Features
-  <a class="heading-link" href="#effect-of-irrelevant-features">
+<div class="notice warning" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#warning-notice"></use></svg></span>Warning</p><p>Introduces information loss due to the reduced number of representable values.</p></div>
+
+<h4 id="quantization-aware-training-qat">
+  Quantization Aware Training (QAT)
+  <a class="heading-link" href="#quantization-aware-training-qat">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
-</h2>
-<p>irrelevant features can have effect to a model depend on the type of the model itself</p>
-<p>below is example of aditional irrelevant/noise features vs RMSE (x axes is number of additional noise features)</p>
-<p><img src="/images/obsidian/Pasted%20image%2020221212094231.png" alt="img">
-image source: <a href="https://bookdown.org/max/FES/feature-selection-simulation.html">https://bookdown.org/max/FES/feature-selection-simulation.html</a>
-original y consist of nonlinear function from a 20 predictors
-$$y=x_1+sin(x_2)+log(|x_3|)+x_4^2+x_5x_6+I(x_7x_8x_9&lt;0)+I(x_{10}&gt;0)+x_{11}I(x_{11}&gt;0)+√(|x_{12}|)+cos(x_{13})+2x_{14}+|x_15|+I(x_{16}&lt;−1)+x_{17}I(x_{17}&lt;−1)−2x_{18}−x_{19}x_{20}+ϵ $$</p>
+</h4>
+<ul>
+<li>QAT simulates low-precision computation during the training process to make the model robust to quantization.</li>
+<li>It introduces quantization error as noise and minimizes it through optimization.</li>
+</ul>
+<h5 id="emulating-low-precision-computation">
+  Emulating Low-Precision Computation
+  <a class="heading-link" href="#emulating-low-precision-computation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h5>
+<ul>
+<li>The training graph operates in floating-point precision but emulates low-precision computation.</li>
+<li>Special operations are inserted to convert tensors between floating-point and low-precision values.</li>
+</ul>
+<h5 id="placing-quantization-emulation-operations">
+  Placing Quantization Emulation Operations
+  <a class="heading-link" href="#placing-quantization-emulation-operations">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h5>
+<p>Quantization emulation operations need to be placed in the training graph consistently with the quantized graph computation.
+<img src="/images/obsidian/Pasted%20image%2020230602202634.png" alt="img">
+source: <a href="https://blog.tensorflow.org/2020/04/quantization-aware-training-with-tensorflow-model-optimization-toolkit.html">https://blog.tensorflow.org/2020/04/quantization-aware-training-with-tensorflow-model-optimization-toolkit.html</a></p>
+<p>Example Usage:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> tensorflow_model_optimization <span style="color:#f92672">as</span> tfmot
+
+model <span style="color:#f92672">=</span> tf<span style="color:#f92672">.</span>keras<span style="color:#f92672">.</span>Sequential([<span style="color:#f92672">...</span>])
+quantized_model <span style="color:#f92672">=</span> tfmot<span style="color:#f92672">.</span>quantization<span style="color:#f92672">.</span>keras<span style="color:#f92672">.</span>quantize_model(model)
+quantized_model<span style="color:#f92672">.</span>compile(<span style="color:#f92672">...</span>)
+quantized_model<span style="color:#f92672">.</span>fit(<span style="color:#f92672">...</span>)
+</code></pre></div><h3 id="pruning">
+  Pruning
+  <a class="heading-link" href="#pruning">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<div class="notice info" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#info-notice"></use></svg></span>Info</p><p>Pruning is a method to increase model efficiency by removing unnecessary parts of the model.</p></div>
+
+<p>It reduces the number of parameters and operations involved in generating predictions.</p>
+<p><img src="/images/obsidian/Pasted%20image%2020230602203314.png" alt="img">
+source: <a href="https://community.deeplearning.ai/t/mlep-course-3-lecture-notes/54454">https://community.deeplearning.ai/t/mlep-course-3-lecture-notes/54454</a></p>
+<h5 id="pruning-techniques">
+  Pruning Techniques
+  <a class="heading-link" href="#pruning-techniques">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h5>
+<ol>
+<li>
+<p><strong>Magnitude-based Pruning</strong>: This technique removes weights with low magnitudes, assuming they contribute less to the model&rsquo;s output. The weights are pruned based on their absolute values.</p>
+</li>
+<li>
+<p><strong>Sensitivity-based Pruning</strong>: It prunes weights based on their sensitivity to changes in the loss function. The weights with the least sensitivity are pruned.</p>
+</li>
+<li>
+<p><strong>L1-norm Pruning</strong>: This method adds an L1-norm regularization term to the loss function, promoting sparsity in weights. It prunes weights with small values.</p>
+</li>
+<li>
+<p><strong>Group-wise Pruning</strong>: It prunes entire groups of weights together, instead of individual weights. This approach preserves the structural integrity of the network.</p>
+</li>
+</ol>
 <hr>
 <h1 id="references">
   References
@@ -245,7 +274,9 @@ $$y=x_1+sin(x_2)+log(|x_3|)+x_4^2+x_5x_6+I(x_7x_8x_9&lt;0)+I(x_{10}&gt;0)+x_{11}
   </a>
 </h1>
 <ol>
-<li><a href="https://bookdown.org/max/FES/selection.html">https://bookdown.org/max/FES/selection.html</a></li>
+<li><a href="https://blog.tensorflow.org/2020/04/quantization-aware-training-with-tensorflow-model-optimization-toolkit.html">https://blog.tensorflow.org/2020/04/quantization-aware-training-with-tensorflow-model-optimization-toolkit.html</a></li>
+<li><a href="http://yann.lecun.com/exdb/publis/pdf/lecun-90b.pdf">http://yann.lecun.com/exdb/publis/pdf/lecun-90b.pdf</a></li>
+<li><a href="https://pytorch.org/tutorials/intermediate/pruning_tutorial.html">https://pytorch.org/tutorials/intermediate/pruning_tutorial.html</a></li>
 </ol>
 
       </div>

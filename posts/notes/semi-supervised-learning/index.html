@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Muhammad Assagaf">
+    <meta name="description" content="Semi-supervised learning is a technique that combines a small labeled dataset with a large unlabeled dataset to improve model performance. The process involves inferring labels for the unlabeled data based on how labeled classes are structured within the feature space.
+Semi-supervised learning assumes that different label classes exhibit clustering or recognizable structure. source: https://www.altexsoft.com/blog/semi-supervised-learning/
+Key Principle    Instead of adding tags to the entire dataset, you go through and hand-label just a small part of the data and use it to train a model, which then is applied to the ocean of unlabeled data.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Semi-Supervised Learning"/>
+<meta name="twitter:description" content="Semi-supervised learning is a technique that combines a small labeled dataset with a large unlabeled dataset to improve model performance. The process involves inferring labels for the unlabeled data based on how labeled classes are structured within the feature space.
+Semi-supervised learning assumes that different label classes exhibit clustering or recognizable structure. source: https://www.altexsoft.com/blog/semi-supervised-learning/
+Key Principle    Instead of adding tags to the entire dataset, you go through and hand-label just a small part of the data and use it to train a model, which then is applied to the ocean of unlabeled data."/>
+
+    <meta property="og:title" content="Semi-Supervised Learning" />
+<meta property="og:description" content="Semi-supervised learning is a technique that combines a small labeled dataset with a large unlabeled dataset to improve model performance. The process involves inferring labels for the unlabeled data based on how labeled classes are structured within the feature space.
+Semi-supervised learning assumes that different label classes exhibit clustering or recognizable structure. source: https://www.altexsoft.com/blog/semi-supervised-learning/
+Key Principle    Instead of adding tags to the entire dataset, you go through and hand-label just a small part of the data and use it to train a model, which then is applied to the ocean of unlabeled data." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/semi-supervised-learning/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-02T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2023-06-02T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  Semi-Supervised Learning · Muhammad
+</title>
+
+    
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/semi-supervised-learning/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Muhammad
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About Me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/portofolio/">Portofolio</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/notes/">Personal notes</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/semi-supervised-learning/">
+              Semi-Supervised Learning
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2023-06-02T00:00:00Z'>
+                June 2, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/machine-learning/">machine-learning</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/machine-learning-labeling/">machine learning labeling</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <hr>
+<p>Semi-supervised learning is a technique that combines a small labeled dataset with a large unlabeled dataset to improve model performance. <strong>The process involves inferring labels for the unlabeled data based on how labeled classes are structured within the feature space.</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Semi-supervised learning assumes that different label classes exhibit clustering or recognizable structure.
+</code></pre></div><p><img src="/images/obsidian/Pasted%20image%2020230602101056.png" alt="img">
+source: <a href="https://www.altexsoft.com/blog/semi-supervised-learning/">https://www.altexsoft.com/blog/semi-supervised-learning/</a></p>
+<h3 id="key-principle">
+  Key Principle
+  <a class="heading-link" href="#key-principle">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Instead of adding tags to the entire dataset, you go through and hand-label just a small part of the data and use it to train a model, which then is applied to the ocean of unlabeled data.</p>
+<h2 id="techniques">
+  Techniques:
+  <a class="heading-link" href="#techniques">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="self-training">
+  Self-Training
+  <a class="heading-link" href="#self-training">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><img src="/images/obsidian/Pasted%20image%2020230602101514.png" alt="img">
+source: <a href="https://www.altexsoft.com/blog/semi-supervised-learning/">https://www.altexsoft.com/blog/semi-supervised-learning/</a></p>
+<ol>
+<li>Train a base model using a small amount of labeled data through supervised methods.</li>
+<li>Apply pseudo-labeling, where the partially trained model predicts labels for the unlabeled data.</li>
+<li>Select the most confident predictions above a certain threshold and add them to the labeled dataset.</li>
+<li>Create a new combined input from the labeled and pseudo-labeled data to train an improved model.</li>
+<li>Iterate this process multiple times, adding more pseudo-labels at each iteration to improve model performance.</li>
+</ol>
+<h3 id="co-training">
+  Co-Training
+  <a class="heading-link" href="#co-training">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><img src="/images/obsidian/Pasted%20image%2020230602102035.png" alt="img">
+source: <a href="https://www.altexsoft.com/blog/semi-supervised-learning/">https://www.altexsoft.com/blog/semi-supervised-learning/</a></p>
+<ol>
+<li>Train separate classifiers for each view using a small amount of labeled data.</li>
+<li>Add the larger pool of unlabeled data and generate pseudo-labels.</li>
+<li>Co-train the classifiers using the pseudo-labeled data with the highest confidence level.</li>
+<li>Update each classifier using confident pseudo-labels assigned by the other classifier.</li>
+<li>Combine the predictions from the two updated classifiers to obtain the final classification result.</li>
+<li>Iterate this process to create an additional labeled dataset from the unlabeled data.</li>
+</ol>
+<h3 id="label-propagation">
+  Label Propagation
+  <a class="heading-link" href="#label-propagation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<h4 id="graph-based-label-propagation">
+  Graph-based label propagation
+  <a class="heading-link" href="#graph-based-label-propagation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p><img src="/images/obsidian/Pasted%20image%2020230602102200.png" alt="img"></p>
+<ol>
+<li>Represent the data as a graph, with most points being unlabeled and a few carrying labeled points.</li>
+<li>Propagate the colored labels throughout the network using paths connecting each data point.</li>
+<li>Count the number of paths leading to different colored nodes to determine the label for each point.</li>
+<li>Repeat this process for every point on the graph.</li>
+</ol>
+<p>Graph-based label propagation is commonly used in personalization and recommender systems to predict customer interests based on connections between users.</p>
+<hr>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<ol>
+<li><a href="https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production/home/week/4">https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production/home/week/4</a></li>
+<li><a href="https://www.altexsoft.com/blog/semi-supervised-learning/">https://www.altexsoft.com/blog/semi-supervised-learning/</a></li>
+<li><a href="https://pages.cs.wisc.edu/~jerryzhu/pub/CMU-CALD-02-107.pdf">https://pages.cs.wisc.edu/~jerryzhu/pub/CMU-CALD-02-107.pdf</a></li>
+<li><a href="https://www.cs.cmu.edu/~avrim/Papers/cotrain.pdf">https://www.cs.cmu.edu/~avrim/Papers/cotrain.pdf</a></li>
+</ol>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>More to Come</p>
+      
+      
+        ©
+        
+        2023
+         Muhammad Assagaf 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5E9PZY0GT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K5E9PZY0GT');
+</script>
+
+  </body>
+
+</html>

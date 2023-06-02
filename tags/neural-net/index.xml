@@ -6,7 +6,18 @@
     <description>Recent content in neural-net on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/neural-net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/neural-net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Model Resource Optimization</title>
+      <link>https://muhammadagf.github.io/posts/notes/model-resource-optimization/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/model-resource-optimization/</guid>
+      <description>Background    Machine learning is increasingly integrated into mobile, IoT, and embedded applications, with billions of devices already in use.
+Reasons for Deploying Models on Device
+ Advances in Machine Learning Research: Research enables running inference locally on low-power devices, making it feasible to incorporate machine learning as part of a device&amp;rsquo;s core functionality. Decreasing Hardware Costs: Lower hardware costs allow for affordable devices and higher volume production, making on-device machine learning more accessible.</description>
+    </item>
+    
     <item>
       <title>Adam (Adaptive Moment Estimation)</title>
       <link>https://muhammadagf.github.io/posts/notes/adam/</link>

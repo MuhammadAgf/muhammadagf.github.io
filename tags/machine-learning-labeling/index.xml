@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning labeling on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/machine-learning-labeling/</link>
+    <description>Recent content in machine learning labeling on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 02 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/machine-learning-labeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Active Learning</title>
+      <link>https://muhammadagf.github.io/posts/notes/active-learning/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/active-learning/</guid>
+      <description>Active learning is a method of intelligently sampling data to select the most informative unlabeled points for labeling. It helps in scenarios with limited data budget, imbalanced datasets, and when standard sampling techniques do not improve accuracy.
+Active learning involves iteratively selecting the most uncertain data points for labeling to improve the model&amp;rsquo;s performance. Intelligent sampling techniques in active learning:     Margin sampling: Labels the most uncertain points based on their distance from the decision boundary.</description>
+    </item>
+    
+    <item>
+      <title>Semi-Supervised Learning</title>
+      <link>https://muhammadagf.github.io/posts/notes/semi-supervised-learning/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/semi-supervised-learning/</guid>
+      <description>Semi-supervised learning is a technique that combines a small labeled dataset with a large unlabeled dataset to improve model performance. The process involves inferring labels for the unlabeled data based on how labeled classes are structured within the feature space.
+Semi-supervised learning assumes that different label classes exhibit clustering or recognizable structure. source: https://www.altexsoft.com/blog/semi-supervised-learning/
+Key Principle    Instead of adding tags to the entire dataset, you go through and hand-label just a small part of the data and use it to train a model, which then is applied to the ocean of unlabeled data.</description>
+    </item>
+    
+  </channel>
+</rss>
