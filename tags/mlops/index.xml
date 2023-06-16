@@ -6,7 +6,30 @@
     <description>Recent content in mlops on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pipeline Prallelism</title>
+      <link>https://muhammadagf.github.io/posts/notes/pipeline-prallelism/</link>
+      <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/pipeline-prallelism/</guid>
+      <description>ETL Problem:    Transformations and preprocessing tasks add overhead to the training input pipeline.
+Commons ETL: source: https://community.deeplearning.ai/t/mlep-course-3-lecture-notes/54454
+Problem:
+ Input pipelines are needed to supply enough data fast enough to keep accelerators busy. Pre-processing tasks and data size can add overhead to the training input pipeline.  Improved Input Pipeline:     Parallel processing of data is essential to utilize compute, IO, and network resources effectively.</description>
+    </item>
+    
+    <item>
+      <title>Distributed Training</title>
+      <link>https://muhammadagf.github.io/posts/notes/distributed-training/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/distributed-training/</guid>
+      <description>Distributed training allows for training huge models and speeding up the training process.
+Types:    Data parallelism    Dividing data into partitions and copying the complete model to all workers. Each worker operates on a different partition, and model updates are synchronized across workers. source: https://community.deeplearning.ai/t/mlep-course-3-lecture-notes/
+  Synchronous training: (example: all-reduce architecture) Workers train on it&amp;rsquo;s current mini-batches of data, apply updates, and wait for updates from other workers before proceeding.</description>
+    </item>
+    
     <item>
       <title>Ml Deployment Patterns And Degrees Of Automation</title>
       <link>https://muhammadagf.github.io/posts/notes/ml-deployment-patterns-and-degrees-of-automation/</link>

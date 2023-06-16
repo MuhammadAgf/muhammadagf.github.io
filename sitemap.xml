@@ -3,12 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://muhammadagf.github.io/posts/</loc>
-    <lastmod>2023-06-02T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://muhammadagf.github.io/posts/notes/</loc>
-    <lastmod>2023-06-02T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>https://muhammadagf.github.io/posts/notes/knowledge-distillation/</loc>
+    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/tags/mlops/</loc>
+    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/</loc>
+    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/tags/neural-net/</loc>
+    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/posts/notes/pipeline-prallelism/</loc>
+    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/tags/</loc>
+    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://muhammadagf.github.io/posts/notes/distributed-training/</loc>
+    <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://muhammadagf.github.io/posts/notes/active-learning/</loc>
     <lastmod>2023-06-02T00:00:00+00:00</lastmod>
@@ -25,16 +46,7 @@
     <loc>https://muhammadagf.github.io/posts/notes/model-resource-optimization/</loc>
     <lastmod>2023-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://muhammadagf.github.io/</loc>
-    <lastmod>2023-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://muhammadagf.github.io/tags/neural-net/</loc>
-    <lastmod>2023-06-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://muhammadagf.github.io/posts/notes/semi-supervised-learning/</loc>
-    <lastmod>2023-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://muhammadagf.github.io/tags/</loc>
     <lastmod>2023-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://muhammadagf.github.io/posts/notes/data-distribution-changes/</loc>
@@ -68,9 +80,6 @@
     <lastmod>2023-05-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://muhammadagf.github.io/posts/notes/ml-deployment-patterns-and-degrees-of-automation/</loc>
-    <lastmod>2023-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://muhammadagf.github.io/tags/mlops/</loc>
     <lastmod>2023-05-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://muhammadagf.github.io/posts/notes/machine-learning-lifecycle/</loc>

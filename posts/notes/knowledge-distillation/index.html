@@ -10,31 +10,31 @@
     
 
     <meta name="author" content="Muhammad Assagaf">
-    <meta name="description" content="Tips for Getting Started    When starting a machine learning project, there are several tips to consider for efficient progress.
-Getting Started on Modeling     Conduct a literature search to understand existing approaches and possibilities. Focus on practical implementations instead of the latest algorithms. Open source implementations can provide a baseline and facilitate quick start. A reasonable algorithm with good data often outperforms a cutting-edge algorithm with poor data.">
+    <meta name="description" content="Idea: Duplicate the performance of a complex model (teacher) to a simpler model (student)
+Teacher and Student     The teacher model is trained first using a standard objective function to maximize its accuracy or a similar metric. The student model, on the other hand, aims to learn transferable knowledge from the teacher by matching the probability distribution of the teacher&rsquo;s predictions.  Dark Knowledge     Improve softness of the teacher&rsquo;s distribution with Softmax Temperature (T) As T grows, you get more insight about which classes the teacher finds similar to the predicted one $$p_i = \frac{exp(\frac{Z_i}{T})}{\sum_j exp(\frac{Z_j}{T})}$$  Techniques     Approach 1: Weigh objectives (Student and teacher) and combine during backprob Approach 2: Compare distributions of the predictions (student and teacher) using KL divergence   References     https://www.">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Get Started In Modelling"/>
-<meta name="twitter:description" content="Tips for Getting Started    When starting a machine learning project, there are several tips to consider for efficient progress.
-Getting Started on Modeling     Conduct a literature search to understand existing approaches and possibilities. Focus on practical implementations instead of the latest algorithms. Open source implementations can provide a baseline and facilitate quick start. A reasonable algorithm with good data often outperforms a cutting-edge algorithm with poor data."/>
+<meta name="twitter:title" content="Knowledge Distillation"/>
+<meta name="twitter:description" content="Idea: Duplicate the performance of a complex model (teacher) to a simpler model (student)
+Teacher and Student     The teacher model is trained first using a standard objective function to maximize its accuracy or a similar metric. The student model, on the other hand, aims to learn transferable knowledge from the teacher by matching the probability distribution of the teacher&rsquo;s predictions.  Dark Knowledge     Improve softness of the teacher&rsquo;s distribution with Softmax Temperature (T) As T grows, you get more insight about which classes the teacher finds similar to the predicted one $$p_i = \frac{exp(\frac{Z_i}{T})}{\sum_j exp(\frac{Z_j}{T})}$$  Techniques     Approach 1: Weigh objectives (Student and teacher) and combine during backprob Approach 2: Compare distributions of the predictions (student and teacher) using KL divergence   References     https://www."/>
 
-    <meta property="og:title" content="Get Started In Modelling" />
-<meta property="og:description" content="Tips for Getting Started    When starting a machine learning project, there are several tips to consider for efficient progress.
-Getting Started on Modeling     Conduct a literature search to understand existing approaches and possibilities. Focus on practical implementations instead of the latest algorithms. Open source implementations can provide a baseline and facilitate quick start. A reasonable algorithm with good data often outperforms a cutting-edge algorithm with poor data." />
+    <meta property="og:title" content="Knowledge Distillation" />
+<meta property="og:description" content="Idea: Duplicate the performance of a complex model (teacher) to a simpler model (student)
+Teacher and Student     The teacher model is trained first using a standard objective function to maximize its accuracy or a similar metric. The student model, on the other hand, aims to learn transferable knowledge from the teacher by matching the probability distribution of the teacher&rsquo;s predictions.  Dark Knowledge     Improve softness of the teacher&rsquo;s distribution with Softmax Temperature (T) As T grows, you get more insight about which classes the teacher finds similar to the predicted one $$p_i = \frac{exp(\frac{Z_i}{T})}{\sum_j exp(\frac{Z_j}{T})}$$  Techniques     Approach 1: Weigh objectives (Student and teacher) and combine during backprob Approach 2: Compare distributions of the predictions (student and teacher) using KL divergence   References     https://www." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/get-started-in-modelling/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-05-21T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2023-05-21T00:00:00&#43;00:00" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/knowledge-distillation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-13T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2023-06-13T00:00:00&#43;00:00" />
 
 
 
     <title>
-  Get Started In Modelling · Muhammad
+  Knowledge Distillation · Muhammad
 </title>
 
     
-      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/get-started-in-modelling/">
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/knowledge-distillation/">
     
 
     <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -122,8 +122,8 @@ Getting Started on Modeling     Conduct a literature search to understand existi
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/get-started-in-modelling/">
-              Get Started In Modelling
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/knowledge-distillation/">
+              Knowledge Distillation
             </a>
           </h1>
         </div>
@@ -131,8 +131,8 @@ Getting Started on Modeling     Conduct a literature search to understand existi
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2023-05-21T00:00:00Z'>
-                May 21, 2023
+              <time datetime='2023-06-13T00:00:00Z'>
+                June 13, 2023
               </time>
             </span>
             <span class="reading-time">
@@ -145,7 +145,7 @@ Getting Started on Modeling     Conduct a literature search to understand existi
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="/tags/machine-learning-lifecycle/">machine learning lifecycle</a>
+      <a href="/tags/neural-net/">neural-net</a>
     </span></div>
 
         </div>
@@ -154,69 +154,38 @@ Getting Started on Modeling     Conduct a literature search to understand existi
       <div>
         
         <hr>
-<h2 id="tips-for-getting-started">
-  Tips for Getting Started
-  <a class="heading-link" href="#tips-for-getting-started">
+<p><strong>Idea: Duplicate the performance of a complex model (teacher) to a simpler model (student)</strong></p>
+<h2 id="teacher-and-student">
+  Teacher and Student
+  <a class="heading-link" href="#teacher-and-student">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h2>
-<p>When starting a machine learning project, there are several tips to consider for efficient progress.</p>
-<h3 id="getting-started-on-modeling">
-  Getting Started on Modeling
-  <a class="heading-link" href="#getting-started-on-modeling">
+<ul>
+<li>The teacher model is trained first using a standard objective function to maximize its accuracy or a similar metric.</li>
+<li>The student model, on the other hand, aims to <strong>learn transferable knowledge from the teacher by matching the probability distribution of the teacher&rsquo;s predictions</strong>.</li>
+</ul>
+<h3 id="dark-knowledge">
+  Dark Knowledge
+  <a class="heading-link" href="#dark-knowledge">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h3>
 <ul>
-<li>Conduct a literature search to understand existing approaches and possibilities.</li>
-<li>Focus on practical implementations instead of the latest algorithms.</li>
-<li>Open source implementations can provide a baseline and facilitate quick start.</li>
-<li>A reasonable algorithm with good data often outperforms a cutting-edge algorithm with poor data.</li>
+<li>Improve softness of the teacher&rsquo;s distribution with <code>Softmax Temperature (T)</code></li>
+<li>As T grows, you get more insight about which classes the teacher finds similar to the predicted one
+$$p_i = \frac{exp(\frac{Z_i}{T})}{\sum_j exp(\frac{Z_j}{T})}$$</li>
 </ul>
-<h3 id="deployment-constraints">
-  Deployment Constraints
-  <a class="heading-link" href="#deployment-constraints">
+<h4 id="techniques">
+  Techniques
+  <a class="heading-link" href="#techniques">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
-</h3>
-<p>Consider deployment constraints, such as compute limitations, when confident about the project&rsquo;s success.</p>
+</h4>
 <ul>
-<li>If the project is still at an early stage, it&rsquo;s acceptable to prioritize establishing a baseline over deployment constraints.</li>
+<li>Approach 1: <strong>Weigh objectives</strong> (Student and teacher) and combine during backprob</li>
+<li>Approach 2: <strong>Compare distributions of the predictions</strong> (student and teacher) using KL divergence</li>
 </ul>
-<h3 id="sanity-checks">
-  Sanity Checks
-  <a class="heading-link" href="#sanity-checks">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h3>
-<ul>
-<li>Before running the learning algorithm on all data, perform quick sanity checks.</li>
-<li><strong>Overfit a small training dataset to ensure the algorithm is functioning correctly.</strong></li>
-<li>Test the algorithm with one or a few training examples to catch bugs early.</li>
-<li>Training on a small subset of images can reveal issues before scaling up.</li>
-</ul>
-<h3 id="error-analysis-and-performance-auditing">
-  Error Analysis and Performance Auditing
-  <a class="heading-link" href="#error-analysis-and-performance-auditing">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h3>
-<ul>
-<li>After training the initial model, conduct error analysis to identify areas for improvement.</li>
-<li>Analyze errors to understand patterns and make targeted adjustments.</li>
-<li>Carry out performance auditing to assess the model&rsquo;s overall performance before deployment.</li>
-</ul>
-<h2 id="handling-large-model-and-data">
-  Handling Large Model and Data
-  <a class="heading-link" href="#handling-large-model-and-data">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h2>
-<ol>
-<li><strong>Distributed Training</strong></li>
-<li><strong>Pipeline Prallelism</strong></li>
-<li><strong>Knowledge Distillation</strong></li>
-</ol>
 <hr>
 <h1 id="references">
   References
@@ -225,8 +194,8 @@ Getting Started on Modeling     Conduct a literature search to understand existi
   </a>
 </h1>
 <ol>
-<li><a href="https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/2">https://www.coursera.org/learn/introduction-to-machine-learning-in-production/home/week/2</a></li>
-<li><a href="https://community.deeplearning.ai/t/mlep-course-1-lecture-notes/54446">https://community.deeplearning.ai/t/mlep-course-1-lecture-notes/54446</a> (need login)</li>
+<li><a href="https://www.ttic.edu/dl/dark14.pdf">https://www.ttic.edu/dl/dark14.pdf</a></li>
+<li><a href="https://youtu.be/asZoedN31VE">https://youtu.be/asZoedN31VE</a></li>
 </ol>
 
       </div>
