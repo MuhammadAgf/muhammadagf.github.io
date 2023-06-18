@@ -6,13 +6,31 @@
     <description>Recent content in Tags on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML Model Deployment</title>
+      <link>https://muhammadagf.github.io/tags/ml-model-deployment/</link>
+      <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/ml-model-deployment/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>mlops</title>
       <link>https://muhammadagf.github.io/tags/mlops/</link>
-      <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/mlops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning lifecycle</title>
+      <link>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</guid>
       <description></description>
     </item>
     
@@ -40,15 +58,6 @@
       <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine learning lifecycle</title>
-      <link>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</guid>
       <description></description>
     </item>
     
@@ -161,7 +170,7 @@
     </item>
     
     <item>
-      <title>Dimensionality Reduction</title>
+      <title>dimensionality Reduction</title>
       <link>https://muhammadagf.github.io/tags/dimensionality-reduction/</link>
       <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
       

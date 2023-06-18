@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML Model Deployment on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/ml-model-deployment/</link>
+    <description>Recent content in ML Model Deployment on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/ml-model-deployment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ml Model Serving</title>
+      <link>https://muhammadagf.github.io/posts/notes/ml-model-serving/</link>
+      <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/ml-model-serving/</guid>
+      <description>Infrastructure for Model Serving    two main options for infrastructure:
+  On-Premises: In this approach, you have all the hardware and software required for running your models on your own premises.
+ pros: provides you with complete control and flexibility to adapt to changes quickly. cons: it can be complicated and expensive to procure, install, configure, and maintain the hardware infrastructure.    Cloud Provider: Alternatively, you can outsource your infrastructure needs to a cloud provider like Amazon Web Services, Google Cloud Platform, or Microsoft Azure.</description>
+    </item>
+    
+  </channel>
+</rss>

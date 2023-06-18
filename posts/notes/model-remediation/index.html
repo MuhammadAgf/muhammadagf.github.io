@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Muhammad Assagaf">
+    <meta name="description" content="ways to improve model robustness:
+Data Augmentation    data augmentation can help generalize the model and reduce sensitivity and useful for correcting unbalanced data.
+ Ensure training data accurately represents the requests your model will receive. Generate data through techniques like generative or interpretive methods, or by adding noise..  Explainable AI (XAI)     Understand the inner workings of your model to improve robustness. Tools and techniques are available to enhance model interpretability.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Model Remediation"/>
+<meta name="twitter:description" content="ways to improve model robustness:
+Data Augmentation    data augmentation can help generalize the model and reduce sensitivity and useful for correcting unbalanced data.
+ Ensure training data accurately represents the requests your model will receive. Generate data through techniques like generative or interpretive methods, or by adding noise..  Explainable AI (XAI)     Understand the inner workings of your model to improve robustness. Tools and techniques are available to enhance model interpretability."/>
+
+    <meta property="og:title" content="Model Remediation" />
+<meta property="og:description" content="ways to improve model robustness:
+Data Augmentation    data augmentation can help generalize the model and reduce sensitivity and useful for correcting unbalanced data.
+ Ensure training data accurately represents the requests your model will receive. Generate data through techniques like generative or interpretive methods, or by adding noise..  Explainable AI (XAI)     Understand the inner workings of your model to improve robustness. Tools and techniques are available to enhance model interpretability." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/model-remediation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-17T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2023-06-17T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  Model Remediation · Muhammad
+</title>
+
+    
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/model-remediation/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Muhammad
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About Me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/portofolio/">Portofolio</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/notes/">Personal notes</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/model-remediation/">
+              Model Remediation
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2023-06-17T00:00:00Z'>
+                June 17, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/machine-learning-lifecycle/">machine learning lifecycle</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <hr>
+<p>ways to improve model robustness:</p>
+<h4 id="data-augmentation">
+  Data Augmentation
+  <a class="heading-link" href="#data-augmentation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p><a href="https://muhammadagf.github.io/posts/notes/data-augmentation/">data augmentation</a> can help generalize the model and reduce sensitivity and useful for correcting unbalanced data.</p>
+<ul>
+<li>Ensure training data accurately represents the requests your model will receive.</li>
+<li>Generate data through techniques like generative or interpretive methods, or by adding noise..</li>
+</ul>
+<h3 id="explainable-ai-xai">
+  Explainable AI (XAI)
+  <a class="heading-link" href="#explainable-ai-xai">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Understand the inner workings of your model to improve robustness.</li>
+<li>Tools and techniques are available to enhance model interpretability.</li>
+</ul>
+<h3 id="model-editing">
+  Model Editing
+  <a class="heading-link" href="#model-editing">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Edit models manually to improve performance and robustness.</li>
+<li>Tweak the learned parameters to correct issues and enhance performance.</li>
+</ul>
+<h3 id="model-assertions">
+  Model Assertions
+  <a class="heading-link" href="#model-assertions">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Apply business rules or sanity checks to model results before delivering them.</li>
+<li>Use model assertions to alter or bypass results based on predefined rules.</li>
+<li>Ensure predictions align with domain-specific constraints (for example age can&rsquo;t be less than 0).</li>
+</ul>
+<h2 id="reducing-model-bias">
+  Reducing Model Bias
+  <a class="heading-link" href="#reducing-model-bias">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="diverse-data-set">
+  Diverse Data Set
+  <a class="heading-link" href="#diverse-data-set">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Use a diverse and representative data set that reflects the user population.</li>
+<li>Include individuals with diverse backgrounds and expertise in ethics and related disciplines in the development team.</li>
+</ul>
+<h3 id="careful-feature-selection">
+  Careful Feature Selection
+  <a class="heading-link" href="#careful-feature-selection">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Employ <a href="https://muhammadagf.github.io/posts/notes/feature-selection/">feature selection</a> techniques such as sampling and reweighting to minimize discrimination in training data.</li>
+<li>Consider fairness metrics when selecting hyperparameters and decision cutoff thresholds.</li>
+</ul>
+<h3 id="fairness-metrics-and-tools">
+  Fairness Metrics and Tools
+  <a class="heading-link" href="#fairness-metrics-and-tools">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Utilize fairness indicators and fairness metric evaluation tools.</li>
+<li>Train fair models directly using techniques like learning fair representations (LFR) and adversarial debiasing such as <a href="https://aif360.readthedocs.io/en/stable/modules/generated/aif360.sklearn.inprocessing.AdversarialDebiasing.html">aif360</a>.</li>
+<li>Employ dual objective functions that balance accuracy and fairness metrics.</li>
+<li>Use rejection option classification tools to reduce unwanted bias.</li>
+</ul>
+<h2 id="model-monitoring-and-debugging">
+  Model Monitoring and Debugging
+  <a class="heading-link" href="#model-monitoring-and-debugging">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="continuous-monitoring">
+  Continuous Monitoring
+  <a class="heading-link" href="#continuous-monitoring">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Constantly monitor model accuracy, fairness, and security characteristics.</li>
+<li>Models need regular checks for accuracy, fairness, and security issues as data and circumstances change.</li>
+<li>Implement monitoring into your process to ensure ongoing model performance evaluation.</li>
+</ul>
+<h3 id="anomaly-detection">
+  Anomaly Detection
+  <a class="heading-link" href="#anomaly-detection">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Employ techniques such as data integrity constraints, statistical process control, and anomaly detection through autoencoders and isolation forests.</li>
+<li>Compare model predictions to benchmark model predictions to identify anomalies.</li>
+</ul>
+<hr>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<ol>
+<li><a href="https://community.deeplearning.ai/t/mlep-course-3-lecture-notes/54454">https://community.deeplearning.ai/t/mlep-course-3-lecture-notes/54454</a></li>
+</ol>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>More to Come</p>
+      
+      
+        ©
+        
+        2023
+         Muhammad Assagaf 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5E9PZY0GT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K5E9PZY0GT');
+</script>
+
+  </body>
+
+</html>

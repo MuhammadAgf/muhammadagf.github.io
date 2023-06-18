@@ -6,7 +6,52 @@
     <description>Recent content on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ml Model Serving</title>
+      <link>https://muhammadagf.github.io/posts/notes/ml-model-serving/</link>
+      <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/ml-model-serving/</guid>
+      <description>Infrastructure for Model Serving    two main options for infrastructure:
+  On-Premises: In this approach, you have all the hardware and software required for running your models on your own premises.
+ pros: provides you with complete control and flexibility to adapt to changes quickly. cons: it can be complicated and expensive to procure, install, configure, and maintain the hardware infrastructure.    Cloud Provider: Alternatively, you can outsource your infrastructure needs to a cloud provider like Amazon Web Services, Google Cloud Platform, or Microsoft Azure.</description>
+    </item>
+    
+    <item>
+      <title>Model Debugging</title>
+      <link>https://muhammadagf.github.io/posts/notes/model-debugging/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/model-debugging/</guid>
+      <description>Model performance analysis goes beyond simple metrics and focuses on model robustness. Model debugging is a discipline that aims to improve model robustness. .notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative} Tip
+Robustness refers to the consistency of a model&amp;rsquo;s accuracy when features change.
+ Objectives of model debugging include: improving model transparency, reducing discrimination, addressing vulnerabilities, and managing performance decay.</description>
+    </item>
+    
+    <item>
+      <title>Model Remediation</title>
+      <link>https://muhammadagf.github.io/posts/notes/model-remediation/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/model-remediation/</guid>
+      <description>ways to improve model robustness:
+Data Augmentation    data augmentation can help generalize the model and reduce sensitivity and useful for correcting unbalanced data.
+ Ensure training data accurately represents the requests your model will receive. Generate data through techniques like generative or interpretive methods, or by adding noise..  Explainable AI (XAI)     Understand the inner workings of your model to improve robustness. Tools and techniques are available to enhance model interpretability.</description>
+    </item>
+    
+    <item>
+      <title>Sensitivity Analysis</title>
+      <link>https://muhammadagf.github.io/posts/notes/sensitivity-analysis/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/sensitivity-analysis/</guid>
+      <description>Sensitivity analysis helps understand a model&amp;rsquo;s behavior by examining the impact of each feature on predictions.
+It involves changing a single feature while keeping others constant and observing the resulting model outputs. The magnitude of change in predictions indicates the feature&amp;rsquo;s influence.
+Techniques for sensitivity analysis include:
+ Random attacks: Generating random input data to test model outputs and uncover unexpected bugs. Partial dependence plots: Show marginal effect of 1 or 2 feature and it&amp;rsquo;s effect to the result of the model  PDPbox and PyCEbox are open-source packages for creating partial dependence plots.</description>
+    </item>
+    
     <item>
       <title>Knowledge Distillation</title>
       <link>https://muhammadagf.github.io/posts/notes/knowledge-distillation/</link>
@@ -100,7 +145,7 @@ Key Principle    Instead of adding tags to the entire dataset, you go through an
       <guid>https://muhammadagf.github.io/posts/notes/feature-engineering/</guid>
       <description>Preprocessing      Data Cleansing: To eliminate or correct erroneous data by identifying and handling inconsistencies or outliers.
   Scaling and Normalizing: Numerical features often need to be scaled or normalized to ensure the models can learn effectively. Scaling adjusts the range of features, while normalization brings them within a specific range, such as between 0 and 1.
-  Dimensionality Reduction: Reducing the number of features by creating a lower-dimensional representation of the data.</description>
+  dimensionality Reduction: Reducing the number of features by creating a lower-dimensional representation of the data.</description>
     </item>
     
     <item>
@@ -193,9 +238,9 @@ Automating or assisting existing tasks:    If a task previously performed by hum
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/posts/notes/ml-model-deployment/</guid>
-      <description>ML/Statistical Issue:    Given a data X, model F and output y, we have a data distribution changes Issue called: Concept drift and Data drift.
+      <description>Issues:    ML/Statistical Issue:    Given a data X, model F and output y, we have a data distribution changes Issue called: Concept drift and Data drift.
 Concept Drift    refer to when desired mapping from X to y changes. for example due to inflation, same size of the house can be priced higher.
-Data Drift    refer to when the input distribution (X) changes. for example when most people suddenly build a smaller house.</description>
+Data Drift    refer to when the input distribution (X) changes.</description>
     </item>
     
     <item>

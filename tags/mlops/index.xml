@@ -6,7 +6,18 @@
     <description>Recent content in mlops on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ml Model Serving</title>
+      <link>https://muhammadagf.github.io/posts/notes/ml-model-serving/</link>
+      <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/ml-model-serving/</guid>
+      <description>Infrastructure for Model Serving    two main options for infrastructure:
+  On-Premises: In this approach, you have all the hardware and software required for running your models on your own premises.
+ pros: provides you with complete control and flexibility to adapt to changes quickly. cons: it can be complicated and expensive to procure, install, configure, and maintain the hardware infrastructure.    Cloud Provider: Alternatively, you can outsource your infrastructure needs to a cloud provider like Amazon Web Services, Google Cloud Platform, or Microsoft Azure.</description>
+    </item>
+    
     <item>
       <title>Pipeline Prallelism</title>
       <link>https://muhammadagf.github.io/posts/notes/pipeline-prallelism/</link>
@@ -57,9 +68,9 @@ Automating or assisting existing tasks:    If a task previously performed by hum
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/posts/notes/ml-model-deployment/</guid>
-      <description>ML/Statistical Issue:    Given a data X, model F and output y, we have a data distribution changes Issue called: Concept drift and Data drift.
+      <description>Issues:    ML/Statistical Issue:    Given a data X, model F and output y, we have a data distribution changes Issue called: Concept drift and Data drift.
 Concept Drift    refer to when desired mapping from X to y changes. for example due to inflation, same size of the house can be priced higher.
-Data Drift    refer to when the input distribution (X) changes. for example when most people suddenly build a smaller house.</description>
+Data Drift    refer to when the input distribution (X) changes.</description>
     </item>
     
   </channel>

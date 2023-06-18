@@ -58,7 +58,7 @@ Key Principle    Instead of adding tags to the entire dataset, you go through an
       <guid>https://muhammadagf.github.io/posts/notes/feature-engineering/</guid>
       <description>Preprocessing      Data Cleansing: To eliminate or correct erroneous data by identifying and handling inconsistencies or outliers.
   Scaling and Normalizing: Numerical features often need to be scaled or normalized to ensure the models can learn effectively. Scaling adjusts the range of features, while normalization brings them within a specific range, such as between 0 and 1.
-  Dimensionality Reduction: Reducing the number of features by creating a lower-dimensional representation of the data.</description>
+  dimensionality Reduction: Reducing the number of features by creating a lower-dimensional representation of the data.</description>
     </item>
     
     <item>
