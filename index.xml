@@ -6,7 +6,41 @@
     <description>Recent content on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ml Batch Processing</title>
+      <link>https://muhammadagf.github.io/posts/notes/ml-batch-inference/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/ml-batch-inference/</guid>
+      <description>source: Feature Stores for ML, 2021
+Batch Inference and ETL Pipelines    Batch inference involves using machine learning models to generate predictions for a large number of data points in a batch or scheduled manner, without the need for real-time information.
+Batch Inference    Batch inference is used when predictions are not required immediately and can be generated on a recurring schedule, such as daily or weekly.</description>
+    </item>
+    
+    <item>
+      <title>Ml Experiment Tracking</title>
+      <link>https://muhammadagf.github.io/posts/notes/ml-experiment-tracking/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/ml-experiment-tracking/</guid>
+      <description>Experiment tracking is the process of managing all the different experiments and their components, such as parameters, metrics, models and other artifacts.
+Running experiments without proper tools can easily result in a disorganized and unmanageable workflow, even for simple projects. As a data scientist, it is essential to choose the right experiment tracking tool that best fits your needs and workflow.
+Why Tracking an experiment:     Small changes in models and data can significantly impact performance and resource requirements, emphasizing the importance of tracking even minor changes.</description>
+    </item>
+    
+    <item>
+      <title>Mlops</title>
+      <link>https://muhammadagf.github.io/posts/notes/mlops/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/mlops/</guid>
+      <description>Introduction to MLOps    MLOps, or Machine Learning Operations, refers to the practices and processes involved in managing and deploying machine learning models in production. It combines the principles of software engineering and DevOps with the unique challenges presented by machine learning systems.
+source: https://neptune.ai/blog/mlops
+Challenges in ML Engineering    There are several challenges in ML engineering that drive the need for MLOps:
+  Slow Deployment: Deploying ML models to production can take days, weeks or even months.</description>
+    </item>
+    
     <item>
       <title>Ml Model Serving</title>
       <link>https://muhammadagf.github.io/posts/notes/ml-model-serving/</link>
@@ -227,7 +261,8 @@ Automating or assisting existing tasks:    If a task previously performed by hum
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/posts/notes/machine-learning-lifecycle/</guid>
-      <description>Scoping:
+      <description>Check: MLOps (mlops) as well.
+  Scoping:
  Define the project. Decide on key metrics. Estimate resources, and timeline.    Data:
  Define data.  establish a baselines, and address data labeling inconsistencies. obtaining data.   Standardize data labeling conventions.  Advanced Labeling Technique:  Semi-supervised Learning Active Learning Weak Supervision        Modeling: To get started in modelling there are 3 key input: Code (algorithm/model), Hyperparameter, Data.</description>
     </item>

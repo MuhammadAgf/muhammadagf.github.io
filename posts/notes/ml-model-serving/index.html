@@ -161,6 +161,7 @@
       <div>
         
         <hr>
+<p><img src="/images/obsidian/MLOPs%20Arch-Page-2.drawio.png" alt="img"></p>
 <h3 id="infrastructure-for-model-serving">
   Infrastructure for Model Serving
   <a class="heading-link" href="#infrastructure-for-model-serving">
@@ -225,24 +226,9 @@
 <p><strong>Model Compilation</strong>: If the target hardware is known, perform model compilation to create a model artifact and execution runtime optimized for that hardware. This can reduce memory consumption and latency.</p>
 </li>
 <li>
-<p><strong>Application Layer</strong>: Optimize the application layer by caching frequently accessed data (<strong>feature store</strong>) or precomputing certain predictions. For example, popular product recommendations can be stored in faster data storage to minimize database hits.</p>
+<p><strong>Application Layer</strong>: Optimize the application layer by caching frequently accessed data (<strong>feature store</strong>) or precomputing certain predictions. For example, popular product recommendations can be stored in faster data storage (key-value store) to minimize database hits.</p>
 </li>
 </ol>
-<h3 id="data-preprocessing-and-postprocessing">
-  Data Preprocessing and Postprocessing
-  <a class="heading-link" href="#data-preprocessing-and-postprocessing">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h3>
-<p>Consider optimizing the data passed into and out of the model:</p>
-<ul>
-<li>
-<p><strong>Preprocessing</strong>: Prepare the input data for the model by transforming, normalizing, or encoding it appropriately. This ensures that the model receives the data in the required format.</p>
-</li>
-<li>
-<p><strong>Postprocessing</strong>: Process the model&rsquo;s output to generate the final prediction. This may involve decoding, filtering, or formatting the results before sending them back to the client.</p>
-</li>
-</ul>
 <hr>
 <h1 id="references">
   References

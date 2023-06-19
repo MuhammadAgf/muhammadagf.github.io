@@ -6,7 +6,18 @@
     <description>Recent content in ML Model Deployment on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/ml-model-deployment/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/ml-model-deployment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ml Batch Processing</title>
+      <link>https://muhammadagf.github.io/posts/notes/ml-batch-inference/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/ml-batch-inference/</guid>
+      <description>source: Feature Stores for ML, 2021
+Batch Inference and ETL Pipelines    Batch inference involves using machine learning models to generate predictions for a large number of data points in a batch or scheduled manner, without the need for real-time information.
+Batch Inference    Batch inference is used when predictions are not required immediately and can be generated on a recurring schedule, such as daily or weekly.</description>
+    </item>
+    
     <item>
       <title>Ml Model Serving</title>
       <link>https://muhammadagf.github.io/posts/notes/ml-model-serving/</link>
