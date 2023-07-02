@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>neural-net</title>
+      <link>https://muhammadagf.github.io/tags/neural-net/</link>
+      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/tags/neural-net/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>machine learning lifecycle</title>
       <link>https://muhammadagf.github.io/tags/machine-learning-lifecycle/</link>
@@ -31,15 +40,6 @@
       <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/tags/mlops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>neural-net</title>
-      <link>https://muhammadagf.github.io/tags/neural-net/</link>
-      <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://muhammadagf.github.io/tags/neural-net/</guid>
       <description></description>
     </item>
     

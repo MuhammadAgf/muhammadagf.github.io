@@ -6,7 +6,17 @@
     <description>Recent content on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bakcpropagation</title>
+      <link>https://muhammadagf.github.io/posts/notes/bakcpropagation/</link>
+      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/bakcpropagation/</guid>
+      <description>Wikipedia: Backpropagation computes the gradient of a loss function with respect to the weights of the network for a single input–output example. Recursive application of chain-rule along the computational graph to compute the gradients for all input and parameters.
+Computational Graph    A computational graph is defined as a directed graph where the nodes correspond to mathematical operations. Computational graphs are a way of expressing and evaluating a mathematical expression.</description>
+    </item>
+    
     <item>
       <title>Ml Batch Processing</title>
       <link>https://muhammadagf.github.io/posts/notes/ml-batch-inference/</link>
@@ -526,7 +536,7 @@ model fitting    MLE    the negative log-likelihood for logistic regression is g
       <description>add penalty to the loss function and reduce the value of weight. (introduce bias) $$ Regularized loss = loss + penalty $$ example:
 L1 Regularization    or called Lasso add “absolute value of magnitude” coefficient as a penalty term to the loss function (minimize sum of of coefficients/weights)
 $$ penalty = \lambda ||w|| = \lambda \sum_{j=1}^M |w|$$
-pros:     robust to outliers works best when your model contains a lot of useless features (built-in feature selection) preferred when having a high number of features as it&amp;rsquo;s provide sparse solution  cons:     if there is a high group of higly correlated variables, L1 tend to select 1 variable from the group and ignore the others  L2 Regularization    or called Ridge add “squared magnitude” coefficient as a penalty term to the loss function (minimize sum of square of coefficients/weights)</description>
+pros:     robust to outliers works best when your model contains a lot of useless features (built-in feature selection) preferred when having a high number of features as it&amp;rsquo;s provide sparse solution  cons:     if there is a high group of highly correlated variables, L1 tend to select 1 variable from the group and ignore the others  L2 Regularization    or called Ridge add “squared magnitude” coefficient as a penalty term to the loss function (minimize sum of square of coefficients/weights)</description>
     </item>
     
   </channel>

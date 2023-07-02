@@ -6,7 +6,17 @@
     <description>Recent content in neural-net on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/neural-net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/neural-net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bakcpropagation</title>
+      <link>https://muhammadagf.github.io/posts/notes/bakcpropagation/</link>
+      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/bakcpropagation/</guid>
+      <description>Wikipedia: Backpropagation computes the gradient of a loss function with respect to the weights of the network for a single input–output example. Recursive application of chain-rule along the computational graph to compute the gradients for all input and parameters.
+Computational Graph    A computational graph is defined as a directed graph where the nodes correspond to mathematical operations. Computational graphs are a way of expressing and evaluating a mathematical expression.</description>
+    </item>
+    
     <item>
       <title>Knowledge Distillation</title>
       <link>https://muhammadagf.github.io/posts/notes/knowledge-distillation/</link>

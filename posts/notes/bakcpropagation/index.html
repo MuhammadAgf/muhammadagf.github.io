@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Muhammad Assagaf">
+    <meta name="description" content="Wikipedia: Backpropagation computes the gradient of a loss function with respect to the weights of the network for a single input–output example. Recursive application of chain-rule along the computational graph to compute the gradients for all input and parameters.
+Computational Graph    A computational graph is defined as a directed graph where the nodes correspond to mathematical operations. Computational graphs are a way of expressing and evaluating a mathematical expression.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bakcpropagation"/>
+<meta name="twitter:description" content="Wikipedia: Backpropagation computes the gradient of a loss function with respect to the weights of the network for a single input–output example. Recursive application of chain-rule along the computational graph to compute the gradients for all input and parameters.
+Computational Graph    A computational graph is defined as a directed graph where the nodes correspond to mathematical operations. Computational graphs are a way of expressing and evaluating a mathematical expression."/>
+
+    <meta property="og:title" content="Bakcpropagation" />
+<meta property="og:description" content="Wikipedia: Backpropagation computes the gradient of a loss function with respect to the weights of the network for a single input–output example. Recursive application of chain-rule along the computational graph to compute the gradients for all input and parameters.
+Computational Graph    A computational graph is defined as a directed graph where the nodes correspond to mathematical operations. Computational graphs are a way of expressing and evaluating a mathematical expression." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/bakcpropagation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-21T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2023-06-21T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  Bakcpropagation · Muhammad
+</title>
+
+    
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/bakcpropagation/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Muhammad
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About Me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/portofolio/">Portofolio</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/notes/">Personal notes</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/bakcpropagation/">
+              Bakcpropagation
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2023-06-21T00:00:00Z'>
+                June 21, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/neural-net/">neural-net</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <hr>
+<p>Wikipedia: Backpropagation computes the <a href="https://en.wikipedia.org/wiki/Gradient" title="Gradient">gradient</a> of a <a href="https://en.wikipedia.org/wiki/Loss_function" title="Loss function">loss function</a> with respect to the <a href="https://en.wikipedia.org/wiki/Glossary_of_graph_theory_terms#weight" title="Glossary of graph theory terms">weights</a> of the network for a single input–output example.
+Recursive application of chain-rule along the computational graph to compute the gradients for all input and parameters.</p>
+<h3 id="computational-graph">
+  Computational Graph
+  <a class="heading-link" href="#computational-graph">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>A computational graph is defined as a directed graph where the nodes correspond to mathematical operations. Computational graphs are a way of expressing and evaluating a mathematical expression.
+<img src="/images/obsidian/Pasted%20image%2020230621161524.png" alt="img">
+source: <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture4.pdf">http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture4.pdf</a></p>
+<h3 id="compute-the-gradient">
+  Compute the Gradient
+  <a class="heading-link" href="#compute-the-gradient">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ol>
+<li><strong>Numerical gradient</strong> (use limit rule)
+<ol>
+<li>easy but approximate and slow</li>
+</ol>
+</li>
+<li><strong>Analytic gradient</strong> (manually compute the derivative of a function)
+<ol>
+<li>fast and exact, error-prone (because we might make mistake when computing the gradient manually)
+in practice: write the analytic gradient and validate it using numerical gradient</li>
+</ol>
+</li>
+</ol>
+<h3 id="backpropagation-in-detail">
+  Backpropagation in detail
+  <a class="heading-link" href="#backpropagation-in-detail">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><img src="/images/obsidian/Pasted%20image%2020230621161740.png" alt="img">
+source: <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture4.pdf">http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture4.pdf</a></p>
+<p>for each node:</p>
+<ul>
+<li>we start from the end all the way to the beginning and then when we reach each node:
+<ul>
+<li>we have the <strong>&ldquo;upstream gradient&rdquo;</strong> coming back with respect to the immediate output node (in the image above we have the gradient of $L$ in respect of $z$ aka $\delta L/\delta z$)</li>
+<li>we want to find the gradient in respect just before the node (in the example above in respect of $x$ and $y$ or $\delta L/\delta x$ and $\delta L/\delta y$)</li>
+<li>to do that first we calculate the &ldquo;local gradient&rdquo; of x in respect to z and y in respect to z</li>
+<li>then we multiply the upstream gradient with the local gradient to get the gradient of x and y in respect to L using the chain rule
+<ul>
+<li>$\delta L/\delta x = \delta L/\delta z \ * \delta z/\delta x$</li>
+<li>$\delta L/\delta y = \delta L/\delta z \ * \delta z/\delta y$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>in practice: the implementations maintain a graph structure, where all the nodes implement <code>forward()</code> and <code>backward()</code> API for forward propagation and the backward propagation</p>
+<hr>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Backpropagation">https://en.wikipedia.org/wiki/Backpropagation</a></li>
+<li><a href="https://cs231n.github.io/optimization-2/">https://cs231n.github.io/optimization-2/</a></li>
+</ol>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>More to Come</p>
+      
+      
+        ©
+        
+        2023
+         Muhammad Assagaf 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5E9PZY0GT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K5E9PZY0GT');
+</script>
+
+  </body>
+
+</html>
