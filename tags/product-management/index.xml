@@ -6,16 +6,27 @@
     <description>Recent content in product-management on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/product-management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/product-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Investigating Metrics In A Product</title>
+      <link>https://muhammadagf.github.io/posts/notes/investigating-metrics-in-a-product/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/investigating-metrics-in-a-product/</guid>
+      <description>To investigate Why is the metric for a feature X dropping by Y%
+Introduction    It&amp;rsquo;s crucial to investigate and understand why certain metrics in a product are dropping. This guide will provide you with a step-by-step framework to approach such investigations and help you uncover the reasons behind the metric decline.
+Step 1: Clarify    To begin the investigation, you need to clarify certain aspects related to the dropping metric:</description>
+    </item>
+    
     <item>
       <title>Measuring Success In A Product</title>
       <link>https://muhammadagf.github.io/posts/notes/measuring-success-in-a-product/</link>
       <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/posts/notes/measuring-success-in-a-product/</guid>
-      <description>GAME Framework    1. Understand the Goal (Goals).    Start by making sure you understand the product properly and agree with your stakeholder on specific user and business objectives.
-A. User Goal
- How will our users benefit from the product? What problems do our users want the product to solve for them? How will our users interact with the product? How will our users feel when they use the product?</description>
+      <description>Measuring the success of a product or its features is a crucial aspect of working on a product. It involves understanding the goals, setting clear success metrics, evaluating actions and metrics, and correlating them with user and business success.
+Starting Strategy    To measure the success of a product or its features, we can utilize the following framework:
+ Clarify and Ask Questions: Begin by seeking clarity on the goals and objectives of the product.</description>
     </item>
     
   </channel>
