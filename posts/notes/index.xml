@@ -6,7 +6,39 @@
     <description>Recent content on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ab-Testing</title>
+      <link>https://muhammadagf.github.io/posts/notes/ab-testing/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/ab-testing/</guid>
+      <description>Designing an A/B Testing    Selecting Metrics for the Experiment    .notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative} Tip
+Experiment Metrics Criteria:
+ Measurable within the experiment period. Attributable to the change of the experiment variants. Sensitive enough to detect change that matter in timely fashion  Focus on Driver metrics and Guardrail metrics not the Goal metrics</description>
+    </item>
+    
+    <item>
+      <title>Product-Analyst</title>
+      <link>https://muhammadagf.github.io/posts/notes/product-analyst/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/product-analyst/</guid>
+      <description>As a Product Analyst, your primary goal is to understand how people use our product, so we can improve their experience and drive positive business outcomes.
+Definition    A way to tell story about how people are using your product so that you can understand how to improve their experience and positively impact your business metrics.
+on a pirate funnel (AAARRR aka Awareness, Acquisition, Activation, Retention, Revenue, Referral) Product analytics will help you develop a detailed understanding of how users behave when they first access your product.</description>
+    </item>
+    
+    <item>
+      <title>Measuring Product Improvement</title>
+      <link>https://muhammadagf.github.io/posts/notes/measuring-product-improvement/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/measuring-product-improvement/</guid>
+      <description>Before launching a feature, it is crucial to analyze existing data to make informed decisions about what to build. This process often leads to questions about the potential impact of adding, changing, or improving a feature.
+Understanding Feature Change    To evaluate a feature change, it is essential to understand why someone proposed the feature and what goals it aims to achieve (similar to measuring success in a product.</description>
+    </item>
+    
     <item>
       <title>Investigating Metrics In A Product</title>
       <link>https://muhammadagf.github.io/posts/notes/investigating-metrics-in-a-product/</link>
