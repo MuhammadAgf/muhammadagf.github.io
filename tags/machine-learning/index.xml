@@ -112,7 +112,7 @@ Pros:
       <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/posts/notes/gradient-boosting/</guid>
-      <description>Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]_{F(x) = F_{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.</description>
+      <description>Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]{F(x) = F{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.</description>
     </item>
     
     <item>
@@ -166,7 +166,7 @@ Categorical Feature     when the target is categorical the relationship between 
       <description>.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative} Note
 MSE = bias$^2$ + variance
  image source: https://www.codingninjas.com/codestudio/library/bias-variance-tradeoff
-Bias (Underfitting)    $$Bias[Y_{pred}|Y_{true}] = E[Y_{pred}] - Y_{true}$$ the **bias** error is an error from incorrect assumption in the learning algorithm. high bias can cause an algorithm to miss the relevant relations between features and target output (**underfitting**) (systematic off-the mark)</description>
+Bias (Underfitting)    $$Bias[Y_{pred}|Y_{true}] = E[Y_{pred}] - Y_{true}$$ the bias error is an error from incorrect assumption in the learning algorithm. high bias can cause an algorithm to miss the relevant relations between features and target output (underfitting) (systematic off-the mark)</description>
     </item>
     
     <item>
@@ -187,7 +187,7 @@ Bias (Underfitting)    $$Bias[Y_{pred}|Y_{true}] = E[Y_{pred}] - Y_{true}$$ the 
       <guid>https://muhammadagf.github.io/posts/notes/logistic-regression/</guid>
       <description>statistical model that models the probability of an event taking place by having the log-odds of an event be a linear combination of one or more independent variables. since logistic regression fit a model in the form $p(y|x)$ directly, it&amp;rsquo;s called discriminative approach.
 $$ p(y|x,w) = Ber(y|sigm(w^Tx))$$ where sigm is a sigmoid function: $$sigm(x) = \frac{1}{1 + e^{-x}}$$
-model fitting    MLE    the negative log-likelihood for logistic regression is given by $$NLL(w) = -\sum_{i=1}^N y_i log(\mu_i) + (1-y_i)log(1-\mu_i)$$ this is also called **cross entropy** error function.</description>
+model fitting    MLE    the negative log-likelihood for logistic regression is given by $$NLL(w) = -\sum_{i=1}^N y_i log(\mu_i) + (1-y_i)log(1-\mu_i)$$ this is also called cross entropy error function.</description>
     </item>
     
     <item>

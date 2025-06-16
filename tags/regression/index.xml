@@ -13,7 +13,7 @@
       <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/posts/notes/gradient-boosting/</guid>
-      <description>Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]_{F(x) = F_{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.</description>
+      <description>Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]{F(x) = F{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.</description>
     </item>
     
     <item>

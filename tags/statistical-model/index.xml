@@ -26,7 +26,7 @@ RSS (Residual Sum Squared)    let $\hat{y_i} = \hat{\beta_0} + \hat{\beta_1} x_i
       <guid>https://muhammadagf.github.io/posts/notes/logistic-regression/</guid>
       <description>statistical model that models the probability of an event taking place by having the log-odds of an event be a linear combination of one or more independent variables. since logistic regression fit a model in the form $p(y|x)$ directly, it&amp;rsquo;s called discriminative approach.
 $$ p(y|x,w) = Ber(y|sigm(w^Tx))$$ where sigm is a sigmoid function: $$sigm(x) = \frac{1}{1 + e^{-x}}$$
-model fitting    MLE    the negative log-likelihood for logistic regression is given by $$NLL(w) = -\sum_{i=1}^N y_i log(\mu_i) + (1-y_i)log(1-\mu_i)$$ this is also called **cross entropy** error function.</description>
+model fitting    MLE    the negative log-likelihood for logistic regression is given by $$NLL(w) = -\sum_{i=1}^N y_i log(\mu_i) + (1-y_i)log(1-\mu_i)$$ this is also called cross entropy error function.</description>
     </item>
     
   </channel>

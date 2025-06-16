@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scalability on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/scalability/</link>
+    <description>Recent content in Scalability on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/scalability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database Scaling And Reliability Strategies</title>
+      <link>https://muhammadagf.github.io/posts/notes/database-scaling-and-reliability-strategies/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/database-scaling-and-reliability-strategies/</guid>
+      <description>Replication    Copying the same data from one database to one or more replicas (add redundancy).
+Types    Primary - Replica    One primary DB that handle all writes (INSERT, UPDATE, DELETE) and one or more replica DBs that handle the reads (SELECT). Replicas get copied data from primary DB.
+The Primary DB sends Changelogs (WALs) to the replicas, replicas apply changes to stay up to date.</description>
+    </item>
+    
+  </channel>
+</rss>

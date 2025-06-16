@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Muhammad Abdullah Assagaf">
+    <meta name="description" content="Replication    Copying the same data from one database to one or more replicas (add redundancy).
+Types    Primary - Replica    One primary DB that handle all writes (INSERT, UPDATE, DELETE) and one or more replica DBs that handle the reads (SELECT). Replicas get copied data from primary DB.
+The Primary DB sends Changelogs (WALs) to the replicas, replicas apply changes to stay up to date.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Database Scaling And Reliability Strategies"/>
+<meta name="twitter:description" content="Replication    Copying the same data from one database to one or more replicas (add redundancy).
+Types    Primary - Replica    One primary DB that handle all writes (INSERT, UPDATE, DELETE) and one or more replica DBs that handle the reads (SELECT). Replicas get copied data from primary DB.
+The Primary DB sends Changelogs (WALs) to the replicas, replicas apply changes to stay up to date."/>
+
+    <meta property="og:title" content="Database Scaling And Reliability Strategies" />
+<meta property="og:description" content="Replication    Copying the same data from one database to one or more replicas (add redundancy).
+Types    Primary - Replica    One primary DB that handle all writes (INSERT, UPDATE, DELETE) and one or more replica DBs that handle the reads (SELECT). Replicas get copied data from primary DB.
+The Primary DB sends Changelogs (WALs) to the replicas, replicas apply changes to stay up to date." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://muhammadagf.github.io/posts/notes/database-scaling-and-reliability-strategies/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-04-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-04-20T00:00:00+00:00" />
+
+
+
+    <title>
+  Database Scaling And Reliability Strategies · Muhammad
+</title>
+
+    
+      <link rel="canonical" href="https://muhammadagf.github.io/posts/notes/database-scaling-and-reliability-strategies/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.91.2" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Muhammad
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About Me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/portofolio/">Portofolio</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/notes/">Personal notes</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://muhammadagf.github.io/posts/notes/database-scaling-and-reliability-strategies/">
+              Database Scaling And Reliability Strategies
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2025-04-20T00:00:00Z'>
+                April 20, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/software-engineering/">software engineering</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/scalability/">Scalability</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <hr>
+<h2 id="replication">
+  Replication
+  <a class="heading-link" href="#replication">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><strong>Copying the same data</strong> from one database to one or more replicas (add redundancy).</p>
+<h3 id="types">
+  Types
+  <a class="heading-link" href="#types">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<h4 id="primary---replica">
+  <strong>Primary - Replica</strong>
+  <a class="heading-link" href="#primary---replica">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>One <strong>primary DB</strong> that handle all writes (INSERT, UPDATE, DELETE) and <strong>one or more replica DBs</strong> that handle the reads (SELECT). <strong>Replicas get copied data</strong> <strong>from</strong> <strong>primary DB</strong>.</p>
+<p>The Primary DB sends Changelogs (WALs) to the replicas, replicas apply changes to stay up to date.</p>
+<p><strong>Why use it?</strong></p>
+<ol>
+<li>if you have a lot of reads, replicas can help distribute the load instead of reading from single db instances.</li>
+<li>if the primary Db crashes, replicas can take over.</li>
+</ol>
+<p><strong>Pros:</strong></p>
+<ol>
+<li>Scale Reads.</li>
+<li>High Availability (even when primary DB fails you can promotes one of replica to primary DB).</li>
+<li>Backups can be taken from Replica.</li>
+</ol>
+<p><strong>Cons:</strong></p>
+<ol>
+<li>Can&rsquo;t scale Writes (all writes still goes to primary DB).</li>
+<li>Data Lag (<strong>Eventually consistent</strong>) -&gt; sometimes Data in replica is not up to date with primary.</li>
+<li>If Primary DB crashes <strong>failovers</strong> takes time.</li>
+</ol>
+<p><strong>Failovers:</strong></p>
+<ol>
+<li><strong>Detection:</strong> Monitoring detect a Primary DB failure.</li>
+<li><strong>Promotion:</strong> One of the replica is promoted to Primary.</li>
+<li><strong>Reconfiguration:</strong> Other replicas point the the new promoted DB.</li>
+</ol>
+<p><strong>Tools for Failovers Automation:</strong></p>
+<ul>
+<li><strong>MySQL:</strong> <a href="https://github.com/yoshinorim/mha4mysql-manager">MHA</a> and <a href="https://github.com/openark/orchestrator">Orchestrator</a>.</li>
+<li><strong>PostgreSQL:</strong> <a href="https://github.com/zalando/patroni">Patroni</a> and <a href="https://repmgr.org/">repmgr</a> .</li>
+</ul>
+<h4 id="active---active-primary-primary">
+  <strong>Active - Active (Primary-Primary)</strong>
+  <a class="heading-link" href="#active---active-primary-primary">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>Multiple Primary DBs each of them can accept both writes and reads, they sync with each other to stay up to date.</p>
+<p><strong>Why use it?</strong></p>
+<ol>
+<li>Write intensive Application</li>
+<li>Geographically distributed Application</li>
+</ol>
+<p><strong>Pros:</strong></p>
+<ol>
+<li>Scale Writes across locations/regions.</li>
+<li>No SPOF -&gt; if one fails, others still works</li>
+<li>lower latency for global app</li>
+</ol>
+<p><strong>Cons:</strong></p>
+<ol>
+<li>Conflicts -&gt; what if 2 or more node update the same row (require conflict resolutions)</li>
+</ol>
+<p><strong>Conflict Resolutions:</strong>
+Because multiple nodes can accept write operations, conflicts can occur when the same row is modified concurrently on different primaries.</p>
+<p>Conflict Resolution Strategies:</p>
+<ul>
+<li>Last Write Wins (LWW).</li>
+<li>Application Defined (Custom)</li>
+<li>Conflict-Free Replicated Data Types (CRDTs)</li>
+</ul>
+<h3 id="strategy">
+  Strategy
+  <a class="heading-link" href="#strategy">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<h4 id="synchronous">
+  Synchronous
+  <a class="heading-link" href="#synchronous">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>Transactions on primary DB declared complete only when those changes have been replicated to all replicas, this ensures that all replicas have the latest data.</p>
+<ul>
+<li><strong>Pros:</strong>
+<ul>
+<li>Strong data consistency.</li>
+<li>No data loss in case of primary failure.</li>
+</ul>
+</li>
+<li><strong>Cons:</strong>
+<ul>
+<li>Increased latency due to waiting for acks.</li>
+<li>Potential performance bottlenecks.
+Use when you <strong>can’t risk data loss</strong> (e.g., banking, inventory) and you’re okay with <strong>slightly slower</strong> write performance.</li>
+</ul>
+</li>
+</ul>
+<h4 id="asynchronous">
+  Asynchronous
+  <a class="heading-link" href="#asynchronous">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>As the name suggest, primary DB can commits transactions without waiting for replicas.</p>
+<ul>
+<li><strong>Pros:</strong>
+<ul>
+<li>Lower latency and higher throughput.</li>
+<li>Better performance for write-heavy applications.</li>
+</ul>
+</li>
+<li><strong>Cons:</strong>
+<ul>
+<li>Risk of data loss if the primary fails before replication.</li>
+<li>Replicas may serve stale data.
+Use when you care more about <strong>speed</strong> than perfect sync.</li>
+</ul>
+</li>
+</ul>
+<h4 id="semi-synchronous">
+  Semi-synchronous:
+  <a class="heading-link" href="#semi-synchronous">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>Primary Db waits until changes have been replicated to at least one replica.</p>
+<h3 id="summary">
+  Summary
+  <a class="heading-link" href="#summary">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Type (Strategy)</th>
+<th>Who handles writes?</th>
+<th>Consistency</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Best Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary - Replica (Async)</strong></td>
+<td>Only one primary</td>
+<td>Eventual</td>
+<td>Simple, fast reads</td>
+<td>Stale replicas, primary bottleneck</td>
+<td>Read-heavy apps</td>
+</tr>
+<tr>
+<td><strong>Primary - Replica (Sync)</strong></td>
+<td>Only one primary</td>
+<td>Strong</td>
+<td>Safe writes</td>
+<td>Slower reads, blocking</td>
+<td>Critical data</td>
+</tr>
+<tr>
+<td><strong>Primary-Primary</strong></td>
+<td>Multiple Primary</td>
+<td>Needs conflict resolution</td>
+<td>Fast, no SPOF</td>
+<td>Complex, conflict risk</td>
+<td>Multi-region writes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sharding">
+  Sharding
+  <a class="heading-link" href="#sharding">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Splitting database horizontally across servers, <strong>where each server holds a subset of data</strong>.
+manage multiple independent databases (shards). App or middleware decide where to read/write.</p>
+<p><strong>Why use it?</strong></p>
+<ul>
+<li>When data is too big on 1 server.</li>
+<li>To scale out and reduce load.</li>
+<li>Optimize User geo-loc.
+<strong>Pros:</strong></li>
+</ul>
+<ul>
+<li>Linearly scales with number of shards.</li>
+<li>Each shard is smaller -&gt; better performance</li>
+<li>Independent failure/recovery of shards.
+<strong>Cons:</strong></li>
+<li>Complex queries (e.g., joins) across shards are difficult (or in some cases impossible).</li>
+<li>Application or middleware must route queries.</li>
+<li>Data balancing and shard rebalancing is difficult.</li>
+<li>Transactions across shards are complex (need 2 phase commit)/</li>
+</ul>
+<h3 id="choosing-shard-key">
+  Choosing Shard key:
+  <a class="heading-link" href="#choosing-shard-key">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><strong>Ideal shard key properties:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Why it Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>High Cardinality</strong></td>
+<td>Avoid putting too much data in one shard</td>
+</tr>
+<tr>
+<td><strong>Even Distribution</strong></td>
+<td>Balance load and storage across all shards</td>
+</tr>
+<tr>
+<td><strong>Frequently Queried</strong></td>
+<td>So that queries know which shard to go to</td>
+</tr>
+<tr>
+<td><strong>Stable</strong></td>
+<td>Shouldn’t change often (don’t use usernames/emails)</td>
+</tr>
+<tr>
+<td><strong>Locality (if needed)</strong></td>
+<td>If you want region-aware routing (geo-sharding)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="problems">
+  Problems
+  <a class="heading-link" href="#problems">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>*<strong>Celebrity problem (Hotspot):</strong>
+<ul>
+<li>Unbalance access to certain key (for example social apps where a single celebrity can have millions of reads per day)
+<ul>
+<li>one way to solve this by allocate each shard to single celebrity (and further partition it if needed)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Resharding Data</strong>
+<ul>
+<li>Needed when a single shard no longer hold more data, solution: <strong>Consistent Hashing</strong></li>
+</ul>
+</li>
+</ul>
+<p>A celebrity user causes huge amount of writes/reads, all their data goes to 1 shard -&gt; This shard becomes a hotspot.</p>
+<hr>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<ol>
+<li><a href="https://www.enterprisedb.com/postgres-tutorials/postgresql-replication-and-automatic-failover-tutorial">https://www.enterprisedb.com/postgres-tutorials/postgresql-replication-and-automatic-failover-tutorial</a></li>
+<li><a href="https://www.enjoyalgorithms.com/blog/master-slave-replication-databases">https://www.enjoyalgorithms.com/blog/master-slave-replication-databases</a></li>
+</ol>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>More to Come</p>
+      
+      
+        ©
+        
+        2025
+         Muhammad Abdullah Assagaf 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5E9PZY0GT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K5E9PZY0GT');
+</script>
+
+  </body>
+
+</html>

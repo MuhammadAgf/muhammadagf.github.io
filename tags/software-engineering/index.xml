@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software engineering on Muhammad</title>
+    <link>https://muhammadagf.github.io/tags/software-engineering/</link>
+    <description>Recent content in software engineering on Muhammad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database Scaling And Reliability Strategies</title>
+      <link>https://muhammadagf.github.io/posts/notes/database-scaling-and-reliability-strategies/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/database-scaling-and-reliability-strategies/</guid>
+      <description>Replication    Copying the same data from one database to one or more replicas (add redundancy).
+Types    Primary - Replica    One primary DB that handle all writes (INSERT, UPDATE, DELETE) and one or more replica DBs that handle the reads (SELECT). Replicas get copied data from primary DB.
+The Primary DB sends Changelogs (WALs) to the replicas, replicas apply changes to stay up to date.</description>
+    </item>
+    
+    <item>
+      <title>Load Balancing</title>
+      <link>https://muhammadagf.github.io/posts/notes/load-balancing/</link>
+      <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/load-balancing/</guid>
+      <description> Distribute client requests to backend servers/nodes/machines The goal:
+ prevent requests going to unhealthy resources prevent overloading resources prevent SPOF (although a single load balancer is a SPOF by itself)   References     https://www.youtube.com/watch?v=-W9F__D3oY4  </description>
+    </item>
+    
+    <item>
+      <title>Scalability</title>
+      <link>https://muhammadagf.github.io/posts/notes/scalability/</link>
+      <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/scalability/</guid>
+      <description>How to scale your app so you can handle higher load
+Vertical Scaling    Get Resources with higher processor, more RAM, disk space.
+Pros:
+ Nothing changes about your infrastructure, easier to manage, and you don&amp;rsquo;t have to deal with Partition problem (see CAP Theorem) Cons: servers with higher storage/processing power can be a lot more expensive upper ceiling on the amount of CPU/RAM/disk space you can add in a single machine.</description>
+    </item>
+    
+    <item>
+      <title>Cap Theorem</title>
+      <link>https://muhammadagf.github.io/posts/notes/cap-theorem/</link>
+      <pubDate>Tue, 19 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/cap-theorem/</guid>
+      <description>It states that it&amp;rsquo;s impossible for a system to simultaneously provide all three of the following guarantees:
+ Consistency: A read is guaranteed to return the most recent write for a given client. Availability: A non-failing node will return a reasonable response within a reasonable amount of time (no error or timeout) Partition Tolerance: The system will continue to function when network partitions occur.  The modern CAP goal should be to maximize combinations of consistency and availability that make sense for the specific application.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,50 @@
     <description>Recent content on Muhammad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://muhammadagf.github.io/posts/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database Scaling And Reliability Strategies</title>
+      <link>https://muhammadagf.github.io/posts/notes/database-scaling-and-reliability-strategies/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/database-scaling-and-reliability-strategies/</guid>
+      <description>Replication    Copying the same data from one database to one or more replicas (add redundancy).
+Types    Primary - Replica    One primary DB that handle all writes (INSERT, UPDATE, DELETE) and one or more replica DBs that handle the reads (SELECT). Replicas get copied data from primary DB.
+The Primary DB sends Changelogs (WALs) to the replicas, replicas apply changes to stay up to date.</description>
+    </item>
+    
+    <item>
+      <title>Load Balancing</title>
+      <link>https://muhammadagf.github.io/posts/notes/load-balancing/</link>
+      <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/load-balancing/</guid>
+      <description> Distribute client requests to backend servers/nodes/machines The goal:
+ prevent requests going to unhealthy resources prevent overloading resources prevent SPOF (although a single load balancer is a SPOF by itself)   References     https://www.youtube.com/watch?v=-W9F__D3oY4  </description>
+    </item>
+    
+    <item>
+      <title>Scalability</title>
+      <link>https://muhammadagf.github.io/posts/notes/scalability/</link>
+      <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/scalability/</guid>
+      <description>How to scale your app so you can handle higher load
+Vertical Scaling    Get Resources with higher processor, more RAM, disk space.
+Pros:
+ Nothing changes about your infrastructure, easier to manage, and you don&amp;rsquo;t have to deal with Partition problem (see CAP Theorem) Cons: servers with higher storage/processing power can be a lot more expensive upper ceiling on the amount of CPU/RAM/disk space you can add in a single machine.</description>
+    </item>
+    
+    <item>
+      <title>Cap Theorem</title>
+      <link>https://muhammadagf.github.io/posts/notes/cap-theorem/</link>
+      <pubDate>Tue, 19 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://muhammadagf.github.io/posts/notes/cap-theorem/</guid>
+      <description>It states that it&amp;rsquo;s impossible for a system to simultaneously provide all three of the following guarantees:
+ Consistency: A read is guaranteed to return the most recent write for a given client. Availability: A non-failing node will return a reasonable response within a reasonable amount of time (no error or timeout) Partition Tolerance: The system will continue to function when network partitions occur.  The modern CAP goal should be to maximize combinations of consistency and availability that make sense for the specific application.</description>
+    </item>
+    
     <item>
       <title>Ab-Testing</title>
       <link>https://muhammadagf.github.io/posts/notes/ab-testing/</link>
@@ -348,7 +391,7 @@ Starting Strategy    To measure the success of a product or its features, we can
       <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/posts/notes/adam/</guid>
-      <description>$$w_t = w_{t-1} - \eta \ \dfrac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$$ **with:** $$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$ this is for bias correction for the fact that first and second moment estimates start at zero.
+      <description>$$w_t = w_{t-1} - \eta \ \dfrac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$$ with: $$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$ this is for bias correction for the fact that first and second moment estimates start at zero.
 given: $$m_t = \beta_1m_{t-1} + (1 - \beta_1)\ \delta w_t$$ $$v_t = \beta_2v_{t-1} + (1 - \beta_2)\ \delta w_t^2$$
  $m_t$ is momentum. $v_t$ takes the idea from AdaGrad / RMSProp  parameter:</description>
     </item>
@@ -414,7 +457,7 @@ sampling distribution of the mean    given a population with mean $\mu$ and stan
       <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/posts/notes/gradient-boosting/</guid>
-      <description>Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]_{F(x) = F_{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.</description>
+      <description>Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]{F(x) = F{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.</description>
     </item>
     
     <item>
@@ -546,7 +589,7 @@ $$ H(X) \triangleq - \sum_{i=1}^K p(X=k) log(p(X=k)) $$
       <description>.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative} Note
 MSE = bias$^2$ + variance
  image source: https://www.codingninjas.com/codestudio/library/bias-variance-tradeoff
-Bias (Underfitting)    $$Bias[Y_{pred}|Y_{true}] = E[Y_{pred}] - Y_{true}$$ the **bias** error is an error from incorrect assumption in the learning algorithm. high bias can cause an algorithm to miss the relevant relations between features and target output (**underfitting**) (systematic off-the mark)</description>
+Bias (Underfitting)    $$Bias[Y_{pred}|Y_{true}] = E[Y_{pred}] - Y_{true}$$ the bias error is an error from incorrect assumption in the learning algorithm. high bias can cause an algorithm to miss the relevant relations between features and target output (underfitting) (systematic off-the mark)</description>
     </item>
     
     <item>
@@ -567,7 +610,7 @@ Bias (Underfitting)    $$Bias[Y_{pred}|Y_{true}] = E[Y_{pred}] - Y_{true}$$ the 
       <guid>https://muhammadagf.github.io/posts/notes/logistic-regression/</guid>
       <description>statistical model that models the probability of an event taking place by having the log-odds of an event be a linear combination of one or more independent variables. since logistic regression fit a model in the form $p(y|x)$ directly, it&amp;rsquo;s called discriminative approach.
 $$ p(y|x,w) = Ber(y|sigm(w^Tx))$$ where sigm is a sigmoid function: $$sigm(x) = \frac{1}{1 + e^{-x}}$$
-model fitting    MLE    the negative log-likelihood for logistic regression is given by $$NLL(w) = -\sum_{i=1}^N y_i log(\mu_i) + (1-y_i)log(1-\mu_i)$$ this is also called **cross entropy** error function.</description>
+model fitting    MLE    the negative log-likelihood for logistic regression is given by $$NLL(w) = -\sum_{i=1}^N y_i log(\mu_i) + (1-y_i)log(1-\mu_i)$$ this is also called cross entropy error function.</description>
     </item>
     
     <item>

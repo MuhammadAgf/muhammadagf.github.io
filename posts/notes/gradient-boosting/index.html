@@ -9,20 +9,20 @@
 
     
 
-    <meta name="author" content="Muhammad Assagaf">
-    <meta name="description" content="Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]_{F(x) = F_{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.">
+    <meta name="author" content="Muhammad Abdullah Assagaf">
+    <meta name="description" content="Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]{F(x) = F{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Gradient Boosting"/>
-<meta name="twitter:description" content="Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]_{F(x) = F_{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target."/>
+<meta name="twitter:description" content="Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]{F(x) = F{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target."/>
 
     <meta property="og:title" content="Gradient Boosting" />
-<meta property="og:description" content="Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]_{F(x) = F_{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target." />
+<meta property="og:description" content="Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]{F(x) = F{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://muhammadagf.github.io/posts/notes/gradient-boosting/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-03-27T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2023-03-27T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2023-03-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-03-27T00:00:00+00:00" />
 
 
 
@@ -62,7 +62,7 @@
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.91.2" />
   </head>
 
   
@@ -172,13 +172,13 @@ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$
 <li>For $m$ to $M$:
 <ol>
 <li>compute <em>pseudo-residuals:</em>
-$$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]_{F(x) = F_{m-1}(x)}$$ for $i = 1, . . ., n.$</li>
+$$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]<em>{F(x) = F</em>{m-1}(x)}$$ for $i = 1, . . ., n.$</li>
 <li>Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.
-*usually it&rsquo;s a decision tree or boosted tree for **gradient boosted decisiontree**)*</li>
+<em>usually it&rsquo;s a decision tree or boosted tree for <strong>gradient boosted decisiontree</strong>)</em></li>
 <li>compute $\gamma_{m}$ by solving $$\gamma_{m} = arg\ min\ \gamma \sum_{i}^n L(y_i, F_{m-1}(x_i)+ \gamma)$$
-*basically get the most optimal prediction for each possible outcome (usually mean(y) for regression)*</li>
+<em>basically get the most optimal prediction for each possible outcome (usually mean(y) for regression)</em></li>
 <li>update $F_m(x) = F_{m-1}(x) + \epsilon\ \gamma_{m}$
-*$\epsilon$ is learning rate*</li>
+<em>$\epsilon$ is learning rate</em></li>
 </ol>
 </li>
 </ol>
@@ -238,8 +238,8 @@ $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]_{F(x
       
         ©
         
-        2024
-         Muhammad Assagaf 
+        2025
+         Muhammad Abdullah Assagaf 
       
       
          · 

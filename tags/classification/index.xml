@@ -13,7 +13,7 @@
       <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://muhammadagf.github.io/posts/notes/gradient-boosting/</guid>
-      <description>Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]_{F(x) = F_{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.</description>
+      <description>Algorithm     Initialize model with a constant value $F_0$ $$F_0(x) = arg\ min\ \gamma \sum_{i}^n L(y_i, \gamma)$$ *initiate the base model (for regression usually $F_0$ is $mean(y)$ For $m$ to $M$:  compute pseudo-residuals: $$r_{im} = \Biggl[ \frac{\partial L(y_i, F(x_i)) }{\partial F(x_i)} \Biggr]{F(x) = F{m-1}(x)}$$ for $i = 1, . . ., n.$ Fit a weak learner to pseudo-residuals, i.e. train it using $r_{im}$ as the target.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ CART Algorithm    CART constructs binary trees using the feature and threshold t
       <guid>https://muhammadagf.github.io/posts/notes/logistic-regression/</guid>
       <description>statistical model that models the probability of an event taking place by having the log-odds of an event be a linear combination of one or more independent variables. since logistic regression fit a model in the form $p(y|x)$ directly, it&amp;rsquo;s called discriminative approach.
 $$ p(y|x,w) = Ber(y|sigm(w^Tx))$$ where sigm is a sigmoid function: $$sigm(x) = \frac{1}{1 + e^{-x}}$$
-model fitting    MLE    the negative log-likelihood for logistic regression is given by $$NLL(w) = -\sum_{i=1}^N y_i log(\mu_i) + (1-y_i)log(1-\mu_i)$$ this is also called **cross entropy** error function.</description>
+model fitting    MLE    the negative log-likelihood for logistic regression is given by $$NLL(w) = -\sum_{i=1}^N y_i log(\mu_i) + (1-y_i)log(1-\mu_i)$$ this is also called cross entropy error function.</description>
     </item>
     
   </channel>
